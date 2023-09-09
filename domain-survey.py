@@ -15,9 +15,9 @@ domain_lists = [f for f in os.listdir("domains") if
                 f.endswith(".txt")]
 for filename in domain_lists:
     input_path = os.path.join("domains", filename)
-    with open(input_path, "w") as input_file:
+    with open(input_path) as input_file:
         sorted_lines = sorted(list(set(input_file.readlines())))
-        input_file.seek(0)
+    with open(input_path, "w") as input_file:
         input_file.writelines(sorted_lines)
     symbol = filename.rstrip("-domains.txt")
     symbol_dir = os.path.join(results_dir, symbol)
@@ -25,14 +25,15 @@ for filename in domain_lists:
     print(f"Checking {symbol}...")
     output_filename = os.path.join(symbol_dir, f"{date}_{symbol}_checkdmarc")
     subprocess.run(["checkdmarc", "--skip-tls", input_path,
-                   "-o", f"{output_filename}.csv", "-o", f"{output_filename}.json"])
+                   "-o", f"{output_filename}.csv", f"{output_filename}.json"])
     with (open(f"{output_filename}.csv")) as results_csv:
         reader = csv.DictReader(results_csv)
-        csv_fields = reader.fieldnames()
+        csv_fields = reader.fieldnames
         for row in reader:
             combined_result_rows.append(row)
+combined_result_rows = sorted(combined_result_rows, key= lambda x: x["domain"])
 combined_filename = f"{date}_fortune-20-combined_checkdmarc.csv"
-with open(os.path.join(results_dir, combined_filename)) as combined_csv_file:
+with open(os.path.join(results_dir, combined_filename, "w")) as combined_csv_file:
     writer = csv.DictWriter(combined_csv_file, csv_fields)
     writer.writeheader()
     writer.writerows(combined_result_rows)
