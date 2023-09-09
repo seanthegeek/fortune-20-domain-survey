@@ -13,7 +13,7 @@ os.makedirs(results_dir, exist_ok=True)
 domain_lists = [f for f in os.listdir("domains") if
                 os.path.isfile(os.path.join("domains", f)) and
                 f.endswith(".txt")]
-for filename in domain_lists:
+for filename in sorted(domain_lists):
     input_path = os.path.join("domains", filename)
     with open(input_path) as input_file:
         sorted_lines = sorted(list(set(input_file.readlines())))
@@ -33,7 +33,7 @@ for filename in domain_lists:
             combined_result_rows.append(row)
 combined_result_rows = sorted(combined_result_rows, key= lambda x: x["domain"])
 combined_filename = f"{date}_fortune-20-combined_checkdmarc.csv"
-with open(os.path.join(results_dir, combined_filename, "w")) as combined_csv_file:
+with open(os.path.join(results_dir, combined_filename), "w") as combined_csv_file:
     writer = csv.DictWriter(combined_csv_file, csv_fields)
     writer.writeheader()
     writer.writerows(combined_result_rows)
