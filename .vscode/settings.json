@@ -1,0 +1,9 @@
+{
+    "cSpell.words": [
+        "DNSSEC",
+        "venv"
+    ],
+   "markdownlint.config": {
+    "MD034": false
+   } 
+}

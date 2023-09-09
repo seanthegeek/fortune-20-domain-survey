@@ -1,0 +1,5 @@
+azure.com
+github.com
+microsoft.com
+office.com
+outlook.com
