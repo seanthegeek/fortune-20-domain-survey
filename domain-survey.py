@@ -29,8 +29,9 @@ for filename in sorted(domain_lists):
                     "-n", "1.1.1.1"])
     with (open(f"{output_filename}.csv")) as results_csv:
         reader = csv.DictReader(results_csv)
-        csv_fields = reader.fieldnames
+        csv_fields = list(reader.fieldnames).insert("owner", 1)
         for row in reader:
+            row["owner"] = symbol
             combined_result_rows.append(row)
 combined_result_rows = sorted(combined_result_rows, key= lambda x: x["domain"])
 combined_filename = f"{date}_fortune-20-combined_checkdmarc.csv"
