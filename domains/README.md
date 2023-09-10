@@ -1,6 +1,6 @@
 # About
 
-Each company has many domains. The domains listed in this project are gathered based on brands and subsidiaries mentioned in public information, such as the SEC form 10-K annual report, available in [EDGAR][EDGAR], and do not include all of the domains related to these companies.
+Each company has many domains. The domains listed in this project are gathered based on brands and subsidiaries mentioned in public information, such as the SEC form 10-K annual report, available in [EDGAR][EDGAR]. The domain lists published here do not include all of the domains related to these companies.
 
 ## License
 
