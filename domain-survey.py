@@ -24,8 +24,9 @@ for filename in sorted(domain_lists):
     os.makedirs(symbol_dir, exist_ok=True)
     print(f"Checking {symbol}...")
     output_filename = os.path.join(symbol_dir, f"{date}_{symbol}_checkdmarc")
-    subprocess.run(["checkdmarc", "--skip-tls", "-n", "1.1.1.1", input_path,
-                   "-o", f"{output_filename}.csv", f"{output_filename}.json"])
+    subprocess.run(["checkdmarc", "--skip-tls", input_path,
+                   "-o", f"{output_filename}.csv", f"{output_filename}.json",
+                    "-n", "1.1.1.1"])
     with (open(f"{output_filename}.csv")) as results_csv:
         reader = csv.DictReader(results_csv)
         csv_fields = reader.fieldnames
