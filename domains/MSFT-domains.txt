@@ -1,5 +1,8 @@
 azure.com
 github.com
+hotmail.com
 microsoft.com
+msn.com
 office.com
 outlook.com
+windows.com
