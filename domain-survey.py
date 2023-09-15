@@ -11,8 +11,8 @@ from checkdmarc import get_base_domain
 
 combined_result_rows = []
 combined_stats = OrderedDict(dnssec=OrderedDict(true=0, false=0),
-                             spf=OrderedDict(true=0, false=0),
-                             dmarc_policy=(OrderedDict(no_dmarc_record=0,
+                             valid_spf_record=OrderedDict(true=0, false=0),
+                             dmarc_policy=(OrderedDict(missing_or_invalid=0,
                                                        none=0,
                                                        quarantine=0,
                                                        reject=0)),
@@ -45,9 +45,9 @@ for filename in sorted(domain_lists):
             row["owner"] = symbol
             combined_result_rows.append(row)
             combined_stats["dnssec"][row["dnssec"].lower()] += 1
-            combined_stats["spf"][row["spf_valid"].lower()] += 1
+            combined_stats["valid_spf_record"][row["spf_valid"].lower()] += 1
             if row["dmarc_p"] == "":
-                combined_stats["dmarc_policy"]["no_dmarc_record"] += 1
+                combined_stats["dmarc_policy"]["missing_or_invalid"] += 1
             else:
                 combined_stats["dmarc_policy"][row["dmarc_p"]] += 1
             if row["mx"] == "":
