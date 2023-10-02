@@ -22,7 +22,7 @@ The list of domains is then processed using [checkdmarc][checkdmarc], which chec
 
 ## License
 
-The DMARC Survey source code licensed under the [Apache 2.0 License][LICENSE].
+The Domain Survey source code licensed under the [Apache 2.0 License][LICENSE].
 
 The domain lists and survey results are provided under the
 [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) license][cc]. Please provide credit to Sean Whalen and the original project at https://github.com/seanthegeek/fortune-20-domain-survey.
