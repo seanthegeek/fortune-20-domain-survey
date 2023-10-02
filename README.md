@@ -4,9 +4,11 @@ A survey of domain security at the companies on the Fortune 20 list.
 
 ## Motive
 
-Professional curiosity turned into a weekend of ADHD-fueled hyperfixation. As usual, I underestimated the ammount of effort required. Berkshire Hathaway alone has over 200 domain names for various subsidiaries and brands! 😅
+> I wonder how many Fortune 20 domains have an enforced DMARC policy?
 
-When an organization is evaluating its security posture, a common step is a comparison to organizations of a similar size and industry. I was curious to see how Fortune 20 companies are deploying security controls that protect their domains, brands, and email inboxes. For example, MX DNS records can reveal if a domain is being protected by a secure email gateway, providing information about which vendors are most popular.
+Professional curiosity turned into weeks of ADHD-fueled hyperfixation. As usual, I underestimated the amount of effort required. Berkshire Hathaway alone has over 200 domain names for various subsidiaries and brands! 😅
+
+When an organization is evaluating its security posture, a common step is a comparison to organizations of a similar size and industry. I was curious to see how Fortune 20 companies are deploying security controls that protect their domains, brands, and email inboxes. For example, MX DNS records can reveal if a domain is being protected by a secure email gateway, providing information about which vendors are most popular. This data is not intended endorse or shame anyone. It's just data.
 
  Likewise, DMARC DNS records show which domains have implemented the DMARC standard,which can [prevent unauthorized spoofing][DMARC] of domains in email message from addresses. However, before a domain's DMARC policy can be changed from a monitor policy (i.e, `none`) to `quarantine` or `reject`, the domain owner must ensure that all legitimate email are properly authenticated. That can be difficult for large organizations, where different business units may use many different services to send emails as the same domain. Smaller subsidiaries tend to have an easier time, because they may only have a few sending services: e.g., an email gateway, marketing service, and a customer service platform.
 
