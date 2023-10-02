@@ -16,7 +16,10 @@ combined_stats = OrderedDict(dnssec=OrderedDict(true=0, false=0),
                                                        none=0,
                                                        quarantine=0,
                                                        reject=0)),
-                                                       mx=OrderedDict(no_mx=0))
+                                                       mx=OrderedDict(no_mx=0),
+                                                       dmarc_rua=OrderedDict(
+                                                           no_rua=0
+                                                       ))
 
 date = datetime.datetime.utcnow().strftime('%Y-%m-%d')
 results_dir = os.path.join("results", date)
@@ -58,12 +61,25 @@ for filename in sorted(domain_lists):
                     combined_stats["mx"][mx] += 1
                 else:
                     combined_stats["mx"][mx] = 1
+            if row["dmarc_rua"] == "":
+                combined_stats["dmarc_rua"]["no_rua"] += 1
+            else:
+                rua_addresses = row["dmarc_rua"].split("|")
+                rua_domains = list(set(map(lambda x: get_base_domain(
+                    x.split("@")[-1].lower()), rua_addresses)))
+                for domain in rua_domains:
+                    if domain not in combined_stats["dmarc_rua"]:
+                        combined_stats["dmarc_rua"][domain] = 1
+                    else:
+                        combined_stats["dmarc_rua"][domain] += 1
 combined_stats["spf"] = sorted(combined_stats["spf"],
                                key=lambda x: x["spf"], reverse=True)
-combined_stats["dmarc_policy"] = sorted(combined_stats["dmarc_policy"],
-                               key=lambda x: x["dmarc_policy"], reverse=True)
 combined_stats["mx"] = sorted(combined_stats["mx"],
                                key=lambda x: x["mx"], reverse=True)
+combined_stats["dmarc_policy"] = sorted(combined_stats["dmarc_policy"],
+                               key=lambda x: x["dmarc_policy"], reverse=True)
+combined_stats["dmarc_rua"] = sorted(combined_stats["dmarc_rua"],
+                               key=lambda x: x["dmarc_rua"], reverse=True)
 combined_result_rows = sorted(combined_result_rows, key=lambda x: x["domain"])
 combined_filename = f"{date}_fortune-20-combined_checkdmarc"
 combined_results_path = os.path.join(results_dir, combined_filename)
