@@ -72,8 +72,9 @@ for filename in sorted(domain_lists):
                         combined_stats["dmarc_rua"][domain] = 1
                     else:
                         combined_stats["dmarc_rua"][domain] += 1
-combined_stats["spf"] = sorted(combined_stats["spf"],
-                               key=lambda x: x["spf"], reverse=True)
+combined_stats["spf"] = sorted(combined_stats["valid_spf_record"],
+                               key=lambda x: x["valid_spf_record"],
+                               reverse=True)
 combined_stats["mx"] = sorted(combined_stats["mx"],
                                key=lambda x: x["mx"], reverse=True)
 combined_stats["dmarc_policy"] = sorted(combined_stats["dmarc_policy"],
