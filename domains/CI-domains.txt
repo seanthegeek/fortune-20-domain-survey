@@ -1,11 +1,10 @@
 cigna.co.id
 cigna.co.nz
+cigna.co.th
 cigna.com
 cigna.com.hk
 cigna.com.sg
 cigna.com.tw
-cigna.co.th
-signa.co.uk
 cignacmb.com
 cignaenvoy.com
 cignafinans.com.tr
@@ -13,4 +12,4 @@ cignaglobalhealth.com
 cignalegal.co.uk
 cignasalud.es
 cignattkinsurance.in
-lina.co.kr
+lina.co.krsigna.co.uk
