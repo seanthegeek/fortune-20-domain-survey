@@ -40,7 +40,7 @@ for filename in sorted(domain_lists):
     output_filename = os.path.join(symbol_dir, f"{date}_{symbol}_checkdmarc")
     subprocess.run(["checkdmarc", "--skip-tls", input_path,
                    "-o", f"{output_filename}.csv", f"{output_filename}.json",
-                    "-n", "1.1.1.1"])
+                    "-t", "10", "-n", "1.1.1.1", "1.0.0.1"])
     with (open(f"{output_filename}.csv")) as results_csv:
         reader = csv.DictReader(results_csv)
         csv_fields = list(reader.fieldnames).insert(1, "owner")
@@ -81,7 +81,7 @@ combined_stats["dmarc_policy"] = sorted(combined_stats["dmarc_policy"],
 combined_stats["dmarc_rua"] = sorted(combined_stats["dmarc_rua"],
                                key=lambda x: x["dmarc_rua"], reverse=True)
 combined_result_rows = sorted(combined_result_rows, key=lambda x: x["domain"])
-combined_filename = f"{date}_fortune-20-combined_checkdmarc"
+combined_filename = f"{date}_fortune-20-aggregate_checkdmarc"
 combined_results_path = os.path.join(results_dir, combined_filename)
 with open(f"{combined_results_path}.csv", "w") as combined_csv_file:
     writer = csv.DictWriter(combined_csv_file, csv_fields)
