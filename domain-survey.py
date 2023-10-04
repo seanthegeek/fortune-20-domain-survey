@@ -5,19 +5,18 @@ import os
 import subprocess
 import csv
 import json
-from collections import OrderedDict
 
 from checkdmarc import get_base_domain
 
 combined_result_rows = []
-combined_stats = OrderedDict(dnssec=OrderedDict(true=0, false=0),
-                             valid_spf_record=OrderedDict(true=0, false=0),
-                             dmarc_policy=(OrderedDict(missing_or_invalid=0,
+combined_stats = dict(dnssec=dict(true=0, false=0),
+                             valid_spf_record=dict(true=0, false=0),
+                             dmarc_policy=(dict(missing_or_invalid=0,
                                                        none=0,
                                                        quarantine=0,
                                                        reject=0)),
-                                                       mx=OrderedDict(no_mx=0),
-                                                       dmarc_rua=OrderedDict(
+                                                       mx=dict(no_mx=0),
+                                                       dmarc_rua=dict(
                                                            no_rua=0
                                                        ))
 
@@ -43,7 +42,8 @@ for filename in sorted(domain_lists):
                     "-t", "10", "-n", "1.1.1.1", "1.0.0.1"])
     with (open(f"{output_filename}.csv")) as results_csv:
         reader = csv.DictReader(results_csv)
-        csv_fields = list(reader.fieldnames).insert(1, "owner")
+        csv_fields = list(reader.fieldnames)
+        csv_fields.insert(1, "owner")
         for row in reader:
             row["owner"] = symbol
             combined_result_rows.append(row)
@@ -72,15 +72,18 @@ for filename in sorted(domain_lists):
                         combined_stats["dmarc_rua"][domain] = 1
                     else:
                         combined_stats["dmarc_rua"][domain] += 1
-combined_stats["spf"] = sorted(combined_stats["valid_spf_record"],
-                               key=lambda x: x["valid_spf_record"],
-                               reverse=True)
-combined_stats["mx"] = sorted(combined_stats["mx"],
-                               key=lambda x: x["mx"], reverse=True)
-combined_stats["dmarc_policy"] = sorted(combined_stats["dmarc_policy"],
-                               key=lambda x: x["dmarc_policy"], reverse=True)
-combined_stats["dmarc_rua"] = sorted(combined_stats["dmarc_rua"],
-                               key=lambda x: x["dmarc_rua"], reverse=True)
+combined_stats["dnssec"] = dict(sorted(combined_stats["dnssec"].items(), 
+                                       key=lambda x: x[1], reverse=True))
+combined_stats["valid_spf_record"] = dict(sorted(
+    combined_stats["valid_spf_record"].items(), key=lambda x: x[1],
+    reverse=True))
+combined_stats["mx"] = dict(sorted(combined_stats["mx"].items(),
+                               key=lambda x: x[1], reverse=True))
+combined_stats["dmarc_policy"] = dict(sorted(
+    combined_stats["dmarc_policy"].items(),
+    key=lambda x: x[1], reverse=True))
+combined_stats["dmarc_rua"] = dict(sorted(combined_stats["dmarc_rua"].items(),
+                               key=lambda x: x[1], reverse=True))
 combined_result_rows = sorted(combined_result_rows, key=lambda x: x["domain"])
 combined_filename = f"{date}_fortune-20-aggregate_checkdmarc"
 combined_results_path = os.path.join(results_dir, combined_filename)
