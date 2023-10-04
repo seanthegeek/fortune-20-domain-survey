@@ -1,0 +1,310 @@
+[
+  {
+    "domain": "exxon.com",
+    "base_domain": "exxon.com",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "a1-116.akam.net",
+        "a14-65.akam.net",
+        "a18-64.akam.net",
+        "a13-67.akam.net",
+        "a10-67.akam.net",
+        "a3-66.akam.net"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [],
+      "warnings": [
+        "No MX records found. Is the domain parked?"
+      ]
+    },
+    "spf": {
+      "record": null,
+      "valid": false,
+      "dns_void_lookups": null,
+      "error": "(SPFRecordNotFound('exxon.com does not have a SPF TXT record', 'exxon.com'), 'exxon.com')"
+    },
+    "dmarc": {
+      "record": null,
+      "valid": false,
+      "location": null,
+      "error": "A DMARC record does not exist for this domain or its base domain"
+    }
+  },
+  {
+    "domain": "exxonmobil.com",
+    "base_domain": "exxonmobil.com",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "a13-67.akam.net",
+        "a3-66.akam.net",
+        "a10-67.akam.net",
+        "a1-116.akam.net",
+        "a18-64.akam.net",
+        "a14-65.akam.net"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [
+        {
+          "preference": 10,
+          "hostname": "mxa-00016305.gslb.pphosted.com",
+          "addresses": [
+            "148.163.148.163"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "mxb-00016305.gslb.pphosted.com",
+          "addresses": [
+            "148.163.152.114"
+          ]
+        }
+      ],
+      "warnings": [
+        "The resolution lifetime expired after 2.000 seconds: Server Do53:10.23.1.99@53 answered The DNS operation timed out.",
+        "The reverse DNS of 148.163.148.163 is mx0a-00016305.pphosted.com, but the A/AAAA DNS records for mx0a-00016305.pphosted.com do not resolve to 148.163.148.163",
+        "The resolution lifetime expired after 2.000 seconds: Server Do53:10.23.1.99@53 answered The DNS operation timed out.",
+        "The reverse DNS of 148.163.152.114 is mx0b-00016305.pphosted.com, but the A/AAAA DNS records for mx0b-00016305.pphosted.com do not resolve to 148.163.152.114"
+      ]
+    },
+    "spf": {
+      "record": "v=spf1 a:dalmxp131.exxonmobil.com a:dalmxp132.exxonmobil.com a:hoemxp131.exxonmobil.com a:hoemxp132.exxonmobil.com include:spf-00016304.pphosted.com include:spf-00016305.pphosted.com ip4:158.26.24.0/28 -all",
+      "valid": true,
+      "dns_lookups": 6,
+      "dns_void_lookups": 0,
+      "warnings": [],
+      "parsed": {
+        "pass": [
+          {
+            "value": "131.126.223.1",
+            "mechanism": "a"
+          },
+          {
+            "value": "131.126.223.2",
+            "mechanism": "a"
+          },
+          {
+            "value": "158.35.223.1",
+            "mechanism": "a"
+          },
+          {
+            "value": "158.35.223.2",
+            "mechanism": "a"
+          },
+          {
+            "value": "158.26.24.0/28",
+            "mechanism": "ip4"
+          }
+        ],
+        "neutral": [],
+        "softfail": [],
+        "fail": [],
+        "include": [
+          {
+            "domain": "spf-00016304.pphosted.com",
+            "record": "v=spf1 ip4:148.163.148.119 ip4:148.163.152.72",
+            "dns_lookups": 0,
+            "dns_void_lookups": 0,
+            "parsed": {
+              "pass": [
+                {
+                  "value": "148.163.148.119",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "148.163.152.72",
+                  "mechanism": "ip4"
+                }
+              ],
+              "neutral": [],
+              "softfail": [],
+              "fail": [],
+              "include": [],
+              "redirect": null,
+              "exp": null,
+              "all": "neutral"
+            },
+            "warnings": []
+          },
+          {
+            "domain": "spf-00016305.pphosted.com",
+            "record": "v=spf1 ip4:148.163.148.163 ip4:148.163.152.114",
+            "dns_lookups": 0,
+            "dns_void_lookups": 0,
+            "parsed": {
+              "pass": [
+                {
+                  "value": "148.163.148.163",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "148.163.152.114",
+                  "mechanism": "ip4"
+                }
+              ],
+              "neutral": [],
+              "softfail": [],
+              "fail": [],
+              "include": [],
+              "redirect": null,
+              "exp": null,
+              "all": "neutral"
+            },
+            "warnings": []
+          }
+        ],
+        "redirect": null,
+        "exp": null,
+        "all": "fail"
+      }
+    },
+    "dmarc": {
+      "record": "v=DMARC1; p=none; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com,mailto:dmarcreports@exxonmobil.com; ruf=mailto:dmarcreports@exxonmobil.com",
+      "valid": true,
+      "location": "exxonmobil.com",
+      "warnings": [],
+      "tags": {
+        "v": {
+          "value": "DMARC1",
+          "explicit": true
+        },
+        "p": {
+          "value": "none",
+          "explicit": true
+        },
+        "fo": {
+          "value": "1",
+          "explicit": true
+        },
+        "rua": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarc_rua@emaildefense.proofpoint.com",
+              "size_limit": null
+            },
+            {
+              "scheme": "mailto",
+              "address": "dmarcreports@exxonmobil.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "ruf": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarcreports@exxonmobil.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "adkim": {
+          "value": "r",
+          "explicit": false
+        },
+        "aspf": {
+          "value": "r",
+          "explicit": false
+        },
+        "pct": {
+          "value": 100,
+          "explicit": false
+        },
+        "rf": {
+          "value": "afrf",
+          "explicit": false
+        },
+        "ri": {
+          "value": 86400,
+          "explicit": false
+        },
+        "sp": {
+          "value": "none",
+          "explicit": false
+        }
+      }
+    }
+  },
+  {
+    "domain": "mobil.com",
+    "base_domain": "mobil.com",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "a10-67.akam.net",
+        "a1-116.akam.net",
+        "a3-66.akam.net",
+        "a18-64.akam.net",
+        "a13-67.akam.net",
+        "a14-65.akam.net"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [],
+      "warnings": [
+        "No MX records found. Is the domain parked?"
+      ]
+    },
+    "spf": {
+      "record": null,
+      "valid": false,
+      "dns_void_lookups": null,
+      "error": "(SPFRecordNotFound('mobil.com does not have a SPF TXT record', 'mobil.com'), 'mobil.com')"
+    },
+    "dmarc": {
+      "record": "v=DMARC1;p=none",
+      "valid": true,
+      "location": "mobil.com",
+      "warnings": [
+        "rua tag (destination for aggregate reports) not found"
+      ],
+      "tags": {
+        "v": {
+          "value": "DMARC1",
+          "explicit": true
+        },
+        "p": {
+          "value": "none",
+          "explicit": true
+        },
+        "adkim": {
+          "value": "r",
+          "explicit": false
+        },
+        "aspf": {
+          "value": "r",
+          "explicit": false
+        },
+        "fo": {
+          "value": "0",
+          "explicit": false
+        },
+        "pct": {
+          "value": 100,
+          "explicit": false
+        },
+        "rf": {
+          "value": "afrf",
+          "explicit": false
+        },
+        "ri": {
+          "value": 86400,
+          "explicit": false
+        },
+        "sp": {
+          "value": "none",
+          "explicit": false
+        }
+      }
+    }
+  }
+]

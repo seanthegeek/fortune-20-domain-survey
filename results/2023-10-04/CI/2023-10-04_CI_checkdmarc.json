@@ -1,0 +1,1987 @@
+[
+  {
+    "domain": "cigna.co.id",
+    "base_domain": "cigna.co.id",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "ns.cigna.com",
+        "ns2.cigna.com"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [
+        {
+          "preference": 10,
+          "hostname": "mxa-000e5c01.gslb.pphosted.com",
+          "addresses": [
+            "67.231.157.188"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "mxb-000e5c01.gslb.pphosted.com",
+          "addresses": [
+            "67.231.157.188"
+          ]
+        }
+      ],
+      "warnings": [
+        "The resolution lifetime expired after 2.000 seconds: Server Do53:10.23.1.99@53 answered The DNS operation timed out.",
+        "The reverse DNS of 67.231.157.188 is mx0b-000e5c01.pphosted.com, but the A/AAAA DNS records for mx0b-000e5c01.pphosted.com do not resolve to 67.231.157.188",
+        "The resolution lifetime expired after 2.000 seconds: Server Do53:10.23.1.99@53 answered The DNS operation timed out.",
+        "The reverse DNS of 67.231.157.188 is mx0b-000e5c01.pphosted.com, but the A/AAAA DNS records for mx0b-000e5c01.pphosted.com do not resolve to 67.231.157.188"
+      ]
+    },
+    "spf": {
+      "record": "v=spf1 exists:%{i}.spf.evernorth.com -all",
+      "valid": true,
+      "dns_lookups": 1,
+      "dns_void_lookups": 0,
+      "warnings": [],
+      "parsed": {
+        "pass": [
+          {
+            "value": "%{i}.spf.evernorth.com",
+            "mechanism": "exists"
+          }
+        ],
+        "neutral": [],
+        "softfail": [],
+        "fail": [],
+        "include": [],
+        "redirect": null,
+        "exp": null,
+        "all": "fail"
+      }
+    },
+    "dmarc": {
+      "record": "v=DMARC1; p=reject; sp=reject; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com",
+      "valid": true,
+      "location": "cigna.co.id",
+      "warnings": [],
+      "tags": {
+        "v": {
+          "value": "DMARC1",
+          "explicit": true
+        },
+        "p": {
+          "value": "reject",
+          "explicit": true
+        },
+        "sp": {
+          "value": "reject",
+          "explicit": true
+        },
+        "fo": {
+          "value": "1",
+          "explicit": true
+        },
+        "rua": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarc_rua@emaildefense.proofpoint.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "ruf": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarc_ruf@emaildefense.proofpoint.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "adkim": {
+          "value": "r",
+          "explicit": false
+        },
+        "aspf": {
+          "value": "r",
+          "explicit": false
+        },
+        "pct": {
+          "value": 100,
+          "explicit": false
+        },
+        "rf": {
+          "value": "afrf",
+          "explicit": false
+        },
+        "ri": {
+          "value": 86400,
+          "explicit": false
+        }
+      }
+    }
+  },
+  {
+    "domain": "cigna.co.nz",
+    "base_domain": "cigna.co.nz",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "ns2.cigna.com",
+        "ns.cigna.com"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [],
+      "warnings": [
+        "No MX records found. Is the domain parked?"
+      ]
+    },
+    "spf": {
+      "record": "v=spf1 include:mktomail.com -all",
+      "valid": true,
+      "dns_lookups": 1,
+      "dns_void_lookups": 0,
+      "warnings": [],
+      "parsed": {
+        "pass": [],
+        "neutral": [],
+        "softfail": [],
+        "fail": [],
+        "include": [
+          {
+            "domain": "mktomail.com",
+            "record": "v=spf1 ip4:199.15.212.0/22 ip4:72.3.185.0/24 ip4:72.32.154.0/24 ip4:72.32.217.0/24 ip4:72.32.243.0/24 ip4:94.236.119.0/26 ip4:37.188.97.188/32 ip4:185.28.196.0/22 ip4:192.28.128.0/18 ip4:103.237.104.0/22 ip4:130.248.172.0/24 ip4:130.248.173.0/24 ~all",
+            "dns_lookups": 0,
+            "dns_void_lookups": 0,
+            "parsed": {
+              "pass": [
+                {
+                  "value": "199.15.212.0/22",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "72.3.185.0/24",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "72.32.154.0/24",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "72.32.217.0/24",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "72.32.243.0/24",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "94.236.119.0/26",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "37.188.97.188/32",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "185.28.196.0/22",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "192.28.128.0/18",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "103.237.104.0/22",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "130.248.172.0/24",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "130.248.173.0/24",
+                  "mechanism": "ip4"
+                }
+              ],
+              "neutral": [],
+              "softfail": [],
+              "fail": [],
+              "include": [],
+              "redirect": null,
+              "exp": null,
+              "all": "softfail"
+            },
+            "warnings": []
+          }
+        ],
+        "redirect": null,
+        "exp": null,
+        "all": "fail"
+      }
+    },
+    "dmarc": {
+      "record": "v=DMARC1; p=reject; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com",
+      "valid": true,
+      "location": "cigna.co.nz",
+      "warnings": [],
+      "tags": {
+        "v": {
+          "value": "DMARC1",
+          "explicit": true
+        },
+        "p": {
+          "value": "reject",
+          "explicit": true
+        },
+        "fo": {
+          "value": "1",
+          "explicit": true
+        },
+        "rua": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarc_rua@emaildefense.proofpoint.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "ruf": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarc_ruf@emaildefense.proofpoint.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "adkim": {
+          "value": "r",
+          "explicit": false
+        },
+        "aspf": {
+          "value": "r",
+          "explicit": false
+        },
+        "pct": {
+          "value": 100,
+          "explicit": false
+        },
+        "rf": {
+          "value": "afrf",
+          "explicit": false
+        },
+        "ri": {
+          "value": 86400,
+          "explicit": false
+        },
+        "sp": {
+          "value": "reject",
+          "explicit": false
+        }
+      }
+    }
+  },
+  {
+    "domain": "cigna.co.th",
+    "base_domain": "cigna.co.th",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [],
+      "error": "All nameservers failed to answer the query cigna.co.th. IN NS: Server Do53:1.1.1.1@53 answered SERVFAIL; Server Do53:1.0.0.1@53 answered SERVFAIL"
+    },
+    "mx": {
+      "hosts": [],
+      "error": "All nameservers failed to answer the query cigna.co.th. IN MX: Server Do53:1.1.1.1@53 answered SERVFAIL; Server Do53:1.0.0.1@53 answered SERVFAIL"
+    },
+    "spf": {
+      "record": null,
+      "valid": false,
+      "dns_void_lookups": null,
+      "error": "(NoNameservers('All nameservers failed to answer the query cigna.co.th. IN TXT: Server Do53:1.1.1.1@53 answered SERVFAIL; Server Do53:1.0.0.1@53 answered SERVFAIL'), 'cigna.co.th')"
+    },
+    "dmarc": {
+      "record": null,
+      "valid": false,
+      "location": null,
+      "error": "All nameservers failed to answer the query _dmarc.cigna.co.th. IN TXT: Server Do53:1.1.1.1@53 answered SERVFAIL; Server Do53:1.0.0.1@53 answered SERVFAIL"
+    }
+  },
+  {
+    "domain": "cigna.com",
+    "base_domain": "cigna.com",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "ns2.cigna.com",
+        "ns.cigna.com"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [
+        {
+          "preference": 10,
+          "hostname": "mxa-000e5c01.gslb.pphosted.com",
+          "addresses": [
+            "67.231.157.188"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "mxb-000e5c01.gslb.pphosted.com",
+          "addresses": [
+            "67.231.157.188"
+          ]
+        }
+      ],
+      "warnings": []
+    },
+    "spf": {
+      "record": "v=spf1 include:_spf.cigna.com include:_spf.salesforce.com include:cignamail.verintefm.com exists:%{i}.spf.evernorth.com -all",
+      "valid": true,
+      "dns_lookups": 5,
+      "dns_void_lookups": 0,
+      "warnings": [],
+      "parsed": {
+        "pass": [
+          {
+            "value": "%{i}.spf.evernorth.com",
+            "mechanism": "exists"
+          }
+        ],
+        "neutral": [],
+        "softfail": [],
+        "fail": [],
+        "include": [
+          {
+            "domain": "_spf.cigna.com",
+            "record": "v=spf1 ip4:217.116.5.148 ip4:199.255.192.0/22 ip4:199.127.232.0/22 ip4:54.240.0.0/18 -all",
+            "dns_lookups": 0,
+            "dns_void_lookups": 0,
+            "parsed": {
+              "pass": [
+                {
+                  "value": "217.116.5.148",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "199.255.192.0/22",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "199.127.232.0/22",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "54.240.0.0/18",
+                  "mechanism": "ip4"
+                }
+              ],
+              "neutral": [],
+              "softfail": [],
+              "fail": [],
+              "include": [],
+              "redirect": null,
+              "exp": null,
+              "all": "fail"
+            },
+            "warnings": []
+          },
+          {
+            "domain": "_spf.salesforce.com",
+            "record": "v=spf1 exists:%{i}._spf.mta.salesforce.com -all",
+            "dns_lookups": 1,
+            "dns_void_lookups": 0,
+            "parsed": {
+              "pass": [
+                {
+                  "value": "%{i}._spf.mta.salesforce.com",
+                  "mechanism": "exists"
+                }
+              ],
+              "neutral": [],
+              "softfail": [],
+              "fail": [],
+              "include": [],
+              "redirect": null,
+              "exp": null,
+              "all": "fail"
+            },
+            "warnings": []
+          },
+          {
+            "domain": "cignamail.verintefm.com",
+            "record": "v=spf1 ip4:35.171.224.16 ip4:34.238.107.229 ip4:34.193.223.166 ip4:34.203.185.172 ip4:35.175.20.100 ip4:54.197.121.30 ip4:52.1.247.173 ip4:23.23.137.243 -all",
+            "dns_lookups": 0,
+            "dns_void_lookups": 0,
+            "parsed": {
+              "pass": [
+                {
+                  "value": "35.171.224.16",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "34.238.107.229",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "34.193.223.166",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "34.203.185.172",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "35.175.20.100",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "54.197.121.30",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "52.1.247.173",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "23.23.137.243",
+                  "mechanism": "ip4"
+                }
+              ],
+              "neutral": [],
+              "softfail": [],
+              "fail": [],
+              "include": [],
+              "redirect": null,
+              "exp": null,
+              "all": "fail"
+            },
+            "warnings": []
+          }
+        ],
+        "redirect": null,
+        "exp": null,
+        "all": "fail"
+      }
+    },
+    "dmarc": {
+      "record": "v=DMARC1; p=quarantine; sp=reject; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com",
+      "valid": true,
+      "location": "cigna.com",
+      "warnings": [],
+      "tags": {
+        "v": {
+          "value": "DMARC1",
+          "explicit": true
+        },
+        "p": {
+          "value": "quarantine",
+          "explicit": true
+        },
+        "sp": {
+          "value": "reject",
+          "explicit": true
+        },
+        "fo": {
+          "value": "1",
+          "explicit": true
+        },
+        "rua": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarc_rua@emaildefense.proofpoint.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "ruf": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarc_ruf@emaildefense.proofpoint.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "adkim": {
+          "value": "r",
+          "explicit": false
+        },
+        "aspf": {
+          "value": "r",
+          "explicit": false
+        },
+        "pct": {
+          "value": 100,
+          "explicit": false
+        },
+        "rf": {
+          "value": "afrf",
+          "explicit": false
+        },
+        "ri": {
+          "value": 86400,
+          "explicit": false
+        }
+      }
+    }
+  },
+  {
+    "domain": "cigna.com.hk",
+    "base_domain": "cigna.com.hk",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "ns2.cigna.com",
+        "ns.cigna.com"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [
+        {
+          "preference": 10,
+          "hostname": "mail.cigna.com.hk",
+          "addresses": [
+            "122.152.138.168"
+          ]
+        }
+      ],
+      "warnings": [
+        "122.152.138.168 does not have any reverse DNS (PTR) records"
+      ]
+    },
+    "spf": {
+      "record": "v=spf1 mx -all",
+      "valid": true,
+      "dns_lookups": 1,
+      "dns_void_lookups": 0,
+      "warnings": [],
+      "parsed": {
+        "pass": [
+          {
+            "value": "mail.cigna.com.hk",
+            "mechanism": "mx"
+          }
+        ],
+        "neutral": [],
+        "softfail": [],
+        "fail": [],
+        "include": [],
+        "redirect": null,
+        "exp": null,
+        "all": "fail"
+      }
+    },
+    "dmarc": {
+      "record": "v=DMARC1; p=none; sp=reject; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com",
+      "valid": true,
+      "location": "cigna.com.hk",
+      "warnings": [],
+      "tags": {
+        "v": {
+          "value": "DMARC1",
+          "explicit": true
+        },
+        "p": {
+          "value": "none",
+          "explicit": true
+        },
+        "sp": {
+          "value": "reject",
+          "explicit": true
+        },
+        "fo": {
+          "value": "1",
+          "explicit": true
+        },
+        "rua": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarc_rua@emaildefense.proofpoint.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "ruf": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarc_ruf@emaildefense.proofpoint.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "adkim": {
+          "value": "r",
+          "explicit": false
+        },
+        "aspf": {
+          "value": "r",
+          "explicit": false
+        },
+        "pct": {
+          "value": 100,
+          "explicit": false
+        },
+        "rf": {
+          "value": "afrf",
+          "explicit": false
+        },
+        "ri": {
+          "value": 86400,
+          "explicit": false
+        }
+      }
+    }
+  },
+  {
+    "domain": "cigna.com.sg",
+    "base_domain": "cigna.com.sg",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "ns.cigna.com",
+        "ns2.cigna.com"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [],
+      "warnings": [
+        "No MX records found. Is the domain parked?"
+      ]
+    },
+    "spf": {
+      "record": "v=spf1 -all",
+      "valid": true,
+      "dns_lookups": 0,
+      "dns_void_lookups": 0,
+      "warnings": [],
+      "parsed": {
+        "pass": [],
+        "neutral": [],
+        "softfail": [],
+        "fail": [],
+        "include": [],
+        "redirect": null,
+        "exp": null,
+        "all": "fail"
+      }
+    },
+    "dmarc": {
+      "record": "v=DMARC1; p=reject; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com",
+      "valid": true,
+      "location": "cigna.com.sg",
+      "warnings": [],
+      "tags": {
+        "v": {
+          "value": "DMARC1",
+          "explicit": true
+        },
+        "p": {
+          "value": "reject",
+          "explicit": true
+        },
+        "fo": {
+          "value": "1",
+          "explicit": true
+        },
+        "rua": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarc_rua@emaildefense.proofpoint.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "ruf": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarc_ruf@emaildefense.proofpoint.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "adkim": {
+          "value": "r",
+          "explicit": false
+        },
+        "aspf": {
+          "value": "r",
+          "explicit": false
+        },
+        "pct": {
+          "value": 100,
+          "explicit": false
+        },
+        "rf": {
+          "value": "afrf",
+          "explicit": false
+        },
+        "ri": {
+          "value": 86400,
+          "explicit": false
+        },
+        "sp": {
+          "value": "reject",
+          "explicit": false
+        }
+      }
+    }
+  },
+  {
+    "domain": "cigna.com.tw",
+    "base_domain": "cigna.com.tw",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "ns2.cigna.com",
+        "ns.cigna.com"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [
+        {
+          "preference": 1,
+          "hostname": "mail.cigna.com.tw",
+          "addresses": [
+            "220.130.127.168"
+          ]
+        }
+      ],
+      "warnings": []
+    },
+    "spf": {
+      "record": "v=spf1 ip4:220.130.127.168 include:spf.neweredm.com include:amazonses.com -all",
+      "valid": true,
+      "dns_lookups": 2,
+      "dns_void_lookups": 0,
+      "warnings": [],
+      "parsed": {
+        "pass": [
+          {
+            "value": "220.130.127.168",
+            "mechanism": "ip4"
+          }
+        ],
+        "neutral": [],
+        "softfail": [],
+        "fail": [],
+        "include": [
+          {
+            "domain": "spf.neweredm.com",
+            "record": "v=spf1 ip4:61.218.77.160/27 ip4:61.218.78.224/27 ip4:61.218.78.96/27 ip4:113.196.228.0/28 ip4:220.228.144.224/27 ip4:218.211.34.128/27 ip4:218.32.92.224/27 ip4:218.32.93.64/28 ip4:218.32.93.128/28 ip4:218.32.93.144/28 ip4:122.146.12.224/27 ?all",
+            "dns_lookups": 0,
+            "dns_void_lookups": 0,
+            "parsed": {
+              "pass": [
+                {
+                  "value": "61.218.77.160/27",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "61.218.78.224/27",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "61.218.78.96/27",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "113.196.228.0/28",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "220.228.144.224/27",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "218.211.34.128/27",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "218.32.92.224/27",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "218.32.93.64/28",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "218.32.93.128/28",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "218.32.93.144/28",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "122.146.12.224/27",
+                  "mechanism": "ip4"
+                }
+              ],
+              "neutral": [],
+              "softfail": [],
+              "fail": [],
+              "include": [],
+              "redirect": null,
+              "exp": null,
+              "all": "neutral"
+            },
+            "warnings": []
+          },
+          {
+            "domain": "amazonses.com",
+            "record": "v=spf1 ip4:199.255.192.0/22 ip4:199.127.232.0/22 ip4:54.240.0.0/18 ip4:69.169.224.0/20 ip4:23.249.208.0/20 ip4:23.251.224.0/19 ip4:76.223.176.0/20 ip4:52.82.172.0/22 ip4:54.240.64.0/19 ip4:54.240.96.0/19 ip4:76.223.128.0/19 -all",
+            "dns_lookups": 0,
+            "dns_void_lookups": 0,
+            "parsed": {
+              "pass": [
+                {
+                  "value": "199.255.192.0/22",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "199.127.232.0/22",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "54.240.0.0/18",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "69.169.224.0/20",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "23.249.208.0/20",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "23.251.224.0/19",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "76.223.176.0/20",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "52.82.172.0/22",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "54.240.64.0/19",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "54.240.96.0/19",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "76.223.128.0/19",
+                  "mechanism": "ip4"
+                }
+              ],
+              "neutral": [],
+              "softfail": [],
+              "fail": [],
+              "include": [],
+              "redirect": null,
+              "exp": null,
+              "all": "fail"
+            },
+            "warnings": []
+          }
+        ],
+        "redirect": null,
+        "exp": null,
+        "all": "fail"
+      }
+    },
+    "dmarc": {
+      "record": "v=DMARC1; p=reject; sp=reject; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com",
+      "valid": true,
+      "location": "cigna.com.tw",
+      "warnings": [],
+      "tags": {
+        "v": {
+          "value": "DMARC1",
+          "explicit": true
+        },
+        "p": {
+          "value": "reject",
+          "explicit": true
+        },
+        "sp": {
+          "value": "reject",
+          "explicit": true
+        },
+        "fo": {
+          "value": "1",
+          "explicit": true
+        },
+        "rua": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarc_rua@emaildefense.proofpoint.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "ruf": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarc_ruf@emaildefense.proofpoint.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "adkim": {
+          "value": "r",
+          "explicit": false
+        },
+        "aspf": {
+          "value": "r",
+          "explicit": false
+        },
+        "pct": {
+          "value": 100,
+          "explicit": false
+        },
+        "rf": {
+          "value": "afrf",
+          "explicit": false
+        },
+        "ri": {
+          "value": 86400,
+          "explicit": false
+        }
+      }
+    }
+  },
+  {
+    "domain": "cignacmb.com",
+    "base_domain": "cignacmb.com",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "dns18.hichina.com",
+        "dns17.hichina.com"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [
+        {
+          "preference": 10,
+          "hostname": "cignacmb-com.mail.protection.partner.outlook.cn",
+          "addresses": [
+            "139.219.146.10",
+            "139.219.17.10"
+          ]
+        }
+      ],
+      "warnings": []
+    },
+    "spf": {
+      "record": "v=spf1 ip4:116.214.128.17 include:spf.protection.partner.outlook.cn -all",
+      "valid": true,
+      "dns_lookups": 2,
+      "dns_void_lookups": 0,
+      "warnings": [],
+      "parsed": {
+        "pass": [
+          {
+            "value": "116.214.128.17",
+            "mechanism": "ip4"
+          }
+        ],
+        "neutral": [],
+        "softfail": [],
+        "fail": [],
+        "include": [
+          {
+            "domain": "spf.protection.partner.outlook.cn",
+            "record": "v=spf1 ip4:42.159.33.192/27 ip4:42.159.161.192/27 ip4:42.159.164.0/24 ip4:42.159.36.0/24 ip4:139.219.16.0/27 ip4:139.219.17.0/24 ip4:139.219.145.0/27 ip4:139.219.146.0/24 ip4:139.219.24.0/22 include:spfa.protection.partner.outlook.cn -all",
+            "dns_lookups": 1,
+            "dns_void_lookups": 0,
+            "parsed": {
+              "pass": [
+                {
+                  "value": "42.159.33.192/27",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "42.159.161.192/27",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "42.159.164.0/24",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "42.159.36.0/24",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "139.219.16.0/27",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "139.219.17.0/24",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "139.219.145.0/27",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "139.219.146.0/24",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "139.219.24.0/22",
+                  "mechanism": "ip4"
+                }
+              ],
+              "neutral": [],
+              "softfail": [],
+              "fail": [],
+              "include": [
+                {
+                  "domain": "spfa.protection.partner.outlook.cn",
+                  "record": "v=spf1 ip6:2406:e500:c020::/44 ip6:2406:e500:c120::/44 ip6:2406:e500:4440::/43 ip6:2406:e500:4420::/43 ip4:139.219.156.0/22 -all",
+                  "dns_lookups": 0,
+                  "dns_void_lookups": 0,
+                  "parsed": {
+                    "pass": [
+                      {
+                        "value": "2406:e500:c020::/44",
+                        "mechanism": "ip6"
+                      },
+                      {
+                        "value": "2406:e500:c120::/44",
+                        "mechanism": "ip6"
+                      },
+                      {
+                        "value": "2406:e500:4440::/43",
+                        "mechanism": "ip6"
+                      },
+                      {
+                        "value": "2406:e500:4420::/43",
+                        "mechanism": "ip6"
+                      },
+                      {
+                        "value": "139.219.156.0/22",
+                        "mechanism": "ip4"
+                      }
+                    ],
+                    "neutral": [],
+                    "softfail": [],
+                    "fail": [],
+                    "include": [],
+                    "redirect": null,
+                    "exp": null,
+                    "all": "fail"
+                  },
+                  "warnings": []
+                }
+              ],
+              "redirect": null,
+              "exp": null,
+              "all": "fail"
+            },
+            "warnings": []
+          }
+        ],
+        "redirect": null,
+        "exp": null,
+        "all": "fail"
+      }
+    },
+    "dmarc": {
+      "record": null,
+      "valid": false,
+      "location": null,
+      "error": "A DMARC record does not exist for this domain or its base domain"
+    }
+  },
+  {
+    "domain": "cignaenvoy.com",
+    "base_domain": "cignaenvoy.com",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "ns2.cigna.com",
+        "ns.cigna.com"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [],
+      "warnings": [
+        "No MX records found. Is the domain parked?"
+      ]
+    },
+    "spf": {
+      "record": "v=spf1 include:spf1.okta.com include:spf-000e5c01.pphosted.com -all",
+      "valid": true,
+      "dns_lookups": 2,
+      "dns_void_lookups": 0,
+      "warnings": [],
+      "parsed": {
+        "pass": [],
+        "neutral": [],
+        "softfail": [],
+        "fail": [],
+        "include": [
+          {
+            "domain": "spf1.okta.com",
+            "record": "v=spf1 ip4:205.220.176.21 ip4:205.220.164.21 ip4:168.245.48.84 ip4:168.245.73.252 ip4:50.31.57.204 ip4:198.21.5.209 ip4:167.89.21.169 ip4:167.89.14.31 ip4:167.89.126.180 ip4:167.89.110.192 ip4:208.185.229.0/24 ip4:208.185.235.0/24 ip4:148.59.108.0/23 ip4:148.59.106.0/23 ip4:159.183.193.109 ip4:159.183.213.105 ip4:159.183.213.107 ip4:159.183.214.96 ip4:159.183.213.204 ip4:159.183.200.101 ip4:149.72.233.170 ip4:149.72.90.103 ip4:192.254.124.136 ip4:198.37.159.181 ip4:167.89.51.134 -all",
+            "dns_lookups": 0,
+            "dns_void_lookups": 0,
+            "parsed": {
+              "pass": [
+                {
+                  "value": "205.220.176.21",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "205.220.164.21",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "168.245.48.84",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "168.245.73.252",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "50.31.57.204",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "198.21.5.209",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "167.89.21.169",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "167.89.14.31",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "167.89.126.180",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "167.89.110.192",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "208.185.229.0/24",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "208.185.235.0/24",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "148.59.108.0/23",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "148.59.106.0/23",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "159.183.193.109",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "159.183.213.105",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "159.183.213.107",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "159.183.214.96",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "159.183.213.204",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "159.183.200.101",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "149.72.233.170",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "149.72.90.103",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "192.254.124.136",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "198.37.159.181",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "167.89.51.134",
+                  "mechanism": "ip4"
+                }
+              ],
+              "neutral": [],
+              "softfail": [],
+              "fail": [],
+              "include": [],
+              "redirect": null,
+              "exp": null,
+              "all": "fail"
+            },
+            "warnings": []
+          },
+          {
+            "domain": "spf-000e5c01.pphosted.com",
+            "record": "v=spf1 ip4:67.231.157.188 ip4:67.231.149.193",
+            "dns_lookups": 0,
+            "dns_void_lookups": 0,
+            "parsed": {
+              "pass": [
+                {
+                  "value": "67.231.157.188",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "67.231.149.193",
+                  "mechanism": "ip4"
+                }
+              ],
+              "neutral": [],
+              "softfail": [],
+              "fail": [],
+              "include": [],
+              "redirect": null,
+              "exp": null,
+              "all": "neutral"
+            },
+            "warnings": []
+          }
+        ],
+        "redirect": null,
+        "exp": null,
+        "all": "fail"
+      }
+    },
+    "dmarc": {
+      "record": "v=DMARC1; p=reject; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com",
+      "valid": true,
+      "location": "cignaenvoy.com",
+      "warnings": [],
+      "tags": {
+        "v": {
+          "value": "DMARC1",
+          "explicit": true
+        },
+        "p": {
+          "value": "reject",
+          "explicit": true
+        },
+        "fo": {
+          "value": "1",
+          "explicit": true
+        },
+        "rua": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarc_rua@emaildefense.proofpoint.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "ruf": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarc_ruf@emaildefense.proofpoint.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "adkim": {
+          "value": "r",
+          "explicit": false
+        },
+        "aspf": {
+          "value": "r",
+          "explicit": false
+        },
+        "pct": {
+          "value": 100,
+          "explicit": false
+        },
+        "rf": {
+          "value": "afrf",
+          "explicit": false
+        },
+        "ri": {
+          "value": 86400,
+          "explicit": false
+        },
+        "sp": {
+          "value": "reject",
+          "explicit": false
+        }
+      }
+    }
+  },
+  {
+    "domain": "cignafinans.com.tr",
+    "base_domain": "cignafinans.com.tr",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "ns4.finansbank.com",
+        "ns.finansbank.com",
+        "ns2.finansbank.com",
+        "ns3.finansbank.com"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [
+        {
+          "preference": 10,
+          "hostname": "mail01.finansbank.com.tr",
+          "addresses": [
+            "62.108.64.49"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "mail02.finansbank.com.tr",
+          "addresses": [
+            "62.108.64.50"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "mail05.finansbank.com.tr",
+          "addresses": [
+            "62.108.64.41"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "mail06.finansbank.com.tr",
+          "addresses": [
+            "62.108.64.43"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "mail07.finansbank.com.tr",
+          "addresses": [
+            "62.108.64.47"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "mail08.finansbank.com.tr",
+          "addresses": [
+            "62.108.64.59"
+          ]
+        },
+        {
+          "preference": 20,
+          "hostname": "mail03.finansbank.com.tr",
+          "addresses": [
+            "62.108.72.49"
+          ]
+        },
+        {
+          "preference": 20,
+          "hostname": "mail04.finansbank.com.tr",
+          "addresses": [
+            "62.108.72.50"
+          ]
+        }
+      ],
+      "warnings": []
+    },
+    "spf": {
+      "record": "v=spf1 ip4:62.108.64.0/24 ip4:62.108.72.0/24 -all",
+      "valid": true,
+      "dns_lookups": 0,
+      "dns_void_lookups": 0,
+      "warnings": [],
+      "parsed": {
+        "pass": [
+          {
+            "value": "62.108.64.0/24",
+            "mechanism": "ip4"
+          },
+          {
+            "value": "62.108.72.0/24",
+            "mechanism": "ip4"
+          }
+        ],
+        "neutral": [],
+        "softfail": [],
+        "fail": [],
+        "include": [],
+        "redirect": null,
+        "exp": null,
+        "all": "fail"
+      }
+    },
+    "dmarc": {
+      "record": "v=DMARC1; p=reject; rua=mailto:dmarc_rua@emaildefense.proofpoint.com",
+      "valid": true,
+      "location": "cignafinans.com.tr",
+      "warnings": [],
+      "tags": {
+        "v": {
+          "value": "DMARC1",
+          "explicit": true
+        },
+        "p": {
+          "value": "reject",
+          "explicit": true
+        },
+        "rua": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarc_rua@emaildefense.proofpoint.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "adkim": {
+          "value": "r",
+          "explicit": false
+        },
+        "aspf": {
+          "value": "r",
+          "explicit": false
+        },
+        "fo": {
+          "value": "0",
+          "explicit": false
+        },
+        "pct": {
+          "value": 100,
+          "explicit": false
+        },
+        "rf": {
+          "value": "afrf",
+          "explicit": false
+        },
+        "ri": {
+          "value": 86400,
+          "explicit": false
+        },
+        "sp": {
+          "value": "reject",
+          "explicit": false
+        }
+      }
+    }
+  },
+  {
+    "domain": "cignaglobalhealth.com",
+    "base_domain": "cignaglobalhealth.com",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "ns2.cigna.com",
+        "ns.cigna.com"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [],
+      "warnings": [
+        "No MX records found. Is the domain parked?"
+      ]
+    },
+    "spf": {
+      "record": "v=spf1 -all",
+      "valid": true,
+      "dns_lookups": 0,
+      "dns_void_lookups": 0,
+      "warnings": [],
+      "parsed": {
+        "pass": [],
+        "neutral": [],
+        "softfail": [],
+        "fail": [],
+        "include": [],
+        "redirect": null,
+        "exp": null,
+        "all": "fail"
+      }
+    },
+    "dmarc": {
+      "record": "v=DMARC1; p=reject; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com",
+      "valid": true,
+      "location": "cignaglobalhealth.com",
+      "warnings": [],
+      "tags": {
+        "v": {
+          "value": "DMARC1",
+          "explicit": true
+        },
+        "p": {
+          "value": "reject",
+          "explicit": true
+        },
+        "fo": {
+          "value": "1",
+          "explicit": true
+        },
+        "rua": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarc_rua@emaildefense.proofpoint.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "ruf": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarc_ruf@emaildefense.proofpoint.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "adkim": {
+          "value": "r",
+          "explicit": false
+        },
+        "aspf": {
+          "value": "r",
+          "explicit": false
+        },
+        "pct": {
+          "value": 100,
+          "explicit": false
+        },
+        "rf": {
+          "value": "afrf",
+          "explicit": false
+        },
+        "ri": {
+          "value": 86400,
+          "explicit": false
+        },
+        "sp": {
+          "value": "reject",
+          "explicit": false
+        }
+      }
+    }
+  },
+  {
+    "domain": "cignalegal.co.uk",
+    "base_domain": "cignalegal.co.uk",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "ns.cigna.com",
+        "ns2.cigna.com"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [
+        {
+          "preference": 10,
+          "hostname": "mxa-000e5c011.gslb.pphosted.com",
+          "addresses": [
+            "185.183.28.71"
+          ]
+        },
+        {
+          "preference": 20,
+          "hostname": "mxb-000e5c011.gslb.pphosted.com",
+          "addresses": [
+            "185.183.28.71"
+          ]
+        }
+      ],
+      "warnings": []
+    },
+    "spf": {
+      "record": "v=spf1 ip4:185.132.180.109 ip4:185.183.28.71 -all",
+      "valid": true,
+      "dns_lookups": 0,
+      "dns_void_lookups": 0,
+      "warnings": [],
+      "parsed": {
+        "pass": [
+          {
+            "value": "185.132.180.109",
+            "mechanism": "ip4"
+          },
+          {
+            "value": "185.183.28.71",
+            "mechanism": "ip4"
+          }
+        ],
+        "neutral": [],
+        "softfail": [],
+        "fail": [],
+        "include": [],
+        "redirect": null,
+        "exp": null,
+        "all": "fail"
+      }
+    },
+    "dmarc": {
+      "record": "v=DMARC1; p=reject; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com",
+      "valid": true,
+      "location": "cignalegal.co.uk",
+      "warnings": [],
+      "tags": {
+        "v": {
+          "value": "DMARC1",
+          "explicit": true
+        },
+        "p": {
+          "value": "reject",
+          "explicit": true
+        },
+        "fo": {
+          "value": "1",
+          "explicit": true
+        },
+        "rua": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarc_rua@emaildefense.proofpoint.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "ruf": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarc_ruf@emaildefense.proofpoint.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "adkim": {
+          "value": "r",
+          "explicit": false
+        },
+        "aspf": {
+          "value": "r",
+          "explicit": false
+        },
+        "pct": {
+          "value": 100,
+          "explicit": false
+        },
+        "rf": {
+          "value": "afrf",
+          "explicit": false
+        },
+        "ri": {
+          "value": 86400,
+          "explicit": false
+        },
+        "sp": {
+          "value": "reject",
+          "explicit": false
+        }
+      }
+    }
+  },
+  {
+    "domain": "cignasalud.es",
+    "base_domain": "cignasalud.es",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "ns.cigna.com",
+        "ns2.cigna.com"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [],
+      "warnings": [
+        "No MX records found. Is the domain parked?"
+      ]
+    },
+    "spf": {
+      "record": "v=spf1 ip4:217.116.5.148 ip4:109.70.36.99 ip4:109.70.36.105 -all",
+      "valid": true,
+      "dns_lookups": 0,
+      "dns_void_lookups": 0,
+      "warnings": [],
+      "parsed": {
+        "pass": [
+          {
+            "value": "217.116.5.148",
+            "mechanism": "ip4"
+          },
+          {
+            "value": "109.70.36.99",
+            "mechanism": "ip4"
+          },
+          {
+            "value": "109.70.36.105",
+            "mechanism": "ip4"
+          }
+        ],
+        "neutral": [],
+        "softfail": [],
+        "fail": [],
+        "include": [],
+        "redirect": null,
+        "exp": null,
+        "all": "fail"
+      }
+    },
+    "dmarc": {
+      "record": "v=DMARC1; p=reject; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com",
+      "valid": true,
+      "location": "cignasalud.es",
+      "warnings": [],
+      "tags": {
+        "v": {
+          "value": "DMARC1",
+          "explicit": true
+        },
+        "p": {
+          "value": "reject",
+          "explicit": true
+        },
+        "fo": {
+          "value": "1",
+          "explicit": true
+        },
+        "rua": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarc_rua@emaildefense.proofpoint.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "ruf": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarc_ruf@emaildefense.proofpoint.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "adkim": {
+          "value": "r",
+          "explicit": false
+        },
+        "aspf": {
+          "value": "r",
+          "explicit": false
+        },
+        "pct": {
+          "value": 100,
+          "explicit": false
+        },
+        "rf": {
+          "value": "afrf",
+          "explicit": false
+        },
+        "ri": {
+          "value": 86400,
+          "explicit": false
+        },
+        "sp": {
+          "value": "reject",
+          "explicit": false
+        }
+      }
+    }
+  },
+  {
+    "domain": "cignattkinsurance.in",
+    "base_domain": "cignattkinsurance.in",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "ns2.cigna.com",
+        "ns.cigna.com"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [],
+      "warnings": [
+        "No MX records found. Is the domain parked?"
+      ]
+    },
+    "spf": {
+      "record": "v=spf1 -all",
+      "valid": true,
+      "dns_lookups": 0,
+      "dns_void_lookups": 0,
+      "warnings": [],
+      "parsed": {
+        "pass": [],
+        "neutral": [],
+        "softfail": [],
+        "fail": [],
+        "include": [],
+        "redirect": null,
+        "exp": null,
+        "all": "fail"
+      }
+    },
+    "dmarc": {
+      "record": "v=DMARC1; p=reject; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com",
+      "valid": true,
+      "location": "cignattkinsurance.in",
+      "warnings": [],
+      "tags": {
+        "v": {
+          "value": "DMARC1",
+          "explicit": true
+        },
+        "p": {
+          "value": "reject",
+          "explicit": true
+        },
+        "fo": {
+          "value": "1",
+          "explicit": true
+        },
+        "rua": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarc_rua@emaildefense.proofpoint.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "ruf": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarc_ruf@emaildefense.proofpoint.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "adkim": {
+          "value": "r",
+          "explicit": false
+        },
+        "aspf": {
+          "value": "r",
+          "explicit": false
+        },
+        "pct": {
+          "value": 100,
+          "explicit": false
+        },
+        "rf": {
+          "value": "afrf",
+          "explicit": false
+        },
+        "ri": {
+          "value": 86400,
+          "explicit": false
+        },
+        "sp": {
+          "value": "reject",
+          "explicit": false
+        }
+      }
+    }
+  },
+  {
+    "domain": "lina.co.krsigna.co.uk",
+    "base_domain": "krsigna.co.uk",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [],
+      "error": "The domain lina.co.krsigna.co.uk does not exist"
+    },
+    "mx": {
+      "hosts": [],
+      "error": "The domain lina.co.krsigna.co.uk does not exist"
+    },
+    "spf": {
+      "record": null,
+      "valid": false,
+      "dns_void_lookups": null,
+      "error": "('The domain lina.co.krsigna.co.uk does not exist', 'lina.co.krsigna.co.uk')"
+    },
+    "dmarc": {
+      "record": null,
+      "valid": false,
+      "location": null,
+      "error": "A DMARC record does not exist for this domain or its base domain"
+    }
+  }
+]

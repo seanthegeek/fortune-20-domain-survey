@@ -1,0 +1,512 @@
+[
+  {
+    "domain": "aetna.com",
+    "base_domain": "aetna.com",
+    "dnssec": true,
+    "ns": {
+      "hostnames": [
+        "ns1.aetna.com",
+        "ns2.aetna.com",
+        "ns7.aetna.com",
+        "a8-67.akam.net",
+        "a9-67.akam.net",
+        "a1-155.akam.net",
+        "a12-65.akam.net",
+        "a13-65.akam.net",
+        "a16-67.akam.net"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [
+        {
+          "preference": 10,
+          "hostname": "usb-smtp-inbound-1.mimecast.com",
+          "addresses": [
+            "170.10.150.242",
+            "170.10.152.242"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "usb-smtp-inbound-2.mimecast.com",
+          "addresses": [
+            "170.10.150.242",
+            "170.10.152.242"
+          ]
+        }
+      ],
+      "warnings": []
+    },
+    "spf": {
+      "record": "v=spf1 include:%{d}.4e.spf-protect.agari.com exists:%{i}._i.%{d}._d.espf.agari.com ~all",
+      "valid": true,
+      "dns_lookups": 2,
+      "dns_void_lookups": 0,
+      "warnings": [],
+      "parsed": {
+        "pass": [
+          {
+            "value": "%{i}._i.%{d}._d.espf.agari.com",
+            "mechanism": "exists"
+          }
+        ],
+        "neutral": [],
+        "softfail": [],
+        "fail": [],
+        "include": [
+          {
+            "domain": "%{d}.4e.spf-protect.agari.com"
+          }
+        ],
+        "redirect": null,
+        "exp": null,
+        "all": "softfail"
+      }
+    },
+    "dmarc": {
+      "record": "v=DMARC1;p=reject;fo=1;rua=mailto:aetna@rua.agari.com;ruf=mailto:aetna@ruf.agari.com",
+      "valid": true,
+      "location": "aetna.com",
+      "warnings": [],
+      "tags": {
+        "v": {
+          "value": "DMARC1",
+          "explicit": true
+        },
+        "p": {
+          "value": "reject",
+          "explicit": true
+        },
+        "fo": {
+          "value": "1",
+          "explicit": true
+        },
+        "rua": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "aetna@rua.agari.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "ruf": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "aetna@ruf.agari.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "adkim": {
+          "value": "r",
+          "explicit": false
+        },
+        "aspf": {
+          "value": "r",
+          "explicit": false
+        },
+        "pct": {
+          "value": 100,
+          "explicit": false
+        },
+        "rf": {
+          "value": "afrf",
+          "explicit": false
+        },
+        "ri": {
+          "value": 86400,
+          "explicit": false
+        },
+        "sp": {
+          "value": "reject",
+          "explicit": false
+        }
+      }
+    }
+  },
+  {
+    "domain": "caremark.com",
+    "base_domain": "caremark.com",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "dmtu.mt.ns.els-gms.att.net",
+        "eazshdcdnsextdns.cvshealth.com",
+        "cbru.br.ns.els-gms.att.net",
+        "dbru.br.ns.els-gms.att.net",
+        "cmtu.mt.ns.els-gms.att.net"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [
+        {
+          "preference": 10,
+          "hostname": "usb-smtp-inbound-1.mimecast.com",
+          "addresses": [
+            "170.10.150.242",
+            "170.10.152.242"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "usb-smtp-inbound-2.mimecast.com",
+          "addresses": [
+            "170.10.150.242",
+            "170.10.152.242"
+          ]
+        }
+      ],
+      "warnings": []
+    },
+    "spf": {
+      "record": "v=spf1 include:%{d}.4e.spf-protect.agari.com exists:%{i}._i.%{d}._d.espf.agari.com ~all",
+      "valid": true,
+      "dns_lookups": 2,
+      "dns_void_lookups": 0,
+      "warnings": [],
+      "parsed": {
+        "pass": [
+          {
+            "value": "%{i}._i.%{d}._d.espf.agari.com",
+            "mechanism": "exists"
+          }
+        ],
+        "neutral": [],
+        "softfail": [],
+        "fail": [],
+        "include": [
+          {
+            "domain": "%{d}.4e.spf-protect.agari.com"
+          }
+        ],
+        "redirect": null,
+        "exp": null,
+        "all": "softfail"
+      }
+    },
+    "dmarc": {
+      "record": "v=DMARC1; p=reject; fo=1; ri=3600; rua=mailto:aetna@rua.agari.com; ruf=mailto:aetna@ruf.agari.com",
+      "valid": true,
+      "location": "caremark.com",
+      "warnings": [],
+      "tags": {
+        "v": {
+          "value": "DMARC1",
+          "explicit": true
+        },
+        "p": {
+          "value": "reject",
+          "explicit": true
+        },
+        "fo": {
+          "value": "1",
+          "explicit": true
+        },
+        "ri": {
+          "value": 3600,
+          "explicit": true
+        },
+        "rua": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "aetna@rua.agari.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "ruf": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "aetna@ruf.agari.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "adkim": {
+          "value": "r",
+          "explicit": false
+        },
+        "aspf": {
+          "value": "r",
+          "explicit": false
+        },
+        "pct": {
+          "value": 100,
+          "explicit": false
+        },
+        "rf": {
+          "value": "afrf",
+          "explicit": false
+        },
+        "sp": {
+          "value": "reject",
+          "explicit": false
+        }
+      }
+    }
+  },
+  {
+    "domain": "cvs.com",
+    "base_domain": "cvs.com",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "a13-65.akam.net",
+        "a8-65.akam.net",
+        "a7-64.akam.net",
+        "a18-67.akam.net",
+        "a14-66.akam.net",
+        "a1-84.akam.net"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [
+        {
+          "preference": 10,
+          "hostname": "usb-smtp-inbound-1.mimecast.com",
+          "addresses": [
+            "170.10.150.242",
+            "170.10.152.242"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "usb-smtp-inbound-2.mimecast.com",
+          "addresses": [
+            "170.10.150.242",
+            "170.10.152.242"
+          ]
+        }
+      ],
+      "warnings": []
+    },
+    "spf": {
+      "record": "v=spf1 include:%{d}.4e.spf-protect.agari.com exists:%{i}._i.%{d}._d.espf.agari.com ~all",
+      "valid": true,
+      "dns_lookups": 2,
+      "dns_void_lookups": 0,
+      "warnings": [],
+      "parsed": {
+        "pass": [
+          {
+            "value": "%{i}._i.%{d}._d.espf.agari.com",
+            "mechanism": "exists"
+          }
+        ],
+        "neutral": [],
+        "softfail": [],
+        "fail": [],
+        "include": [
+          {
+            "domain": "%{d}.4e.spf-protect.agari.com"
+          }
+        ],
+        "redirect": null,
+        "exp": null,
+        "all": "softfail"
+      }
+    },
+    "dmarc": {
+      "record": "v=DMARC1; p=reject; fo=1; ri=3600; rua=mailto:aetna@rua.agari.com; ruf=mailto:aetna@ruf.agari.com",
+      "valid": true,
+      "location": "cvs.com",
+      "warnings": [],
+      "tags": {
+        "v": {
+          "value": "DMARC1",
+          "explicit": true
+        },
+        "p": {
+          "value": "reject",
+          "explicit": true
+        },
+        "fo": {
+          "value": "1",
+          "explicit": true
+        },
+        "ri": {
+          "value": 3600,
+          "explicit": true
+        },
+        "rua": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "aetna@rua.agari.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "ruf": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "aetna@ruf.agari.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "adkim": {
+          "value": "r",
+          "explicit": false
+        },
+        "aspf": {
+          "value": "r",
+          "explicit": false
+        },
+        "pct": {
+          "value": 100,
+          "explicit": false
+        },
+        "rf": {
+          "value": "afrf",
+          "explicit": false
+        },
+        "sp": {
+          "value": "reject",
+          "explicit": false
+        }
+      }
+    }
+  },
+  {
+    "domain": "cvshealth.com",
+    "base_domain": "cvshealth.com",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "a14-66.akam.net",
+        "a18-67.akam.net",
+        "a8-65.akam.net",
+        "a1-84.akam.net",
+        "a7-64.akam.net",
+        "a13-65.akam.net"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [
+        {
+          "preference": 10,
+          "hostname": "usb-smtp-inbound-1.mimecast.com",
+          "addresses": [
+            "170.10.150.242",
+            "170.10.152.242"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "usb-smtp-inbound-2.mimecast.com",
+          "addresses": [
+            "170.10.150.242",
+            "170.10.152.242"
+          ]
+        }
+      ],
+      "warnings": []
+    },
+    "spf": {
+      "record": "v=spf1 include:%{d}.4e.spf-protect.agari.com exists:%{i}._i.%{d}._d.espf.agari.com ~all",
+      "valid": true,
+      "dns_lookups": 2,
+      "dns_void_lookups": 0,
+      "warnings": [],
+      "parsed": {
+        "pass": [
+          {
+            "value": "%{i}._i.%{d}._d.espf.agari.com",
+            "mechanism": "exists"
+          }
+        ],
+        "neutral": [],
+        "softfail": [],
+        "fail": [],
+        "include": [
+          {
+            "domain": "%{d}.4e.spf-protect.agari.com"
+          }
+        ],
+        "redirect": null,
+        "exp": null,
+        "all": "softfail"
+      }
+    },
+    "dmarc": {
+      "record": "v=DMARC1; p=reject; fo=1; ri=3600; rua=mailto:aetna@rua.agari.com; ruf=mailto:aetna@ruf.agari.com",
+      "valid": true,
+      "location": "cvshealth.com",
+      "warnings": [],
+      "tags": {
+        "v": {
+          "value": "DMARC1",
+          "explicit": true
+        },
+        "p": {
+          "value": "reject",
+          "explicit": true
+        },
+        "fo": {
+          "value": "1",
+          "explicit": true
+        },
+        "ri": {
+          "value": 3600,
+          "explicit": true
+        },
+        "rua": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "aetna@rua.agari.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "ruf": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "aetna@ruf.agari.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "adkim": {
+          "value": "r",
+          "explicit": false
+        },
+        "aspf": {
+          "value": "r",
+          "explicit": false
+        },
+        "pct": {
+          "value": 100,
+          "explicit": false
+        },
+        "rf": {
+          "value": "afrf",
+          "explicit": false
+        },
+        "sp": {
+          "value": "reject",
+          "explicit": false
+        }
+      }
+    }
+  }
+]

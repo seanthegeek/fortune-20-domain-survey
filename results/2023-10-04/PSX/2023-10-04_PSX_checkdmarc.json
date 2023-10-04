@@ -1,0 +1,799 @@
+[
+  {
+    "domain": "conoco.com",
+    "base_domain": "conoco.com",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "pdns1.cscdns.net",
+        "pdns2.cscdns.net"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [
+        {
+          "preference": 10,
+          "hostname": "inbound-smtp.us-east-1.amazonaws.com",
+          "addresses": [
+            "3.211.210.226",
+            "44.206.9.87",
+            "44.210.166.32",
+            "54.164.173.191",
+            "54.197.5.236"
+          ]
+        }
+      ],
+      "warnings": []
+    },
+    "spf": {
+      "record": null,
+      "valid": false,
+      "dns_void_lookups": null,
+      "error": "(SPFRecordNotFound('conoco.com does not have a SPF TXT record', 'conoco.com'), 'conoco.com')"
+    },
+    "dmarc": {
+      "record": "v=DMARC1; p=none; rua=mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com;fo=1",
+      "valid": true,
+      "location": "conoco.com",
+      "warnings": [],
+      "tags": {
+        "v": {
+          "value": "DMARC1",
+          "explicit": true
+        },
+        "p": {
+          "value": "none",
+          "explicit": true
+        },
+        "rua": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarc_rua@emaildefense.proofpoint.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "ruf": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarc_ruf@emaildefense.proofpoint.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "fo": {
+          "value": "1",
+          "explicit": true
+        },
+        "adkim": {
+          "value": "r",
+          "explicit": false
+        },
+        "aspf": {
+          "value": "r",
+          "explicit": false
+        },
+        "pct": {
+          "value": 100,
+          "explicit": false
+        },
+        "rf": {
+          "value": "afrf",
+          "explicit": false
+        },
+        "ri": {
+          "value": 86400,
+          "explicit": false
+        },
+        "sp": {
+          "value": "none",
+          "explicit": false
+        }
+      }
+    }
+  },
+  {
+    "domain": "dcpmidstream.com",
+    "base_domain": "dcpmidstream.com",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "george.ns.cloudflare.com",
+        "virginia.ns.cloudflare.com"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [
+        {
+          "preference": 0,
+          "hostname": "dcpmidstream-com.mail.protection.outlook.com",
+          "addresses": [
+            "52.101.11.2",
+            "52.101.11.3",
+            "52.101.42.4",
+            "52.101.42.6",
+            "52.101.8.34",
+            "52.101.8.46",
+            "52.101.9.5"
+          ]
+        },
+        {
+          "preference": 1,
+          "hostname": "my-dcpmidstream-com.mail.protection.outlook.com",
+          "addresses": [
+            "52.101.11.2",
+            "52.101.42.13",
+            "52.101.42.6",
+            "52.101.42.9",
+            "52.101.8.42",
+            "52.101.9.2",
+            "52.101.9.5"
+          ]
+        }
+      ],
+      "warnings": []
+    },
+    "spf": {
+      "record": "v=spf1 include:spf.protection.outlook.com include:spf-001c4c01.pphosted.com -all",
+      "valid": true,
+      "dns_lookups": 2,
+      "dns_void_lookups": 0,
+      "warnings": [],
+      "parsed": {
+        "pass": [],
+        "neutral": [],
+        "softfail": [],
+        "fail": [],
+        "include": [
+          {
+            "domain": "spf.protection.outlook.com",
+            "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/50 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+            "dns_lookups": 0,
+            "dns_void_lookups": 0,
+            "parsed": {
+              "pass": [
+                {
+                  "value": "40.92.0.0/15",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "40.107.0.0/16",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "52.100.0.0/14",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "104.47.0.0/17",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "2a01:111:f400::/48",
+                  "mechanism": "ip6"
+                },
+                {
+                  "value": "2a01:111:f403::/49",
+                  "mechanism": "ip6"
+                },
+                {
+                  "value": "2a01:111:f403:8000::/50",
+                  "mechanism": "ip6"
+                },
+                {
+                  "value": "2a01:111:f403:c000::/51",
+                  "mechanism": "ip6"
+                },
+                {
+                  "value": "2a01:111:f403:f000::/52",
+                  "mechanism": "ip6"
+                }
+              ],
+              "neutral": [],
+              "softfail": [],
+              "fail": [],
+              "include": [],
+              "redirect": null,
+              "exp": null,
+              "all": "fail"
+            },
+            "warnings": []
+          },
+          {
+            "domain": "spf-001c4c01.pphosted.com",
+            "record": "v=spf1 ip4:148.163.158.158 ip4:148.163.156.161",
+            "dns_lookups": 0,
+            "dns_void_lookups": 0,
+            "parsed": {
+              "pass": [
+                {
+                  "value": "148.163.158.158",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "148.163.156.161",
+                  "mechanism": "ip4"
+                }
+              ],
+              "neutral": [],
+              "softfail": [],
+              "fail": [],
+              "include": [],
+              "redirect": null,
+              "exp": null,
+              "all": "neutral"
+            },
+            "warnings": []
+          }
+        ],
+        "redirect": null,
+        "exp": null,
+        "all": "fail"
+      }
+    },
+    "dmarc": {
+      "record": null,
+      "valid": false,
+      "location": null,
+      "error": "A DMARC record does not exist for this domain or its base domain"
+    }
+  },
+  {
+    "domain": "efuelco.com",
+    "base_domain": "efuelco.com",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "ns82.worldnic.com",
+        "ns81.worldnic.com"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [
+        {
+          "preference": 10,
+          "hostname": "efuelco-com.mail.protection.outlook.com",
+          "addresses": [
+            "104.47.73.10",
+            "104.47.74.10"
+          ]
+        }
+      ],
+      "warnings": []
+    },
+    "spf": {
+      "record": "v=spf1 ip4:12.0.240.74 include:spf.protection.outlook.com include:_spf.safewebservices.com include:outgoing.bctsmtp.com -all",
+      "valid": true,
+      "dns_lookups": 4,
+      "dns_void_lookups": 0,
+      "warnings": [],
+      "parsed": {
+        "pass": [
+          {
+            "value": "12.0.240.74",
+            "mechanism": "ip4"
+          }
+        ],
+        "neutral": [],
+        "softfail": [],
+        "fail": [],
+        "include": [
+          {
+            "domain": "spf.protection.outlook.com",
+            "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/50 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+            "dns_lookups": 0,
+            "dns_void_lookups": 0,
+            "parsed": {
+              "pass": [
+                {
+                  "value": "40.92.0.0/15",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "40.107.0.0/16",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "52.100.0.0/14",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "104.47.0.0/17",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "2a01:111:f400::/48",
+                  "mechanism": "ip6"
+                },
+                {
+                  "value": "2a01:111:f403::/49",
+                  "mechanism": "ip6"
+                },
+                {
+                  "value": "2a01:111:f403:8000::/50",
+                  "mechanism": "ip6"
+                },
+                {
+                  "value": "2a01:111:f403:c000::/51",
+                  "mechanism": "ip6"
+                },
+                {
+                  "value": "2a01:111:f403:f000::/52",
+                  "mechanism": "ip6"
+                }
+              ],
+              "neutral": [],
+              "softfail": [],
+              "fail": [],
+              "include": [],
+              "redirect": null,
+              "exp": null,
+              "all": "fail"
+            },
+            "warnings": []
+          },
+          {
+            "domain": "_spf.safewebservices.com",
+            "record": "v=spf1 ip4:216.35.170.0/23 ip4:64.73.126.0/23 ip4:104.192.32.80/29 ip4:104.192.36.80/29 -all",
+            "dns_lookups": 0,
+            "dns_void_lookups": 0,
+            "parsed": {
+              "pass": [
+                {
+                  "value": "216.35.170.0/23",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "64.73.126.0/23",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "104.192.32.80/29",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "104.192.36.80/29",
+                  "mechanism": "ip4"
+                }
+              ],
+              "neutral": [],
+              "softfail": [],
+              "fail": [],
+              "include": [],
+              "redirect": null,
+              "exp": null,
+              "all": "fail"
+            },
+            "warnings": []
+          },
+          {
+            "domain": "outgoing.bctsmtp.com",
+            "record": "v=spf1 ip4:199.101.130.177 include:spf.mailroute.net -all",
+            "dns_lookups": 1,
+            "dns_void_lookups": 0,
+            "parsed": {
+              "pass": [
+                {
+                  "value": "199.101.130.177",
+                  "mechanism": "ip4"
+                }
+              ],
+              "neutral": [],
+              "softfail": [],
+              "fail": [],
+              "include": [
+                {
+                  "domain": "spf.mailroute.net",
+                  "record": "v=spf1 ip4:199.89.0.0/21 -all",
+                  "dns_lookups": 0,
+                  "dns_void_lookups": 0,
+                  "parsed": {
+                    "pass": [
+                      {
+                        "value": "199.89.0.0/21",
+                        "mechanism": "ip4"
+                      }
+                    ],
+                    "neutral": [],
+                    "softfail": [],
+                    "fail": [],
+                    "include": [],
+                    "redirect": null,
+                    "exp": null,
+                    "all": "fail"
+                  },
+                  "warnings": []
+                }
+              ],
+              "redirect": null,
+              "exp": null,
+              "all": "fail"
+            },
+            "warnings": []
+          }
+        ],
+        "redirect": null,
+        "exp": null,
+        "all": "fail"
+      }
+    },
+    "dmarc": {
+      "record": "v=DMARC1; p=none; sp=none;",
+      "valid": true,
+      "location": "efuelco.com",
+      "warnings": [
+        "rua tag (destination for aggregate reports) not found"
+      ],
+      "tags": {
+        "v": {
+          "value": "DMARC1",
+          "explicit": true
+        },
+        "p": {
+          "value": "none",
+          "explicit": true
+        },
+        "sp": {
+          "value": "none",
+          "explicit": true
+        },
+        "adkim": {
+          "value": "r",
+          "explicit": false
+        },
+        "aspf": {
+          "value": "r",
+          "explicit": false
+        },
+        "fo": {
+          "value": "0",
+          "explicit": false
+        },
+        "pct": {
+          "value": 100,
+          "explicit": false
+        },
+        "rf": {
+          "value": "afrf",
+          "explicit": false
+        },
+        "ri": {
+          "value": 86400,
+          "explicit": false
+        }
+      }
+    }
+  },
+  {
+    "domain": "jet.de",
+    "base_domain": "jet.de",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "dns1.cscdns.net",
+        "dns2.cscdns.net"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [
+        {
+          "preference": 10,
+          "hostname": "iris.corpex-net.de",
+          "addresses": [
+            "194.6.192.38"
+          ]
+        },
+        {
+          "preference": 100,
+          "hostname": "smtp-relay.corpex-net.de",
+          "addresses": [
+            "194.6.192.35"
+          ]
+        },
+        {
+          "preference": 110,
+          "hostname": "smtp-fallback.corpex-net.de",
+          "addresses": [
+            "212.12.39.90"
+          ]
+        }
+      ],
+      "warnings": []
+    },
+    "spf": {
+      "record": "v=spf1 include:spf.corpex.de mx -all",
+      "valid": true,
+      "dns_lookups": 2,
+      "dns_void_lookups": 0,
+      "warnings": [],
+      "parsed": {
+        "pass": [
+          {
+            "value": "iris.corpex-net.de",
+            "mechanism": "mx"
+          },
+          {
+            "value": "smtp-relay.corpex-net.de",
+            "mechanism": "mx"
+          },
+          {
+            "value": "smtp-fallback.corpex-net.de",
+            "mechanism": "mx"
+          }
+        ],
+        "neutral": [],
+        "softfail": [],
+        "fail": [],
+        "include": [
+          {
+            "domain": "spf.corpex.de",
+            "record": "v=spf1 ip4:194.6.192.232/29 ip4:194.6.195.48/28 ip4:212.12.39.90/32 ip6:2a00:1f78:fffe:552::/64 -all",
+            "dns_lookups": 0,
+            "dns_void_lookups": 0,
+            "parsed": {
+              "pass": [
+                {
+                  "value": "194.6.192.232/29",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "194.6.195.48/28",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "212.12.39.90/32",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "2a00:1f78:fffe:552::/64",
+                  "mechanism": "ip6"
+                }
+              ],
+              "neutral": [],
+              "softfail": [],
+              "fail": [],
+              "include": [],
+              "redirect": null,
+              "exp": null,
+              "all": "fail"
+            },
+            "warnings": []
+          }
+        ],
+        "redirect": null,
+        "exp": null,
+        "all": "fail"
+      }
+    },
+    "dmarc": {
+      "record": null,
+      "valid": false,
+      "location": null,
+      "error": "A DMARC record does not exist for this domain or its base domain"
+    }
+  },
+  {
+    "domain": "jetlocal.co.uk",
+    "base_domain": "jetlocal.co.uk",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "dns1.cscdns.net",
+        "dns2.cscdns.net"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [
+        {
+          "preference": 1,
+          "hostname": "aspmx.l.google.com",
+          "addresses": [
+            "142.250.105.26",
+            "2607:f8b0:4002:c09::1b"
+          ]
+        },
+        {
+          "preference": 5,
+          "hostname": "alt1.aspmx.l.google.com",
+          "addresses": [
+            "172.217.197.26",
+            "2607:f8b0:400d:c0f::1b"
+          ]
+        },
+        {
+          "preference": 5,
+          "hostname": "alt2.aspmx.l.google.com",
+          "addresses": [
+            "108.177.12.26",
+            "2607:f8b0:400c:c08::1a"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "alt3.aspmx.l.google.com",
+          "addresses": [
+            "172.253.62.26",
+            "2607:f8b0:4004:c07::1b"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "alt4.aspmx.l.google.com",
+          "addresses": [
+            "2800:3f0:4003:c00::1b",
+            "64.233.186.26"
+          ]
+        }
+      ],
+      "warnings": [
+        "2800:3f0:4003:c00::1b does not have any reverse DNS (PTR) records"
+      ]
+    },
+    "spf": {
+      "record": "v=spf1 include:servers.mcsv.net ?all",
+      "valid": true,
+      "dns_lookups": 1,
+      "dns_void_lookups": 0,
+      "warnings": [],
+      "parsed": {
+        "pass": [],
+        "neutral": [],
+        "softfail": [],
+        "fail": [],
+        "include": [
+          {
+            "domain": "servers.mcsv.net",
+            "record": "v=spf1 ip4:205.201.128.0/20 ip4:198.2.128.0/18 ip4:148.105.8.0/21 -all",
+            "dns_lookups": 0,
+            "dns_void_lookups": 0,
+            "parsed": {
+              "pass": [
+                {
+                  "value": "205.201.128.0/20",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "198.2.128.0/18",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "148.105.8.0/21",
+                  "mechanism": "ip4"
+                }
+              ],
+              "neutral": [],
+              "softfail": [],
+              "fail": [],
+              "include": [],
+              "redirect": null,
+              "exp": null,
+              "all": "fail"
+            },
+            "warnings": []
+          }
+        ],
+        "redirect": null,
+        "exp": null,
+        "all": "neutral"
+      }
+    },
+    "dmarc": {
+      "record": null,
+      "valid": false,
+      "location": null,
+      "error": "A DMARC record does not exist for this domain or its base domain"
+    }
+  },
+  {
+    "domain": "phillips66.com",
+    "base_domain": "phillips66.com",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "pdns1.cscdns.net",
+        "pdns2.cscdns.net"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [],
+      "warnings": [
+        "No MX records found. Is the domain parked?"
+      ]
+    },
+    "spf": {
+      "record": "v=spf1 include:%{ir}.%{v}.%{d}.spf.has.pphosted.com ~all",
+      "valid": true,
+      "dns_lookups": 1,
+      "dns_void_lookups": 0,
+      "warnings": [],
+      "parsed": {
+        "pass": [],
+        "neutral": [],
+        "softfail": [],
+        "fail": [],
+        "include": [
+          {
+            "domain": "%{ir}.%{v}.%{d}.spf.has.pphosted.com"
+          }
+        ],
+        "redirect": null,
+        "exp": null,
+        "all": "softfail"
+      }
+    },
+    "dmarc": {
+      "record": "v=DMARC1; p=none; rua=mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com;fo=1",
+      "valid": true,
+      "location": "phillips66.com",
+      "warnings": [],
+      "tags": {
+        "v": {
+          "value": "DMARC1",
+          "explicit": true
+        },
+        "p": {
+          "value": "none",
+          "explicit": true
+        },
+        "rua": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarc_rua@emaildefense.proofpoint.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "ruf": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarc_ruf@emaildefense.proofpoint.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "fo": {
+          "value": "1",
+          "explicit": true
+        },
+        "adkim": {
+          "value": "r",
+          "explicit": false
+        },
+        "aspf": {
+          "value": "r",
+          "explicit": false
+        },
+        "pct": {
+          "value": 100,
+          "explicit": false
+        },
+        "rf": {
+          "value": "afrf",
+          "explicit": false
+        },
+        "ri": {
+          "value": 86400,
+          "explicit": false
+        },
+        "sp": {
+          "value": "none",
+          "explicit": false
+        }
+      }
+    }
+  }
+]

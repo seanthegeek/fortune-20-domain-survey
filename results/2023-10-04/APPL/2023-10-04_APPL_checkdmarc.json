@@ -1,0 +1,557 @@
+[
+  {
+    "domain": "apple.com",
+    "base_domain": "apple.com",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "a.ns.apple.com",
+        "b.ns.apple.com",
+        "c.ns.apple.com",
+        "d.ns.apple.com"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [
+        {
+          "preference": 10,
+          "hostname": "mx-in.g.apple.com",
+          "addresses": [
+            "17.32.222.242"
+          ]
+        },
+        {
+          "preference": 20,
+          "hostname": "mx-in-hfd.apple.com",
+          "addresses": [
+            "17.57.165.2"
+          ]
+        },
+        {
+          "preference": 20,
+          "hostname": "mx-in-mdn.apple.com",
+          "addresses": [
+            "17.32.222.242"
+          ]
+        },
+        {
+          "preference": 20,
+          "hostname": "mx-in-rno.apple.com",
+          "addresses": [
+            "17.179.253.242"
+          ]
+        },
+        {
+          "preference": 20,
+          "hostname": "mx-in-vib.apple.com",
+          "addresses": [
+            "17.57.170.2"
+          ]
+        }
+      ],
+      "warnings": [
+        "The resolution lifetime expired after 2.000 seconds: Server Do53:10.23.1.99@53 answered The DNS operation timed out.",
+        "The reverse DNS of 17.32.222.242 is mx-in-mdn.apple.com, but the A/AAAA DNS records for mx-in-mdn.apple.com do not resolve to 17.32.222.242",
+        "The resolution lifetime expired after 2.000 seconds: Server Do53:10.23.1.99@53 answered The DNS operation timed out.",
+        "The reverse DNS of 17.57.165.2 is mx-in-hfd.apple.com, but the A/AAAA DNS records for mx-in-hfd.apple.com do not resolve to 17.57.165.2"
+      ]
+    },
+    "spf": {
+      "record": "v=spf1 include:_spf.apple.com include:_spf-txn.apple.com ~all",
+      "valid": true,
+      "dns_lookups": 2,
+      "dns_void_lookups": 0,
+      "warnings": [],
+      "parsed": {
+        "pass": [],
+        "neutral": [],
+        "softfail": [],
+        "fail": [],
+        "include": [
+          {
+            "domain": "_spf.apple.com",
+            "record": "v=spf1 ip4:17.151.62.66 ip4:17.151.62.67 ip4:17.151.62.68 ip4:17.171.2.60 ip4:17.171.2.68 ip4:17.171.2.72 ip4:17.179.253.33 ip4:17.179.253.34 ip4:17.179.253.38 ip4:17.179.253.39 ip4:17.179.253.43 ip4:17.179.253.44 ip4:17.179.253.48 ip4:17.179.253.49 ip4:17.179.253.22/31 ip4:17.179.253.24/31 ip4:17.32.222.22/31 ip4:17.32.222.24/31 ip4:17.72.136.23 ip4:17.72.136.24/31 ip4:17.132.96.0/31 ip4:17.132.100.0/31 ~all",
+            "dns_lookups": 0,
+            "dns_void_lookups": 0,
+            "parsed": {
+              "pass": [
+                {
+                  "value": "17.151.62.66",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "17.151.62.67",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "17.151.62.68",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "17.171.2.60",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "17.171.2.68",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "17.171.2.72",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "17.179.253.33",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "17.179.253.34",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "17.179.253.38",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "17.179.253.39",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "17.179.253.43",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "17.179.253.44",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "17.179.253.48",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "17.179.253.49",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "17.179.253.22/31",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "17.179.253.24/31",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "17.32.222.22/31",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "17.32.222.24/31",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "17.72.136.23",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "17.72.136.24/31",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "17.132.96.0/31",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "17.132.100.0/31",
+                  "mechanism": "ip4"
+                }
+              ],
+              "neutral": [],
+              "softfail": [],
+              "fail": [],
+              "include": [],
+              "redirect": null,
+              "exp": null,
+              "all": "softfail"
+            },
+            "warnings": []
+          },
+          {
+            "domain": "_spf-txn.apple.com",
+            "record": "v=spf1 ip4:17.151.1.0/24 ip4:17.171.37.0/24 ip4:17.111.110.0/23 ~all",
+            "dns_lookups": 0,
+            "dns_void_lookups": 0,
+            "parsed": {
+              "pass": [
+                {
+                  "value": "17.151.1.0/24",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "17.171.37.0/24",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "17.111.110.0/23",
+                  "mechanism": "ip4"
+                }
+              ],
+              "neutral": [],
+              "softfail": [],
+              "fail": [],
+              "include": [],
+              "redirect": null,
+              "exp": null,
+              "all": "softfail"
+            },
+            "warnings": []
+          }
+        ],
+        "redirect": null,
+        "exp": null,
+        "all": "softfail"
+      }
+    },
+    "dmarc": {
+      "record": "v=DMARC1; p=quarantine; sp=reject; rua=mailto:d@rua.agari.com; ruf=mailto:d@ruf.agari.com;",
+      "valid": true,
+      "location": "apple.com",
+      "warnings": [],
+      "tags": {
+        "v": {
+          "value": "DMARC1",
+          "explicit": true
+        },
+        "p": {
+          "value": "quarantine",
+          "explicit": true
+        },
+        "sp": {
+          "value": "reject",
+          "explicit": true
+        },
+        "rua": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "d@rua.agari.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "ruf": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "d@ruf.agari.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "adkim": {
+          "value": "r",
+          "explicit": false
+        },
+        "aspf": {
+          "value": "r",
+          "explicit": false
+        },
+        "fo": {
+          "value": "0",
+          "explicit": false
+        },
+        "pct": {
+          "value": 100,
+          "explicit": false
+        },
+        "rf": {
+          "value": "afrf",
+          "explicit": false
+        },
+        "ri": {
+          "value": 86400,
+          "explicit": false
+        }
+      }
+    }
+  },
+  {
+    "domain": "icloud.com",
+    "base_domain": "icloud.com",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "b.ns.apple.com",
+        "a.ns.apple.com",
+        "c.ns.apple.com",
+        "d.ns.apple.com"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [
+        {
+          "preference": 10,
+          "hostname": "mx01.mail.icloud.com",
+          "addresses": [
+            "17.42.251.62",
+            "17.56.9.29",
+            "17.57.152.5",
+            "17.57.154.33",
+            "17.57.155.34",
+            "17.57.156.30"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "mx02.mail.icloud.com",
+          "addresses": [
+            "17.42.251.62",
+            "17.56.9.29",
+            "17.57.152.5",
+            "17.57.154.33",
+            "17.57.155.34",
+            "17.57.156.30"
+          ]
+        }
+      ],
+      "warnings": []
+    },
+    "spf": {
+      "record": "v=spf1 ip4:17.58.0.0/16 ip4:17.57.155.0/24 ip4:17.57.156.0/24 ip4:144.178.36.0/24 ip4:144.178.38.0/24 ip4:112.19.199.64/29 ip4:112.19.242.64/29 ip4:222.73.195.64/29 ip4:157.255.1.64/29 ip4:106.39.212.64/29 ip4:123.126.78.64/29 ip4:183.240.219.64/29 ip4:39.156.163.64/29 ~all",
+      "valid": true,
+      "dns_lookups": 0,
+      "dns_void_lookups": 0,
+      "warnings": [],
+      "parsed": {
+        "pass": [
+          {
+            "value": "17.58.0.0/16",
+            "mechanism": "ip4"
+          },
+          {
+            "value": "17.57.155.0/24",
+            "mechanism": "ip4"
+          },
+          {
+            "value": "17.57.156.0/24",
+            "mechanism": "ip4"
+          },
+          {
+            "value": "144.178.36.0/24",
+            "mechanism": "ip4"
+          },
+          {
+            "value": "144.178.38.0/24",
+            "mechanism": "ip4"
+          },
+          {
+            "value": "112.19.199.64/29",
+            "mechanism": "ip4"
+          },
+          {
+            "value": "112.19.242.64/29",
+            "mechanism": "ip4"
+          },
+          {
+            "value": "222.73.195.64/29",
+            "mechanism": "ip4"
+          },
+          {
+            "value": "157.255.1.64/29",
+            "mechanism": "ip4"
+          },
+          {
+            "value": "106.39.212.64/29",
+            "mechanism": "ip4"
+          },
+          {
+            "value": "123.126.78.64/29",
+            "mechanism": "ip4"
+          },
+          {
+            "value": "183.240.219.64/29",
+            "mechanism": "ip4"
+          },
+          {
+            "value": "39.156.163.64/29",
+            "mechanism": "ip4"
+          }
+        ],
+        "neutral": [],
+        "softfail": [],
+        "fail": [],
+        "include": [],
+        "redirect": null,
+        "exp": null,
+        "all": "softfail"
+      }
+    },
+    "dmarc": {
+      "record": "v=DMARC1; p=quarantine; sp=quarantine; rua=mailto:d@rua.agari.com; ruf=mailto:d@ruf.agari.com",
+      "valid": true,
+      "location": "icloud.com",
+      "warnings": [],
+      "tags": {
+        "v": {
+          "value": "DMARC1",
+          "explicit": true
+        },
+        "p": {
+          "value": "quarantine",
+          "explicit": true
+        },
+        "sp": {
+          "value": "quarantine",
+          "explicit": true
+        },
+        "rua": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "d@rua.agari.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "ruf": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "d@ruf.agari.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "adkim": {
+          "value": "r",
+          "explicit": false
+        },
+        "aspf": {
+          "value": "r",
+          "explicit": false
+        },
+        "fo": {
+          "value": "0",
+          "explicit": false
+        },
+        "pct": {
+          "value": 100,
+          "explicit": false
+        },
+        "rf": {
+          "value": "afrf",
+          "explicit": false
+        },
+        "ri": {
+          "value": 86400,
+          "explicit": false
+        }
+      }
+    }
+  },
+  {
+    "domain": "wwdc.com",
+    "base_domain": "wwdc.com",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "b.ns.apple.com",
+        "a.ns.apple.com",
+        "c.ns.apple.com",
+        "d.ns.apple.com"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [],
+      "warnings": [
+        "No MX records found. Is the domain parked?"
+      ]
+    },
+    "spf": {
+      "record": "v=spf1 -all",
+      "valid": true,
+      "dns_lookups": 0,
+      "dns_void_lookups": 0,
+      "warnings": [],
+      "parsed": {
+        "pass": [],
+        "neutral": [],
+        "softfail": [],
+        "fail": [],
+        "include": [],
+        "redirect": null,
+        "exp": null,
+        "all": "fail"
+      }
+    },
+    "dmarc": {
+      "record": "v=DMARC1; p=reject; rua=mailto:d@rua.agari.com; ruf=mailto:d@ruf.agari.com;",
+      "valid": true,
+      "location": "wwdc.com",
+      "warnings": [],
+      "tags": {
+        "v": {
+          "value": "DMARC1",
+          "explicit": true
+        },
+        "p": {
+          "value": "reject",
+          "explicit": true
+        },
+        "rua": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "d@rua.agari.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "ruf": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "d@ruf.agari.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "adkim": {
+          "value": "r",
+          "explicit": false
+        },
+        "aspf": {
+          "value": "r",
+          "explicit": false
+        },
+        "fo": {
+          "value": "0",
+          "explicit": false
+        },
+        "pct": {
+          "value": 100,
+          "explicit": false
+        },
+        "rf": {
+          "value": "afrf",
+          "explicit": false
+        },
+        "ri": {
+          "value": 86400,
+          "explicit": false
+        },
+        "sp": {
+          "value": "reject",
+          "explicit": false
+        }
+      }
+    }
+  }
+]

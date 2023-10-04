@@ -1,0 +1,2335 @@
+[
+  {
+    "domain": "constco.is",
+    "base_domain": "constco.is",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [],
+      "error": "The domain constco.is does not exist"
+    },
+    "mx": {
+      "hosts": [],
+      "error": "The domain constco.is does not exist"
+    },
+    "spf": {
+      "record": null,
+      "valid": false,
+      "dns_void_lookups": null,
+      "error": "('The domain constco.is does not exist', 'constco.is')"
+    },
+    "dmarc": {
+      "record": null,
+      "valid": false,
+      "location": null,
+      "error": "A DMARC record does not exist for this domain or its base domain"
+    }
+  },
+  {
+    "domain": "costco.ca",
+    "base_domain": "costco.ca",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "a1-116.akam.net",
+        "a9-66.akam.net",
+        "a5-64.akam.net",
+        "a6-64.akam.net",
+        "a14-67.akam.net",
+        "a28-66.akam.net"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [
+        {
+          "preference": 5,
+          "hostname": "mx0a-001f9d01.pphosted.com",
+          "addresses": [
+            "148.163.156.53"
+          ]
+        },
+        {
+          "preference": 5,
+          "hostname": "mx0b-001f9d01.pphosted.com",
+          "addresses": [
+            "148.163.158.49"
+          ]
+        }
+      ],
+      "warnings": []
+    },
+    "spf": {
+      "record": "v=spf1 include:%{ir}.%{v}.%{d}.spf.has.pphosted.com ~all",
+      "valid": true,
+      "dns_lookups": 1,
+      "dns_void_lookups": 0,
+      "warnings": [],
+      "parsed": {
+        "pass": [],
+        "neutral": [],
+        "softfail": [],
+        "fail": [],
+        "include": [
+          {
+            "domain": "%{ir}.%{v}.%{d}.spf.has.pphosted.com"
+          }
+        ],
+        "redirect": null,
+        "exp": null,
+        "all": "softfail"
+      }
+    },
+    "dmarc": {
+      "record": "v=DMARC1; p=none; sp=none; fo=1; rua=mailto:dmarc_agg@auth.returnpath.net; ruf=mailto:dmarc_afrf@auth.returnpath.net",
+      "valid": true,
+      "location": "costco.ca",
+      "warnings": [],
+      "tags": {
+        "v": {
+          "value": "DMARC1",
+          "explicit": true
+        },
+        "p": {
+          "value": "none",
+          "explicit": true
+        },
+        "sp": {
+          "value": "none",
+          "explicit": true
+        },
+        "fo": {
+          "value": "1",
+          "explicit": true
+        },
+        "rua": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarc_agg@auth.returnpath.net",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "ruf": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarc_afrf@auth.returnpath.net",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "adkim": {
+          "value": "r",
+          "explicit": false
+        },
+        "aspf": {
+          "value": "r",
+          "explicit": false
+        },
+        "pct": {
+          "value": 100,
+          "explicit": false
+        },
+        "rf": {
+          "value": "afrf",
+          "explicit": false
+        },
+        "ri": {
+          "value": 86400,
+          "explicit": false
+        }
+      }
+    }
+  },
+  {
+    "domain": "costco.co.nz",
+    "base_domain": "costco.co.nz",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "a6-64.akam.net",
+        "a9-66.akam.net",
+        "dbru.br.ns.els-gms.att.net",
+        "dmtu.mt.ns.els-gms.att.net",
+        "a5-64.akam.net",
+        "a14-67.akam.net",
+        "a1-116.akam.net",
+        "a28-66.akam.net"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [
+        {
+          "preference": 10,
+          "hostname": "mx0a-001f9d01.pphosted.com",
+          "addresses": [
+            "148.163.156.53"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "mx0b-001f9d01.pphosted.com",
+          "addresses": [
+            "148.163.158.49"
+          ]
+        }
+      ],
+      "warnings": []
+    },
+    "spf": {
+      "record": "v=spf1 include:_spf.google.com include:_spf1.costco.co.nz -all",
+      "valid": true,
+      "dns_lookups": 5,
+      "dns_void_lookups": 0,
+      "warnings": [],
+      "parsed": {
+        "pass": [],
+        "neutral": [],
+        "softfail": [],
+        "fail": [],
+        "include": [
+          {
+            "domain": "_spf.google.com",
+            "record": "v=spf1 include:_netblocks.google.com include:_netblocks2.google.com include:_netblocks3.google.com ~all",
+            "dns_lookups": 3,
+            "dns_void_lookups": 0,
+            "parsed": {
+              "pass": [],
+              "neutral": [],
+              "softfail": [],
+              "fail": [],
+              "include": [
+                {
+                  "domain": "_netblocks.google.com",
+                  "record": "v=spf1 ip4:35.190.247.0/24 ip4:64.233.160.0/19 ip4:66.102.0.0/20 ip4:66.249.80.0/20 ip4:72.14.192.0/18 ip4:74.125.0.0/16 ip4:108.177.8.0/21 ip4:173.194.0.0/16 ip4:209.85.128.0/17 ip4:216.58.192.0/19 ip4:216.239.32.0/19 ~all",
+                  "dns_lookups": 0,
+                  "dns_void_lookups": 0,
+                  "parsed": {
+                    "pass": [
+                      {
+                        "value": "35.190.247.0/24",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "64.233.160.0/19",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "66.102.0.0/20",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "66.249.80.0/20",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "72.14.192.0/18",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "74.125.0.0/16",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "108.177.8.0/21",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "173.194.0.0/16",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "209.85.128.0/17",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "216.58.192.0/19",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "216.239.32.0/19",
+                        "mechanism": "ip4"
+                      }
+                    ],
+                    "neutral": [],
+                    "softfail": [],
+                    "fail": [],
+                    "include": [],
+                    "redirect": null,
+                    "exp": null,
+                    "all": "softfail"
+                  },
+                  "warnings": []
+                },
+                {
+                  "domain": "_netblocks2.google.com",
+                  "record": "v=spf1 ip6:2001:4860:4000::/36 ip6:2404:6800:4000::/36 ip6:2607:f8b0:4000::/36 ip6:2800:3f0:4000::/36 ip6:2a00:1450:4000::/36 ip6:2c0f:fb50:4000::/36 ~all",
+                  "dns_lookups": 0,
+                  "dns_void_lookups": 0,
+                  "parsed": {
+                    "pass": [
+                      {
+                        "value": "2001:4860:4000::/36",
+                        "mechanism": "ip6"
+                      },
+                      {
+                        "value": "2404:6800:4000::/36",
+                        "mechanism": "ip6"
+                      },
+                      {
+                        "value": "2607:f8b0:4000::/36",
+                        "mechanism": "ip6"
+                      },
+                      {
+                        "value": "2800:3f0:4000::/36",
+                        "mechanism": "ip6"
+                      },
+                      {
+                        "value": "2a00:1450:4000::/36",
+                        "mechanism": "ip6"
+                      },
+                      {
+                        "value": "2c0f:fb50:4000::/36",
+                        "mechanism": "ip6"
+                      }
+                    ],
+                    "neutral": [],
+                    "softfail": [],
+                    "fail": [],
+                    "include": [],
+                    "redirect": null,
+                    "exp": null,
+                    "all": "softfail"
+                  },
+                  "warnings": []
+                },
+                {
+                  "domain": "_netblocks3.google.com",
+                  "record": "v=spf1 ip4:172.217.0.0/19 ip4:172.217.32.0/20 ip4:172.217.128.0/19 ip4:172.217.160.0/20 ip4:172.217.192.0/19 ip4:172.253.56.0/21 ip4:172.253.112.0/20 ip4:108.177.96.0/19 ip4:35.191.0.0/16 ip4:130.211.0.0/22 ~all",
+                  "dns_lookups": 0,
+                  "dns_void_lookups": 0,
+                  "parsed": {
+                    "pass": [
+                      {
+                        "value": "172.217.0.0/19",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "172.217.32.0/20",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "172.217.128.0/19",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "172.217.160.0/20",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "172.217.192.0/19",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "172.253.56.0/21",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "172.253.112.0/20",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "108.177.96.0/19",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "35.191.0.0/16",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "130.211.0.0/22",
+                        "mechanism": "ip4"
+                      }
+                    ],
+                    "neutral": [],
+                    "softfail": [],
+                    "fail": [],
+                    "include": [],
+                    "redirect": null,
+                    "exp": null,
+                    "all": "softfail"
+                  },
+                  "warnings": []
+                }
+              ],
+              "redirect": null,
+              "exp": null,
+              "all": "softfail"
+            },
+            "warnings": []
+          },
+          {
+            "domain": "_spf1.costco.co.nz",
+            "record": "v=spf1 ip4:148.163.158.49 ip4:148.163.156.53 ip4:125.63.141.78 ip4:119.225.221.146 ip4:119.225.210.130 ip4:125.63.129.190 ip4:125.63.141.142 ~all",
+            "dns_lookups": 0,
+            "dns_void_lookups": 0,
+            "parsed": {
+              "pass": [
+                {
+                  "value": "148.163.158.49",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "148.163.156.53",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "125.63.141.78",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "119.225.221.146",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "119.225.210.130",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "125.63.129.190",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "125.63.141.142",
+                  "mechanism": "ip4"
+                }
+              ],
+              "neutral": [],
+              "softfail": [],
+              "fail": [],
+              "include": [],
+              "redirect": null,
+              "exp": null,
+              "all": "softfail"
+            },
+            "warnings": []
+          }
+        ],
+        "redirect": null,
+        "exp": null,
+        "all": "fail"
+      }
+    },
+    "dmarc": {
+      "record": "v=DMARC1; p=reject; sp=none; fo=1; rua=mailto:dmarc_agg@auth.returnpath.net; ruf=mailto:dmarc_afrf@auth.returnpath.net",
+      "valid": true,
+      "location": "costco.co.nz",
+      "warnings": [],
+      "tags": {
+        "v": {
+          "value": "DMARC1",
+          "explicit": true
+        },
+        "p": {
+          "value": "reject",
+          "explicit": true
+        },
+        "sp": {
+          "value": "none",
+          "explicit": true
+        },
+        "fo": {
+          "value": "1",
+          "explicit": true
+        },
+        "rua": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarc_agg@auth.returnpath.net",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "ruf": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarc_afrf@auth.returnpath.net",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "adkim": {
+          "value": "r",
+          "explicit": false
+        },
+        "aspf": {
+          "value": "r",
+          "explicit": false
+        },
+        "pct": {
+          "value": 100,
+          "explicit": false
+        },
+        "rf": {
+          "value": "afrf",
+          "explicit": false
+        },
+        "ri": {
+          "value": 86400,
+          "explicit": false
+        }
+      }
+    }
+  },
+  {
+    "domain": "costco.co.uk",
+    "base_domain": "costco.co.uk",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "dns1.cscdns.net",
+        "dns2.cscdns.net"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [
+        {
+          "preference": 1,
+          "hostname": "mx0a-001f9d01.pphosted.com",
+          "addresses": [
+            "148.163.156.53"
+          ]
+        },
+        {
+          "preference": 1,
+          "hostname": "mx0b-001f9d01.pphosted.com",
+          "addresses": [
+            "148.163.158.49"
+          ]
+        }
+      ],
+      "warnings": []
+    },
+    "spf": {
+      "record": "v=spf1 include:%{ir}.%{v}.%{d}.spf.has.pphosted.com -all",
+      "valid": true,
+      "dns_lookups": 1,
+      "dns_void_lookups": 0,
+      "warnings": [],
+      "parsed": {
+        "pass": [],
+        "neutral": [],
+        "softfail": [],
+        "fail": [],
+        "include": [
+          {
+            "domain": "%{ir}.%{v}.%{d}.spf.has.pphosted.com"
+          }
+        ],
+        "redirect": null,
+        "exp": null,
+        "all": "fail"
+      }
+    },
+    "dmarc": {
+      "record": "v=DMARC1; p=reject; sp=reject; fo=1; rua=mailto:dmarc_agg@auth.returnpath.net; ruf=mailto:dmarc_afrf@auth.returnpath.net",
+      "valid": true,
+      "location": "costco.co.uk",
+      "warnings": [],
+      "tags": {
+        "v": {
+          "value": "DMARC1",
+          "explicit": true
+        },
+        "p": {
+          "value": "reject",
+          "explicit": true
+        },
+        "sp": {
+          "value": "reject",
+          "explicit": true
+        },
+        "fo": {
+          "value": "1",
+          "explicit": true
+        },
+        "rua": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarc_agg@auth.returnpath.net",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "ruf": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarc_afrf@auth.returnpath.net",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "adkim": {
+          "value": "r",
+          "explicit": false
+        },
+        "aspf": {
+          "value": "r",
+          "explicit": false
+        },
+        "pct": {
+          "value": 100,
+          "explicit": false
+        },
+        "rf": {
+          "value": "afrf",
+          "explicit": false
+        },
+        "ri": {
+          "value": 86400,
+          "explicit": false
+        }
+      }
+    }
+  },
+  {
+    "domain": "costco.com",
+    "base_domain": "costco.com",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "a6-64.akam.net",
+        "a1-116.akam.net",
+        "a14-67.akam.net",
+        "a5-64.akam.net",
+        "a9-66.akam.net",
+        "a28-66.akam.net"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [
+        {
+          "preference": 10,
+          "hostname": "mx0a-001f9d01.pphosted.com",
+          "addresses": [
+            "148.163.156.53"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "mx0b-001f9d01.pphosted.com",
+          "addresses": [
+            "148.163.158.49"
+          ]
+        }
+      ],
+      "warnings": []
+    },
+    "spf": {
+      "record": "v=spf1 include:%{ir}.%{v}.%{d}.spf.has.pphosted.com ~all",
+      "valid": true,
+      "dns_lookups": 1,
+      "dns_void_lookups": 0,
+      "warnings": [],
+      "parsed": {
+        "pass": [],
+        "neutral": [],
+        "softfail": [],
+        "fail": [],
+        "include": [
+          {
+            "domain": "%{ir}.%{v}.%{d}.spf.has.pphosted.com"
+          }
+        ],
+        "redirect": null,
+        "exp": null,
+        "all": "softfail"
+      }
+    },
+    "dmarc": {
+      "record": "v=DMARC1; p=none; sp=none; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com",
+      "valid": true,
+      "location": "costco.com",
+      "warnings": [],
+      "tags": {
+        "v": {
+          "value": "DMARC1",
+          "explicit": true
+        },
+        "p": {
+          "value": "none",
+          "explicit": true
+        },
+        "sp": {
+          "value": "none",
+          "explicit": true
+        },
+        "fo": {
+          "value": "1",
+          "explicit": true
+        },
+        "rua": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarc_rua@emaildefense.proofpoint.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "ruf": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarc_ruf@emaildefense.proofpoint.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "adkim": {
+          "value": "r",
+          "explicit": false
+        },
+        "aspf": {
+          "value": "r",
+          "explicit": false
+        },
+        "pct": {
+          "value": 100,
+          "explicit": false
+        },
+        "rf": {
+          "value": "afrf",
+          "explicit": false
+        },
+        "ri": {
+          "value": 86400,
+          "explicit": false
+        }
+      }
+    }
+  },
+  {
+    "domain": "costco.com.aw",
+    "base_domain": "costco.com.aw",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [],
+      "error": "The domain costco.com.aw does not exist"
+    },
+    "mx": {
+      "hosts": [],
+      "error": "The domain costco.com.aw does not exist"
+    },
+    "spf": {
+      "record": null,
+      "valid": false,
+      "dns_void_lookups": null,
+      "error": "('The domain costco.com.aw does not exist', 'costco.com.aw')"
+    },
+    "dmarc": {
+      "record": null,
+      "valid": false,
+      "location": null,
+      "error": "A DMARC record does not exist for this domain or its base domain"
+    }
+  },
+  {
+    "domain": "costco.com.mx",
+    "base_domain": "costco.com.mx",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "nsq2.costco.com.mx",
+        "nsq1.costco.com.mx"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [
+        {
+          "preference": 1,
+          "hostname": "mx0a-001f9d01.pphosted.com",
+          "addresses": [
+            "148.163.156.53"
+          ]
+        },
+        {
+          "preference": 1,
+          "hostname": "mx0b-001f9d01.pphosted.com",
+          "addresses": [
+            "148.163.158.49"
+          ]
+        }
+      ],
+      "warnings": [
+        "The resolution lifetime expired after 2.000 seconds: Server Do53:10.23.1.99@53 answered The DNS operation timed out.",
+        "The reverse DNS of 148.163.156.53 is mx0a-001f9d01.pphosted.com, but the A/AAAA DNS records for mx0a-001f9d01.pphosted.com do not resolve to 148.163.156.53"
+      ]
+    },
+    "spf": {
+      "record": "v=spf1 a ip4:141.146.165.0/27 mx include:_spf.google.com include:spf-001f9d01.pphosted.com include:sendgrid.net ~all",
+      "valid": true,
+      "dns_lookups": 9,
+      "dns_void_lookups": 0,
+      "warnings": [],
+      "parsed": {
+        "pass": [
+          {
+            "value": "35.192.62.159",
+            "mechanism": "a"
+          },
+          {
+            "value": "141.146.165.0/27",
+            "mechanism": "ip4"
+          },
+          {
+            "value": "mx0a-001f9d01.pphosted.com",
+            "mechanism": "mx"
+          },
+          {
+            "value": "mx0b-001f9d01.pphosted.com",
+            "mechanism": "mx"
+          }
+        ],
+        "neutral": [],
+        "softfail": [],
+        "fail": [],
+        "include": [
+          {
+            "domain": "_spf.google.com",
+            "record": "v=spf1 include:_netblocks.google.com include:_netblocks2.google.com include:_netblocks3.google.com ~all",
+            "dns_lookups": 3,
+            "dns_void_lookups": 0,
+            "parsed": {
+              "pass": [],
+              "neutral": [],
+              "softfail": [],
+              "fail": [],
+              "include": [
+                {
+                  "domain": "_netblocks.google.com",
+                  "record": "v=spf1 ip4:35.190.247.0/24 ip4:64.233.160.0/19 ip4:66.102.0.0/20 ip4:66.249.80.0/20 ip4:72.14.192.0/18 ip4:74.125.0.0/16 ip4:108.177.8.0/21 ip4:173.194.0.0/16 ip4:209.85.128.0/17 ip4:216.58.192.0/19 ip4:216.239.32.0/19 ~all",
+                  "dns_lookups": 0,
+                  "dns_void_lookups": 0,
+                  "parsed": {
+                    "pass": [
+                      {
+                        "value": "35.190.247.0/24",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "64.233.160.0/19",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "66.102.0.0/20",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "66.249.80.0/20",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "72.14.192.0/18",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "74.125.0.0/16",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "108.177.8.0/21",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "173.194.0.0/16",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "209.85.128.0/17",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "216.58.192.0/19",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "216.239.32.0/19",
+                        "mechanism": "ip4"
+                      }
+                    ],
+                    "neutral": [],
+                    "softfail": [],
+                    "fail": [],
+                    "include": [],
+                    "redirect": null,
+                    "exp": null,
+                    "all": "softfail"
+                  },
+                  "warnings": []
+                },
+                {
+                  "domain": "_netblocks2.google.com",
+                  "record": "v=spf1 ip6:2001:4860:4000::/36 ip6:2404:6800:4000::/36 ip6:2607:f8b0:4000::/36 ip6:2800:3f0:4000::/36 ip6:2a00:1450:4000::/36 ip6:2c0f:fb50:4000::/36 ~all",
+                  "dns_lookups": 0,
+                  "dns_void_lookups": 0,
+                  "parsed": {
+                    "pass": [
+                      {
+                        "value": "2001:4860:4000::/36",
+                        "mechanism": "ip6"
+                      },
+                      {
+                        "value": "2404:6800:4000::/36",
+                        "mechanism": "ip6"
+                      },
+                      {
+                        "value": "2607:f8b0:4000::/36",
+                        "mechanism": "ip6"
+                      },
+                      {
+                        "value": "2800:3f0:4000::/36",
+                        "mechanism": "ip6"
+                      },
+                      {
+                        "value": "2a00:1450:4000::/36",
+                        "mechanism": "ip6"
+                      },
+                      {
+                        "value": "2c0f:fb50:4000::/36",
+                        "mechanism": "ip6"
+                      }
+                    ],
+                    "neutral": [],
+                    "softfail": [],
+                    "fail": [],
+                    "include": [],
+                    "redirect": null,
+                    "exp": null,
+                    "all": "softfail"
+                  },
+                  "warnings": []
+                },
+                {
+                  "domain": "_netblocks3.google.com",
+                  "record": "v=spf1 ip4:172.217.0.0/19 ip4:172.217.32.0/20 ip4:172.217.128.0/19 ip4:172.217.160.0/20 ip4:172.217.192.0/19 ip4:172.253.56.0/21 ip4:172.253.112.0/20 ip4:108.177.96.0/19 ip4:35.191.0.0/16 ip4:130.211.0.0/22 ~all",
+                  "dns_lookups": 0,
+                  "dns_void_lookups": 0,
+                  "parsed": {
+                    "pass": [
+                      {
+                        "value": "172.217.0.0/19",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "172.217.32.0/20",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "172.217.128.0/19",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "172.217.160.0/20",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "172.217.192.0/19",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "172.253.56.0/21",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "172.253.112.0/20",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "108.177.96.0/19",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "35.191.0.0/16",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "130.211.0.0/22",
+                        "mechanism": "ip4"
+                      }
+                    ],
+                    "neutral": [],
+                    "softfail": [],
+                    "fail": [],
+                    "include": [],
+                    "redirect": null,
+                    "exp": null,
+                    "all": "softfail"
+                  },
+                  "warnings": []
+                }
+              ],
+              "redirect": null,
+              "exp": null,
+              "all": "softfail"
+            },
+            "warnings": []
+          },
+          {
+            "domain": "spf-001f9d01.pphosted.com",
+            "record": "v=spf1 ip4:148.163.158.49 ip4:148.163.156.53",
+            "dns_lookups": 0,
+            "dns_void_lookups": 0,
+            "parsed": {
+              "pass": [
+                {
+                  "value": "148.163.158.49",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "148.163.156.53",
+                  "mechanism": "ip4"
+                }
+              ],
+              "neutral": [],
+              "softfail": [],
+              "fail": [],
+              "include": [],
+              "redirect": null,
+              "exp": null,
+              "all": "neutral"
+            },
+            "warnings": []
+          },
+          {
+            "domain": "sendgrid.net",
+            "record": "v=spf1 ip4:167.89.0.0/17 ip4:208.117.48.0/20 ip4:50.31.32.0/19 ip4:198.37.144.0/20 ip4:198.21.0.0/21 ip4:192.254.112.0/20 ip4:168.245.0.0/17 ip4:149.72.0.0/16 ip4:159.183.0.0/16 include:ab.sendgrid.net ~all",
+            "dns_lookups": 1,
+            "dns_void_lookups": 0,
+            "parsed": {
+              "pass": [
+                {
+                  "value": "167.89.0.0/17",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "208.117.48.0/20",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "50.31.32.0/19",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "198.37.144.0/20",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "198.21.0.0/21",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "192.254.112.0/20",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "168.245.0.0/17",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "149.72.0.0/16",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "159.183.0.0/16",
+                  "mechanism": "ip4"
+                }
+              ],
+              "neutral": [],
+              "softfail": [],
+              "fail": [],
+              "include": [
+                {
+                  "domain": "ab.sendgrid.net",
+                  "record": "v=spf1 ip4:223.165.113.0/24 ip4:223.165.115.0/24 ip4:223.165.118.0/23 ip4:223.165.120.0/23 ~all",
+                  "dns_lookups": 0,
+                  "dns_void_lookups": 0,
+                  "parsed": {
+                    "pass": [
+                      {
+                        "value": "223.165.113.0/24",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "223.165.115.0/24",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "223.165.118.0/23",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "223.165.120.0/23",
+                        "mechanism": "ip4"
+                      }
+                    ],
+                    "neutral": [],
+                    "softfail": [],
+                    "fail": [],
+                    "include": [],
+                    "redirect": null,
+                    "exp": null,
+                    "all": "softfail"
+                  },
+                  "warnings": []
+                }
+              ],
+              "redirect": null,
+              "exp": null,
+              "all": "softfail"
+            },
+            "warnings": []
+          }
+        ],
+        "redirect": null,
+        "exp": null,
+        "all": "softfail"
+      }
+    },
+    "dmarc": {
+      "record": "v=DMARC1;p=reject;sp=reject;fo=1;rua=mailto:dmarc_rua@emaildefense.proofpoint.com;ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com",
+      "valid": true,
+      "location": "costco.com.mx",
+      "warnings": [],
+      "tags": {
+        "v": {
+          "value": "DMARC1",
+          "explicit": true
+        },
+        "p": {
+          "value": "reject",
+          "explicit": true
+        },
+        "sp": {
+          "value": "reject",
+          "explicit": true
+        },
+        "fo": {
+          "value": "1",
+          "explicit": true
+        },
+        "rua": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarc_rua@emaildefense.proofpoint.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "ruf": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarc_ruf@emaildefense.proofpoint.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "adkim": {
+          "value": "r",
+          "explicit": false
+        },
+        "aspf": {
+          "value": "r",
+          "explicit": false
+        },
+        "pct": {
+          "value": 100,
+          "explicit": false
+        },
+        "rf": {
+          "value": "afrf",
+          "explicit": false
+        },
+        "ri": {
+          "value": 86400,
+          "explicit": false
+        }
+      }
+    }
+  },
+  {
+    "domain": "costco.com.tw",
+    "base_domain": "costco.com.tw",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "dns2.costco.com.tw",
+        "dns1.costco.com.tw",
+        "dns3.costco.com.tw"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [
+        {
+          "preference": 10,
+          "hostname": "mx0a-001f9d01.pphosted.com",
+          "addresses": [
+            "148.163.156.53"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "mx0b-001f9d01.pphosted.com",
+          "addresses": [
+            "148.163.158.49"
+          ]
+        }
+      ],
+      "warnings": []
+    },
+    "spf": {
+      "record": "v=spf1 include:spf-001f9d01.pphosted.com include:_spf.costco.com.tw include:_spf.google.com -all",
+      "valid": true,
+      "dns_lookups": 6,
+      "dns_void_lookups": 0,
+      "warnings": [],
+      "parsed": {
+        "pass": [],
+        "neutral": [],
+        "softfail": [],
+        "fail": [],
+        "include": [
+          {
+            "domain": "spf-001f9d01.pphosted.com",
+            "record": "v=spf1 ip4:148.163.158.49 ip4:148.163.156.53",
+            "dns_lookups": 0,
+            "dns_void_lookups": 0,
+            "parsed": {
+              "pass": [
+                {
+                  "value": "148.163.158.49",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "148.163.156.53",
+                  "mechanism": "ip4"
+                }
+              ],
+              "neutral": [],
+              "softfail": [],
+              "fail": [],
+              "include": [],
+              "redirect": null,
+              "exp": null,
+              "all": "neutral"
+            },
+            "warnings": []
+          },
+          {
+            "domain": "_spf.costco.com.tw",
+            "record": "v=spf1 ip4:220.130.22.34/31 ip4:220.130.22.36/30 ip4:220.130.22.40/29 ip4:123.51.211.32/28 ~all",
+            "dns_lookups": 0,
+            "dns_void_lookups": 0,
+            "parsed": {
+              "pass": [
+                {
+                  "value": "220.130.22.34/31",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "220.130.22.36/30",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "220.130.22.40/29",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "123.51.211.32/28",
+                  "mechanism": "ip4"
+                }
+              ],
+              "neutral": [],
+              "softfail": [],
+              "fail": [],
+              "include": [],
+              "redirect": null,
+              "exp": null,
+              "all": "softfail"
+            },
+            "warnings": []
+          },
+          {
+            "domain": "_spf.google.com",
+            "record": "v=spf1 include:_netblocks.google.com include:_netblocks2.google.com include:_netblocks3.google.com ~all",
+            "dns_lookups": 3,
+            "dns_void_lookups": 0,
+            "parsed": {
+              "pass": [],
+              "neutral": [],
+              "softfail": [],
+              "fail": [],
+              "include": [
+                {
+                  "domain": "_netblocks.google.com",
+                  "record": "v=spf1 ip4:35.190.247.0/24 ip4:64.233.160.0/19 ip4:66.102.0.0/20 ip4:66.249.80.0/20 ip4:72.14.192.0/18 ip4:74.125.0.0/16 ip4:108.177.8.0/21 ip4:173.194.0.0/16 ip4:209.85.128.0/17 ip4:216.58.192.0/19 ip4:216.239.32.0/19 ~all",
+                  "dns_lookups": 0,
+                  "dns_void_lookups": 0,
+                  "parsed": {
+                    "pass": [
+                      {
+                        "value": "35.190.247.0/24",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "64.233.160.0/19",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "66.102.0.0/20",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "66.249.80.0/20",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "72.14.192.0/18",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "74.125.0.0/16",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "108.177.8.0/21",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "173.194.0.0/16",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "209.85.128.0/17",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "216.58.192.0/19",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "216.239.32.0/19",
+                        "mechanism": "ip4"
+                      }
+                    ],
+                    "neutral": [],
+                    "softfail": [],
+                    "fail": [],
+                    "include": [],
+                    "redirect": null,
+                    "exp": null,
+                    "all": "softfail"
+                  },
+                  "warnings": []
+                },
+                {
+                  "domain": "_netblocks2.google.com",
+                  "record": "v=spf1 ip6:2001:4860:4000::/36 ip6:2404:6800:4000::/36 ip6:2607:f8b0:4000::/36 ip6:2800:3f0:4000::/36 ip6:2a00:1450:4000::/36 ip6:2c0f:fb50:4000::/36 ~all",
+                  "dns_lookups": 0,
+                  "dns_void_lookups": 0,
+                  "parsed": {
+                    "pass": [
+                      {
+                        "value": "2001:4860:4000::/36",
+                        "mechanism": "ip6"
+                      },
+                      {
+                        "value": "2404:6800:4000::/36",
+                        "mechanism": "ip6"
+                      },
+                      {
+                        "value": "2607:f8b0:4000::/36",
+                        "mechanism": "ip6"
+                      },
+                      {
+                        "value": "2800:3f0:4000::/36",
+                        "mechanism": "ip6"
+                      },
+                      {
+                        "value": "2a00:1450:4000::/36",
+                        "mechanism": "ip6"
+                      },
+                      {
+                        "value": "2c0f:fb50:4000::/36",
+                        "mechanism": "ip6"
+                      }
+                    ],
+                    "neutral": [],
+                    "softfail": [],
+                    "fail": [],
+                    "include": [],
+                    "redirect": null,
+                    "exp": null,
+                    "all": "softfail"
+                  },
+                  "warnings": []
+                },
+                {
+                  "domain": "_netblocks3.google.com",
+                  "record": "v=spf1 ip4:172.217.0.0/19 ip4:172.217.32.0/20 ip4:172.217.128.0/19 ip4:172.217.160.0/20 ip4:172.217.192.0/19 ip4:172.253.56.0/21 ip4:172.253.112.0/20 ip4:108.177.96.0/19 ip4:35.191.0.0/16 ip4:130.211.0.0/22 ~all",
+                  "dns_lookups": 0,
+                  "dns_void_lookups": 0,
+                  "parsed": {
+                    "pass": [
+                      {
+                        "value": "172.217.0.0/19",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "172.217.32.0/20",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "172.217.128.0/19",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "172.217.160.0/20",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "172.217.192.0/19",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "172.253.56.0/21",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "172.253.112.0/20",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "108.177.96.0/19",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "35.191.0.0/16",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "130.211.0.0/22",
+                        "mechanism": "ip4"
+                      }
+                    ],
+                    "neutral": [],
+                    "softfail": [],
+                    "fail": [],
+                    "include": [],
+                    "redirect": null,
+                    "exp": null,
+                    "all": "softfail"
+                  },
+                  "warnings": []
+                }
+              ],
+              "redirect": null,
+              "exp": null,
+              "all": "softfail"
+            },
+            "warnings": []
+          }
+        ],
+        "redirect": null,
+        "exp": null,
+        "all": "fail"
+      }
+    },
+    "dmarc": {
+      "record": "v=DMARC1; p=reject; sp=reject; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com;ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com",
+      "valid": true,
+      "location": "costco.com.tw",
+      "warnings": [],
+      "tags": {
+        "v": {
+          "value": "DMARC1",
+          "explicit": true
+        },
+        "p": {
+          "value": "reject",
+          "explicit": true
+        },
+        "sp": {
+          "value": "reject",
+          "explicit": true
+        },
+        "fo": {
+          "value": "1",
+          "explicit": true
+        },
+        "rua": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarc_rua@emaildefense.proofpoint.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "ruf": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarc_ruf@emaildefense.proofpoint.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "adkim": {
+          "value": "r",
+          "explicit": false
+        },
+        "aspf": {
+          "value": "r",
+          "explicit": false
+        },
+        "pct": {
+          "value": 100,
+          "explicit": false
+        },
+        "rf": {
+          "value": "afrf",
+          "explicit": false
+        },
+        "ri": {
+          "value": 86400,
+          "explicit": false
+        }
+      }
+    }
+  },
+  {
+    "domain": "costco.es",
+    "base_domain": "costco.es",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "dbru.br.ns.els-gms.att.net",
+        "a1-116.akam.net",
+        "a5-64.akam.net",
+        "dmtu.mt.ns.els-gms.att.net",
+        "a9-66.akam.net",
+        "a6-64.akam.net",
+        "a14-67.akam.net",
+        "a28-66.akam.net"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [
+        {
+          "preference": 10,
+          "hostname": "mx0a-001f9d01.pphosted.com",
+          "addresses": [
+            "148.163.156.53"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "mx0b-001f9d01.pphosted.com",
+          "addresses": [
+            "148.163.158.49"
+          ]
+        }
+      ],
+      "warnings": []
+    },
+    "spf": {
+      "record": "v=spf1 include:%{ir}.%{v}.%{d}.spf.has.pphosted.com ~all",
+      "valid": true,
+      "dns_lookups": 1,
+      "dns_void_lookups": 0,
+      "warnings": [],
+      "parsed": {
+        "pass": [],
+        "neutral": [],
+        "softfail": [],
+        "fail": [],
+        "include": [
+          {
+            "domain": "%{ir}.%{v}.%{d}.spf.has.pphosted.com"
+          }
+        ],
+        "redirect": null,
+        "exp": null,
+        "all": "softfail"
+      }
+    },
+    "dmarc": {
+      "record": "v=DMARC1;p=reject;sp=reject;fo=1;rua=mailto:dmarc_rua@emaildefense.proofpoint.com;ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com",
+      "valid": true,
+      "location": "costco.es",
+      "warnings": [],
+      "tags": {
+        "v": {
+          "value": "DMARC1",
+          "explicit": true
+        },
+        "p": {
+          "value": "reject",
+          "explicit": true
+        },
+        "sp": {
+          "value": "reject",
+          "explicit": true
+        },
+        "fo": {
+          "value": "1",
+          "explicit": true
+        },
+        "rua": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarc_rua@emaildefense.proofpoint.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "ruf": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarc_ruf@emaildefense.proofpoint.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "adkim": {
+          "value": "r",
+          "explicit": false
+        },
+        "aspf": {
+          "value": "r",
+          "explicit": false
+        },
+        "pct": {
+          "value": 100,
+          "explicit": false
+        },
+        "rf": {
+          "value": "afrf",
+          "explicit": false
+        },
+        "ri": {
+          "value": 86400,
+          "explicit": false
+        }
+      }
+    }
+  },
+  {
+    "domain": "costco.fr",
+    "base_domain": "costco.fr",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "a1-116.akam.net",
+        "a9-66.akam.net",
+        "a14-67.akam.net",
+        "dbru.br.ns.els-gms.att.net",
+        "a28-66.akam.net",
+        "a5-64.akam.net",
+        "dmtu.mt.ns.els-gms.att.net",
+        "a6-64.akam.net"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [
+        {
+          "preference": 10,
+          "hostname": "mx0a-001f9d01.pphosted.com",
+          "addresses": [
+            "148.163.156.53"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "mx0b-001f9d01.pphosted.com",
+          "addresses": [
+            "148.163.158.49"
+          ]
+        }
+      ],
+      "warnings": []
+    },
+    "spf": {
+      "record": "v=spf1 include:%{ir}.%{v}.%{d}.spf.has.pphosted.com ~all",
+      "valid": true,
+      "dns_lookups": 1,
+      "dns_void_lookups": 0,
+      "warnings": [],
+      "parsed": {
+        "pass": [],
+        "neutral": [],
+        "softfail": [],
+        "fail": [],
+        "include": [
+          {
+            "domain": "%{ir}.%{v}.%{d}.spf.has.pphosted.com"
+          }
+        ],
+        "redirect": null,
+        "exp": null,
+        "all": "softfail"
+      }
+    },
+    "dmarc": {
+      "record": "v=DMARC1;p=reject;sp=reject;fo=1;rua=mailto:dmarc_rua@emaildefense.proofpoint.com;ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com",
+      "valid": true,
+      "location": "costco.fr",
+      "warnings": [],
+      "tags": {
+        "v": {
+          "value": "DMARC1",
+          "explicit": true
+        },
+        "p": {
+          "value": "reject",
+          "explicit": true
+        },
+        "sp": {
+          "value": "reject",
+          "explicit": true
+        },
+        "fo": {
+          "value": "1",
+          "explicit": true
+        },
+        "rua": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarc_rua@emaildefense.proofpoint.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "ruf": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarc_ruf@emaildefense.proofpoint.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "adkim": {
+          "value": "r",
+          "explicit": false
+        },
+        "aspf": {
+          "value": "r",
+          "explicit": false
+        },
+        "pct": {
+          "value": 100,
+          "explicit": false
+        },
+        "rf": {
+          "value": "afrf",
+          "explicit": false
+        },
+        "ri": {
+          "value": 86400,
+          "explicit": false
+        }
+      }
+    }
+  },
+  {
+    "domain": "costco.jp",
+    "base_domain": "costco.jp",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "dns1.cscdns.net",
+        "dns2.cscdns.net"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [
+        {
+          "preference": 0,
+          "hostname": "null.costco.jp",
+          "addresses": []
+        }
+      ],
+      "warnings": [
+        "The domain null.costco.jp does not exist"
+      ]
+    },
+    "spf": {
+      "record": "v=spf1 -all",
+      "valid": true,
+      "dns_lookups": 0,
+      "dns_void_lookups": 0,
+      "warnings": [],
+      "parsed": {
+        "pass": [],
+        "neutral": [],
+        "softfail": [],
+        "fail": [],
+        "include": [],
+        "redirect": null,
+        "exp": null,
+        "all": "fail"
+      }
+    },
+    "dmarc": {
+      "record": "v=DMARC1; p=reject; sp=reject; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com",
+      "valid": true,
+      "location": "costco.jp",
+      "warnings": [],
+      "tags": {
+        "v": {
+          "value": "DMARC1",
+          "explicit": true
+        },
+        "p": {
+          "value": "reject",
+          "explicit": true
+        },
+        "sp": {
+          "value": "reject",
+          "explicit": true
+        },
+        "fo": {
+          "value": "1",
+          "explicit": true
+        },
+        "rua": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarc_rua@emaildefense.proofpoint.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "ruf": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarc_ruf@emaildefense.proofpoint.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "adkim": {
+          "value": "r",
+          "explicit": false
+        },
+        "aspf": {
+          "value": "r",
+          "explicit": false
+        },
+        "pct": {
+          "value": 100,
+          "explicit": false
+        },
+        "rf": {
+          "value": "afrf",
+          "explicit": false
+        },
+        "ri": {
+          "value": 86400,
+          "explicit": false
+        }
+      }
+    }
+  },
+  {
+    "domain": "costco.kr",
+    "base_domain": "costco.kr",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "dns1.cscdns.net",
+        "dns2.cscdns.net"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [
+        {
+          "preference": 0,
+          "hostname": "null.costco.kr",
+          "addresses": []
+        }
+      ],
+      "warnings": [
+        "The domain null.costco.kr does not exist"
+      ]
+    },
+    "spf": {
+      "record": "v=spf1 -all",
+      "valid": true,
+      "dns_lookups": 0,
+      "dns_void_lookups": 0,
+      "warnings": [],
+      "parsed": {
+        "pass": [],
+        "neutral": [],
+        "softfail": [],
+        "fail": [],
+        "include": [],
+        "redirect": null,
+        "exp": null,
+        "all": "fail"
+      }
+    },
+    "dmarc": {
+      "record": "v=DMARC1; p=reject; sp=reject; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com",
+      "valid": true,
+      "location": "costco.kr",
+      "warnings": [],
+      "tags": {
+        "v": {
+          "value": "DMARC1",
+          "explicit": true
+        },
+        "p": {
+          "value": "reject",
+          "explicit": true
+        },
+        "sp": {
+          "value": "reject",
+          "explicit": true
+        },
+        "fo": {
+          "value": "1",
+          "explicit": true
+        },
+        "rua": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarc_rua@emaildefense.proofpoint.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "ruf": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarc_ruf@emaildefense.proofpoint.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "adkim": {
+          "value": "r",
+          "explicit": false
+        },
+        "aspf": {
+          "value": "r",
+          "explicit": false
+        },
+        "pct": {
+          "value": 100,
+          "explicit": false
+        },
+        "rf": {
+          "value": "afrf",
+          "explicit": false
+        },
+        "ri": {
+          "value": 86400,
+          "explicit": false
+        }
+      }
+    }
+  },
+  {
+    "domain": "costco.se",
+    "base_domain": "costco.se",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "a9-66.akam.net",
+        "a6-64.akam.net",
+        "dbru.br.ns.els-gms.att.net",
+        "a1-116.akam.net",
+        "a14-67.akam.net",
+        "a28-66.akam.net",
+        "dmtu.mt.ns.els-gms.att.net",
+        "a5-64.akam.net"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [
+        {
+          "preference": 10,
+          "hostname": "mx0a-001f9d01.pphosted.com",
+          "addresses": [
+            "148.163.156.53"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "mx0b-001f9d01.pphosted.com",
+          "addresses": [
+            "148.163.158.49"
+          ]
+        }
+      ],
+      "warnings": [
+        "The resolution lifetime expired after 2.000 seconds: Server Do53:10.23.1.99@53 answered The DNS operation timed out.",
+        "The reverse DNS of 148.163.156.53 is mx0a-001f9d01.pphosted.com, but the A/AAAA DNS records for mx0a-001f9d01.pphosted.com do not resolve to 148.163.156.53"
+      ]
+    },
+    "spf": {
+      "record": "v=spf1 include:_spf.google.com include:_spf1.costco.se -all",
+      "valid": true,
+      "dns_lookups": 6,
+      "dns_void_lookups": 0,
+      "warnings": [],
+      "parsed": {
+        "pass": [],
+        "neutral": [],
+        "softfail": [],
+        "fail": [],
+        "include": [
+          {
+            "domain": "_spf.google.com",
+            "record": "v=spf1 include:_netblocks.google.com include:_netblocks2.google.com include:_netblocks3.google.com ~all",
+            "dns_lookups": 3,
+            "dns_void_lookups": 0,
+            "parsed": {
+              "pass": [],
+              "neutral": [],
+              "softfail": [],
+              "fail": [],
+              "include": [
+                {
+                  "domain": "_netblocks.google.com",
+                  "record": "v=spf1 ip4:35.190.247.0/24 ip4:64.233.160.0/19 ip4:66.102.0.0/20 ip4:66.249.80.0/20 ip4:72.14.192.0/18 ip4:74.125.0.0/16 ip4:108.177.8.0/21 ip4:173.194.0.0/16 ip4:209.85.128.0/17 ip4:216.58.192.0/19 ip4:216.239.32.0/19 ~all",
+                  "dns_lookups": 0,
+                  "dns_void_lookups": 0,
+                  "parsed": {
+                    "pass": [
+                      {
+                        "value": "35.190.247.0/24",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "64.233.160.0/19",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "66.102.0.0/20",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "66.249.80.0/20",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "72.14.192.0/18",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "74.125.0.0/16",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "108.177.8.0/21",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "173.194.0.0/16",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "209.85.128.0/17",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "216.58.192.0/19",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "216.239.32.0/19",
+                        "mechanism": "ip4"
+                      }
+                    ],
+                    "neutral": [],
+                    "softfail": [],
+                    "fail": [],
+                    "include": [],
+                    "redirect": null,
+                    "exp": null,
+                    "all": "softfail"
+                  },
+                  "warnings": []
+                },
+                {
+                  "domain": "_netblocks2.google.com",
+                  "record": "v=spf1 ip6:2001:4860:4000::/36 ip6:2404:6800:4000::/36 ip6:2607:f8b0:4000::/36 ip6:2800:3f0:4000::/36 ip6:2a00:1450:4000::/36 ip6:2c0f:fb50:4000::/36 ~all",
+                  "dns_lookups": 0,
+                  "dns_void_lookups": 0,
+                  "parsed": {
+                    "pass": [
+                      {
+                        "value": "2001:4860:4000::/36",
+                        "mechanism": "ip6"
+                      },
+                      {
+                        "value": "2404:6800:4000::/36",
+                        "mechanism": "ip6"
+                      },
+                      {
+                        "value": "2607:f8b0:4000::/36",
+                        "mechanism": "ip6"
+                      },
+                      {
+                        "value": "2800:3f0:4000::/36",
+                        "mechanism": "ip6"
+                      },
+                      {
+                        "value": "2a00:1450:4000::/36",
+                        "mechanism": "ip6"
+                      },
+                      {
+                        "value": "2c0f:fb50:4000::/36",
+                        "mechanism": "ip6"
+                      }
+                    ],
+                    "neutral": [],
+                    "softfail": [],
+                    "fail": [],
+                    "include": [],
+                    "redirect": null,
+                    "exp": null,
+                    "all": "softfail"
+                  },
+                  "warnings": []
+                },
+                {
+                  "domain": "_netblocks3.google.com",
+                  "record": "v=spf1 ip4:172.217.0.0/19 ip4:172.217.32.0/20 ip4:172.217.128.0/19 ip4:172.217.160.0/20 ip4:172.217.192.0/19 ip4:172.253.56.0/21 ip4:172.253.112.0/20 ip4:108.177.96.0/19 ip4:35.191.0.0/16 ip4:130.211.0.0/22 ~all",
+                  "dns_lookups": 0,
+                  "dns_void_lookups": 0,
+                  "parsed": {
+                    "pass": [
+                      {
+                        "value": "172.217.0.0/19",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "172.217.32.0/20",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "172.217.128.0/19",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "172.217.160.0/20",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "172.217.192.0/19",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "172.253.56.0/21",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "172.253.112.0/20",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "108.177.96.0/19",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "35.191.0.0/16",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "130.211.0.0/22",
+                        "mechanism": "ip4"
+                      }
+                    ],
+                    "neutral": [],
+                    "softfail": [],
+                    "fail": [],
+                    "include": [],
+                    "redirect": null,
+                    "exp": null,
+                    "all": "softfail"
+                  },
+                  "warnings": []
+                }
+              ],
+              "redirect": null,
+              "exp": null,
+              "all": "softfail"
+            },
+            "warnings": []
+          },
+          {
+            "domain": "_spf1.costco.se",
+            "record": "v=spf1 include:spf-001f9d01.pphosted.com ~all",
+            "dns_lookups": 1,
+            "dns_void_lookups": 0,
+            "parsed": {
+              "pass": [],
+              "neutral": [],
+              "softfail": [],
+              "fail": [],
+              "include": [
+                {
+                  "domain": "spf-001f9d01.pphosted.com",
+                  "record": "v=spf1 ip4:148.163.158.49 ip4:148.163.156.53",
+                  "dns_lookups": 0,
+                  "dns_void_lookups": 0,
+                  "parsed": {
+                    "pass": [
+                      {
+                        "value": "148.163.158.49",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "148.163.156.53",
+                        "mechanism": "ip4"
+                      }
+                    ],
+                    "neutral": [],
+                    "softfail": [],
+                    "fail": [],
+                    "include": [],
+                    "redirect": null,
+                    "exp": null,
+                    "all": "neutral"
+                  },
+                  "warnings": []
+                }
+              ],
+              "redirect": null,
+              "exp": null,
+              "all": "softfail"
+            },
+            "warnings": []
+          }
+        ],
+        "redirect": null,
+        "exp": null,
+        "all": "fail"
+      }
+    },
+    "dmarc": {
+      "record": "v=DMARC1; p=reject; sp=reject; fo=1; rua=mailto:dmarc_agg@auth.returnpath.net; ruf=mailto:dmarc_afrf@auth.returnpath.net",
+      "valid": true,
+      "location": "costco.se",
+      "warnings": [],
+      "tags": {
+        "v": {
+          "value": "DMARC1",
+          "explicit": true
+        },
+        "p": {
+          "value": "reject",
+          "explicit": true
+        },
+        "sp": {
+          "value": "reject",
+          "explicit": true
+        },
+        "fo": {
+          "value": "1",
+          "explicit": true
+        },
+        "rua": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarc_agg@auth.returnpath.net",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "ruf": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarc_afrf@auth.returnpath.net",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "adkim": {
+          "value": "r",
+          "explicit": false
+        },
+        "aspf": {
+          "value": "r",
+          "explicit": false
+        },
+        "pct": {
+          "value": 100,
+          "explicit": false
+        },
+        "rf": {
+          "value": "afrf",
+          "explicit": false
+        },
+        "ri": {
+          "value": 86400,
+          "explicit": false
+        }
+      }
+    }
+  }
+]

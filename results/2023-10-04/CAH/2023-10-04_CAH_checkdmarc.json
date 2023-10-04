@@ -1,0 +1,2793 @@
+[
+  {
+    "domain": "cardinalhealth.br",
+    "base_domain": "cardinalhealth.br",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [],
+      "error": "The domain cardinalhealth.br does not exist"
+    },
+    "mx": {
+      "hosts": [],
+      "error": "The domain cardinalhealth.br does not exist"
+    },
+    "spf": {
+      "record": null,
+      "valid": false,
+      "dns_void_lookups": null,
+      "error": "('The domain cardinalhealth.br does not exist', 'cardinalhealth.br')"
+    },
+    "dmarc": {
+      "record": null,
+      "valid": false,
+      "location": null,
+      "error": "A DMARC record does not exist for this domain or its base domain"
+    }
+  },
+  {
+    "domain": "cardinalhealth.ca",
+    "base_domain": "cardinalhealth.ca",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "ns-cloud-e4.googledomains.com",
+        "ns-cloud-e1.googledomains.com",
+        "ns-cloud-e3.googledomains.com",
+        "ns-cloud-e2.googledomains.com"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [
+        {
+          "preference": 10,
+          "hostname": "mx1.hc2781-64.iphmx.com",
+          "addresses": [
+            "216.71.143.52",
+            "216.71.148.142"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "mx2.hc2781-64.iphmx.com",
+          "addresses": [
+            "216.71.143.52",
+            "216.71.148.142"
+          ]
+        }
+      ],
+      "warnings": []
+    },
+    "spf": {
+      "record": "v=spf1 include:_spf.cardinalhealth.com include:spf.protection.outlook.com include:aspmx.pardot.com include:amazonses.com  ~all",
+      "valid": true,
+      "dns_lookups": 6,
+      "dns_void_lookups": 0,
+      "warnings": [],
+      "parsed": {
+        "pass": [],
+        "neutral": [],
+        "softfail": [],
+        "fail": [],
+        "include": [
+          {
+            "domain": "_spf.cardinalhealth.com",
+            "record": "v=spf1 exists:%{i}.spf.hc2781-64.iphmx.com",
+            "dns_lookups": 1,
+            "dns_void_lookups": 0,
+            "parsed": {
+              "pass": [
+                {
+                  "value": "%{i}.spf.hc2781-64.iphmx.com",
+                  "mechanism": "exists"
+                }
+              ],
+              "neutral": [],
+              "softfail": [],
+              "fail": [],
+              "include": [],
+              "redirect": null,
+              "exp": null,
+              "all": "neutral"
+            },
+            "warnings": []
+          },
+          {
+            "domain": "spf.protection.outlook.com",
+            "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/50 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+            "dns_lookups": 0,
+            "dns_void_lookups": 0,
+            "parsed": {
+              "pass": [
+                {
+                  "value": "40.92.0.0/15",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "40.107.0.0/16",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "52.100.0.0/14",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "104.47.0.0/17",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "2a01:111:f400::/48",
+                  "mechanism": "ip6"
+                },
+                {
+                  "value": "2a01:111:f403::/49",
+                  "mechanism": "ip6"
+                },
+                {
+                  "value": "2a01:111:f403:8000::/50",
+                  "mechanism": "ip6"
+                },
+                {
+                  "value": "2a01:111:f403:c000::/51",
+                  "mechanism": "ip6"
+                },
+                {
+                  "value": "2a01:111:f403:f000::/52",
+                  "mechanism": "ip6"
+                }
+              ],
+              "neutral": [],
+              "softfail": [],
+              "fail": [],
+              "include": [],
+              "redirect": null,
+              "exp": null,
+              "all": "fail"
+            },
+            "warnings": []
+          },
+          {
+            "domain": "aspmx.pardot.com",
+            "record": "v=spf1 include:et._spf.pardot.com -all",
+            "dns_lookups": 1,
+            "dns_void_lookups": 0,
+            "parsed": {
+              "pass": [],
+              "neutral": [],
+              "softfail": [],
+              "fail": [],
+              "include": [
+                {
+                  "domain": "et._spf.pardot.com",
+                  "record": "v=spf1 ip4:198.245.81.0/24 ip4:136.147.176.0/24 ip4:13.111.0.0/16 ip4:136.147.182.0/24 ip4:136.147.135.0/24 ip4:199.122.123.0/24 -all",
+                  "dns_lookups": 0,
+                  "dns_void_lookups": 0,
+                  "parsed": {
+                    "pass": [
+                      {
+                        "value": "198.245.81.0/24",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "136.147.176.0/24",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "13.111.0.0/16",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "136.147.182.0/24",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "136.147.135.0/24",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "199.122.123.0/24",
+                        "mechanism": "ip4"
+                      }
+                    ],
+                    "neutral": [],
+                    "softfail": [],
+                    "fail": [],
+                    "include": [],
+                    "redirect": null,
+                    "exp": null,
+                    "all": "fail"
+                  },
+                  "warnings": []
+                }
+              ],
+              "redirect": null,
+              "exp": null,
+              "all": "fail"
+            },
+            "warnings": []
+          },
+          {
+            "domain": "amazonses.com",
+            "record": "v=spf1 ip4:199.255.192.0/22 ip4:199.127.232.0/22 ip4:54.240.0.0/18 ip4:69.169.224.0/20 ip4:23.249.208.0/20 ip4:23.251.224.0/19 ip4:76.223.176.0/20 ip4:52.82.172.0/22 ip4:54.240.64.0/19 ip4:54.240.96.0/19 ip4:76.223.128.0/19 -all",
+            "dns_lookups": 0,
+            "dns_void_lookups": 0,
+            "parsed": {
+              "pass": [
+                {
+                  "value": "199.255.192.0/22",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "199.127.232.0/22",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "54.240.0.0/18",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "69.169.224.0/20",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "23.249.208.0/20",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "23.251.224.0/19",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "76.223.176.0/20",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "52.82.172.0/22",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "54.240.64.0/19",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "54.240.96.0/19",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "76.223.128.0/19",
+                  "mechanism": "ip4"
+                }
+              ],
+              "neutral": [],
+              "softfail": [],
+              "fail": [],
+              "include": [],
+              "redirect": null,
+              "exp": null,
+              "all": "fail"
+            },
+            "warnings": []
+          }
+        ],
+        "redirect": null,
+        "exp": null,
+        "all": "softfail"
+      }
+    },
+    "dmarc": {
+      "record": null,
+      "valid": false,
+      "location": null,
+      "error": "A DMARC record does not exist for this domain or its base domain"
+    }
+  },
+  {
+    "domain": "cardinalhealth.cn",
+    "base_domain": "cardinalhealth.cn",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "ns-cloud-e4.googledomains.com",
+        "ns-cloud-e1.googledomains.com",
+        "ns-cloud-e3.googledomains.com",
+        "ns-cloud-e2.googledomains.com"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [],
+      "warnings": [
+        "No MX records found. Is the domain parked?"
+      ]
+    },
+    "spf": {
+      "record": null,
+      "valid": false,
+      "dns_void_lookups": null,
+      "error": "(SPFRecordNotFound('cardinalhealth.cn does not have a SPF TXT record', 'cardinalhealth.cn'), 'cardinalhealth.cn')"
+    },
+    "dmarc": {
+      "record": null,
+      "valid": false,
+      "location": null,
+      "error": "A DMARC record does not exist for this domain or its base domain"
+    }
+  },
+  {
+    "domain": "cardinalhealth.co.uk",
+    "base_domain": "cardinalhealth.co.uk",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "ns-cloud-e3.googledomains.com",
+        "ns-cloud-e2.googledomains.com",
+        "ns-cloud-e4.googledomains.com",
+        "ns-cloud-e1.googledomains.com"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [],
+      "warnings": [
+        "No MX records found. Is the domain parked?"
+      ]
+    },
+    "spf": {
+      "record": "v=spf1 -all",
+      "valid": true,
+      "dns_lookups": 0,
+      "dns_void_lookups": 0,
+      "warnings": [],
+      "parsed": {
+        "pass": [],
+        "neutral": [],
+        "softfail": [],
+        "fail": [],
+        "include": [],
+        "redirect": null,
+        "exp": null,
+        "all": "fail"
+      }
+    },
+    "dmarc": {
+      "record": null,
+      "valid": false,
+      "location": null,
+      "error": "A DMARC record does not exist for this domain or its base domain"
+    }
+  },
+  {
+    "domain": "cardinalhealth.com",
+    "base_domain": "cardinalhealth.com",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "ns-cloud-e4.googledomains.com",
+        "ns-cloud-e2.googledomains.com",
+        "ns-cloud-e3.googledomains.com",
+        "ns-cloud-e1.googledomains.com"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [
+        {
+          "preference": 10,
+          "hostname": "mx1.hc2781-64.iphmx.com",
+          "addresses": [
+            "216.71.143.52",
+            "216.71.148.142"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "mx2.hc2781-64.iphmx.com",
+          "addresses": [
+            "216.71.143.52",
+            "216.71.148.142"
+          ]
+        }
+      ],
+      "warnings": []
+    },
+    "spf": {
+      "record": "v=spf1 exists:%{i}.spf.hc2781-64.iphmx.com include:_spf.salesforce.com include:spf-a.opntxtdns.com include:7698986.spf08.hubspotemail.net include:sendgrid.net include:amazonses.com ip4:12.19.100.11 ip4:208.185.229.41 ip4:208.185.229.42 ip4:208.185.229.43 ip4:208.185.229.44 ip4:208.185.229.45 ip4:72.3.202.3 ip4:198.89.160.32 ip4:198.89.160.35 ~all",
+      "valid": true,
+      "dns_lookups": 8,
+      "dns_void_lookups": 0,
+      "warnings": [],
+      "parsed": {
+        "pass": [
+          {
+            "value": "%{i}.spf.hc2781-64.iphmx.com",
+            "mechanism": "exists"
+          },
+          {
+            "value": "12.19.100.11",
+            "mechanism": "ip4"
+          },
+          {
+            "value": "208.185.229.41",
+            "mechanism": "ip4"
+          },
+          {
+            "value": "208.185.229.42",
+            "mechanism": "ip4"
+          },
+          {
+            "value": "208.185.229.43",
+            "mechanism": "ip4"
+          },
+          {
+            "value": "208.185.229.44",
+            "mechanism": "ip4"
+          },
+          {
+            "value": "208.185.229.45",
+            "mechanism": "ip4"
+          },
+          {
+            "value": "72.3.202.3",
+            "mechanism": "ip4"
+          },
+          {
+            "value": "198.89.160.32",
+            "mechanism": "ip4"
+          },
+          {
+            "value": "198.89.160.35",
+            "mechanism": "ip4"
+          }
+        ],
+        "neutral": [],
+        "softfail": [],
+        "fail": [],
+        "include": [
+          {
+            "domain": "_spf.salesforce.com",
+            "record": "v=spf1 exists:%{i}._spf.mta.salesforce.com -all",
+            "dns_lookups": 1,
+            "dns_void_lookups": 0,
+            "parsed": {
+              "pass": [
+                {
+                  "value": "%{i}._spf.mta.salesforce.com",
+                  "mechanism": "exists"
+                }
+              ],
+              "neutral": [],
+              "softfail": [],
+              "fail": [],
+              "include": [],
+              "redirect": null,
+              "exp": null,
+              "all": "fail"
+            },
+            "warnings": []
+          },
+          {
+            "domain": "spf-a.opntxtdns.com",
+            "record": "v=spf1 ip4:150.105.185.150/32 ip4:150.105.217.150/32 ip4:150.105.112.150/32 ip4:150.105.120.150/32  -all",
+            "dns_lookups": 0,
+            "dns_void_lookups": 0,
+            "parsed": {
+              "pass": [
+                {
+                  "value": "150.105.185.150/32",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "150.105.217.150/32",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "150.105.112.150/32",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "150.105.120.150/32",
+                  "mechanism": "ip4"
+                }
+              ],
+              "neutral": [],
+              "softfail": [],
+              "fail": [],
+              "include": [],
+              "redirect": null,
+              "exp": null,
+              "all": "fail"
+            },
+            "warnings": []
+          },
+          {
+            "domain": "7698986.spf08.hubspotemail.net",
+            "record": "v=spf1 ip4:3.93.157.0/24 ip4:3.210.190.0/24 ip4:18.208.124.128/25 ip4:54.174.52.0/24 ip4:54.174.53.128/30 ip4:54.174.57.0/24 ip4:54.174.59.0/24 ip4:54.174.60.0/23 ip4:54.174.63.0/24 ip4:139.180.17.0/24 ip4:143.244.80.0/20 ip4:158.247.16.0/20 -all",
+            "dns_lookups": 0,
+            "dns_void_lookups": 0,
+            "parsed": {
+              "pass": [
+                {
+                  "value": "3.93.157.0/24",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "3.210.190.0/24",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "18.208.124.128/25",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "54.174.52.0/24",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "54.174.53.128/30",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "54.174.57.0/24",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "54.174.59.0/24",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "54.174.60.0/23",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "54.174.63.0/24",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "139.180.17.0/24",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "143.244.80.0/20",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "158.247.16.0/20",
+                  "mechanism": "ip4"
+                }
+              ],
+              "neutral": [],
+              "softfail": [],
+              "fail": [],
+              "include": [],
+              "redirect": null,
+              "exp": null,
+              "all": "fail"
+            },
+            "warnings": []
+          },
+          {
+            "domain": "sendgrid.net",
+            "record": "v=spf1 ip4:167.89.0.0/17 ip4:208.117.48.0/20 ip4:50.31.32.0/19 ip4:198.37.144.0/20 ip4:198.21.0.0/21 ip4:192.254.112.0/20 ip4:168.245.0.0/17 ip4:149.72.0.0/16 ip4:159.183.0.0/16 include:ab.sendgrid.net ~all",
+            "dns_lookups": 1,
+            "dns_void_lookups": 0,
+            "parsed": {
+              "pass": [
+                {
+                  "value": "167.89.0.0/17",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "208.117.48.0/20",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "50.31.32.0/19",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "198.37.144.0/20",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "198.21.0.0/21",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "192.254.112.0/20",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "168.245.0.0/17",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "149.72.0.0/16",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "159.183.0.0/16",
+                  "mechanism": "ip4"
+                }
+              ],
+              "neutral": [],
+              "softfail": [],
+              "fail": [],
+              "include": [
+                {
+                  "domain": "ab.sendgrid.net",
+                  "record": "v=spf1 ip4:223.165.113.0/24 ip4:223.165.115.0/24 ip4:223.165.118.0/23 ip4:223.165.120.0/23 ~all",
+                  "dns_lookups": 0,
+                  "dns_void_lookups": 0,
+                  "parsed": {
+                    "pass": [
+                      {
+                        "value": "223.165.113.0/24",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "223.165.115.0/24",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "223.165.118.0/23",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "223.165.120.0/23",
+                        "mechanism": "ip4"
+                      }
+                    ],
+                    "neutral": [],
+                    "softfail": [],
+                    "fail": [],
+                    "include": [],
+                    "redirect": null,
+                    "exp": null,
+                    "all": "softfail"
+                  },
+                  "warnings": []
+                }
+              ],
+              "redirect": null,
+              "exp": null,
+              "all": "softfail"
+            },
+            "warnings": []
+          },
+          {
+            "domain": "amazonses.com",
+            "record": "v=spf1 ip4:199.255.192.0/22 ip4:199.127.232.0/22 ip4:54.240.0.0/18 ip4:69.169.224.0/20 ip4:23.249.208.0/20 ip4:23.251.224.0/19 ip4:76.223.176.0/20 ip4:52.82.172.0/22 ip4:54.240.64.0/19 ip4:54.240.96.0/19 ip4:76.223.128.0/19 -all",
+            "dns_lookups": 0,
+            "dns_void_lookups": 0,
+            "parsed": {
+              "pass": [
+                {
+                  "value": "199.255.192.0/22",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "199.127.232.0/22",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "54.240.0.0/18",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "69.169.224.0/20",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "23.249.208.0/20",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "23.251.224.0/19",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "76.223.176.0/20",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "52.82.172.0/22",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "54.240.64.0/19",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "54.240.96.0/19",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "76.223.128.0/19",
+                  "mechanism": "ip4"
+                }
+              ],
+              "neutral": [],
+              "softfail": [],
+              "fail": [],
+              "include": [],
+              "redirect": null,
+              "exp": null,
+              "all": "fail"
+            },
+            "warnings": []
+          }
+        ],
+        "redirect": null,
+        "exp": null,
+        "all": "softfail"
+      }
+    },
+    "dmarc": {
+      "record": "v=DMARC1; p=none; rua=mailto:dmarcreports@cardinalhealth.com; ruf=mailto:dmarcreports@cardinalhealth.com",
+      "valid": true,
+      "location": "cardinalhealth.com",
+      "warnings": [],
+      "tags": {
+        "v": {
+          "value": "DMARC1",
+          "explicit": true
+        },
+        "p": {
+          "value": "none",
+          "explicit": true
+        },
+        "rua": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarcreports@cardinalhealth.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "ruf": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarcreports@cardinalhealth.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "adkim": {
+          "value": "r",
+          "explicit": false
+        },
+        "aspf": {
+          "value": "r",
+          "explicit": false
+        },
+        "fo": {
+          "value": "0",
+          "explicit": false
+        },
+        "pct": {
+          "value": 100,
+          "explicit": false
+        },
+        "rf": {
+          "value": "afrf",
+          "explicit": false
+        },
+        "ri": {
+          "value": 86400,
+          "explicit": false
+        },
+        "sp": {
+          "value": "none",
+          "explicit": false
+        }
+      }
+    }
+  },
+  {
+    "domain": "cardinalhealth.com.au",
+    "base_domain": "cardinalhealth.com.au",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "ns-cloud-e2.googledomains.com",
+        "ns-cloud-e3.googledomains.com",
+        "ns-cloud-e1.googledomains.com",
+        "ns-cloud-e4.googledomains.com"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [],
+      "warnings": [
+        "No MX records found. Is the domain parked?"
+      ]
+    },
+    "spf": {
+      "record": null,
+      "valid": false,
+      "dns_void_lookups": null,
+      "error": "(SPFRecordNotFound('cardinalhealth.com.au does not have a SPF TXT record', 'cardinalhealth.com.au'), 'cardinalhealth.com.au')"
+    },
+    "dmarc": {
+      "record": null,
+      "valid": false,
+      "location": null,
+      "error": "A DMARC record does not exist for this domain or its base domain"
+    }
+  },
+  {
+    "domain": "cardinalhealth.de",
+    "base_domain": "cardinalhealth.de",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "ns-cloud-e4.googledomains.com",
+        "ns-cloud-e2.googledomains.com",
+        "ns-cloud-e1.googledomains.com",
+        "ns-cloud-e3.googledomains.com"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [],
+      "warnings": [
+        "No MX records found. Is the domain parked?"
+      ]
+    },
+    "spf": {
+      "record": "v=spf1 -all",
+      "valid": true,
+      "dns_lookups": 0,
+      "dns_void_lookups": 0,
+      "warnings": [],
+      "parsed": {
+        "pass": [],
+        "neutral": [],
+        "softfail": [],
+        "fail": [],
+        "include": [],
+        "redirect": null,
+        "exp": null,
+        "all": "fail"
+      }
+    },
+    "dmarc": {
+      "record": null,
+      "valid": false,
+      "location": null,
+      "error": "A DMARC record does not exist for this domain or its base domain"
+    }
+  },
+  {
+    "domain": "cardinalhealth.es",
+    "base_domain": "cardinalhealth.es",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "ns-cloud-e4.googledomains.com",
+        "ns-cloud-e1.googledomains.com",
+        "ns-cloud-e2.googledomains.com",
+        "ns-cloud-e3.googledomains.com"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [],
+      "warnings": [
+        "No MX records found. Is the domain parked?"
+      ]
+    },
+    "spf": {
+      "record": null,
+      "valid": false,
+      "dns_void_lookups": null,
+      "error": "(SPFRecordNotFound('cardinalhealth.es does not have a SPF TXT record', 'cardinalhealth.es'), 'cardinalhealth.es')"
+    },
+    "dmarc": {
+      "record": null,
+      "valid": false,
+      "location": null,
+      "error": "A DMARC record does not exist for this domain or its base domain"
+    }
+  },
+  {
+    "domain": "cardinalhealth.jp",
+    "base_domain": "cardinalhealth.jp",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "ns-cloud-e3.googledomains.com",
+        "ns-cloud-e4.googledomains.com",
+        "ns-cloud-e1.googledomains.com",
+        "ns-cloud-e2.googledomains.com"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [],
+      "warnings": [
+        "No MX records found. Is the domain parked?"
+      ]
+    },
+    "spf": {
+      "record": null,
+      "valid": false,
+      "dns_void_lookups": null,
+      "error": "(SPFRecordNotFound('cardinalhealth.jp does not have a SPF TXT record', 'cardinalhealth.jp'), 'cardinalhealth.jp')"
+    },
+    "dmarc": {
+      "record": null,
+      "valid": false,
+      "location": null,
+      "error": "A DMARC record does not exist for this domain or its base domain"
+    }
+  },
+  {
+    "domain": "cardinalhealth.kr",
+    "base_domain": "cardinalhealth.kr",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "ns-cloud-e4.googledomains.com",
+        "ns-cloud-e2.googledomains.com",
+        "ns-cloud-e3.googledomains.com",
+        "ns-cloud-e1.googledomains.com"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [],
+      "warnings": [
+        "No MX records found. Is the domain parked?"
+      ]
+    },
+    "spf": {
+      "record": null,
+      "valid": false,
+      "dns_void_lookups": null,
+      "error": "('cardinalhealth.kr does not have a SPF TXT record ', 'cardinalhealth.kr')"
+    },
+    "dmarc": {
+      "record": null,
+      "valid": false,
+      "location": null,
+      "error": "A DMARC record does not exist for this domain or its base domain"
+    }
+  },
+  {
+    "domain": "cardinalhealth.pr",
+    "base_domain": "cardinalhealth.pr",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "ns-cloud-e2.googledomains.com",
+        "ns-cloud-e4.googledomains.com",
+        "ns-cloud-e3.googledomains.com",
+        "ns-cloud-e1.googledomains.com"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [],
+      "warnings": [
+        "No MX records found. Is the domain parked?"
+      ]
+    },
+    "spf": {
+      "record": null,
+      "valid": false,
+      "dns_void_lookups": null,
+      "error": "('cardinalhealth.pr does not have a SPF TXT record ', 'cardinalhealth.pr')"
+    },
+    "dmarc": {
+      "record": null,
+      "valid": false,
+      "location": null,
+      "error": "A DMARC record does not exist for this domain or its base domain"
+    }
+  },
+  {
+    "domain": "cardinalhealthphilippines.jobs",
+    "base_domain": "cardinalhealthphilippines.jobs",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "dns2.stabletransit.com",
+        "dns1.stabletransit.com"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [],
+      "warnings": [
+        "No MX records found. Is the domain parked?"
+      ]
+    },
+    "spf": {
+      "record": null,
+      "valid": false,
+      "dns_void_lookups": null,
+      "error": "(SPFRecordNotFound('cardinalhealthphilippines.jobs does not have a SPF TXT record', 'cardinalhealthphilippines.jobs'), 'cardinalhealthphilippines.jobs')"
+    },
+    "dmarc": {
+      "record": null,
+      "valid": false,
+      "location": null,
+      "error": "A DMARC record does not exist for this domain or its base domain"
+    }
+  },
+  {
+    "domain": "edgepark.com",
+    "base_domain": "edgepark.com",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "ns-cloud-e1.googledomains.com",
+        "ns-cloud-e2.googledomains.com",
+        "ns-cloud-e3.googledomains.com",
+        "ns-cloud-e4.googledomains.com"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [
+        {
+          "preference": 10,
+          "hostname": "mx1.hc2781-64.iphmx.com",
+          "addresses": [
+            "216.71.143.52",
+            "216.71.148.142"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "mx2.hc2781-64.iphmx.com",
+          "addresses": [
+            "216.71.143.52",
+            "216.71.148.142"
+          ]
+        }
+      ],
+      "warnings": []
+    },
+    "spf": {
+      "record": "v=spf1 include:_spf.cardinalhealth.com include:bounce.simpleepay.com include:_spf.access.creehan.com ~all",
+      "valid": true,
+      "dns_lookups": 5,
+      "dns_void_lookups": 0,
+      "warnings": [],
+      "parsed": {
+        "pass": [],
+        "neutral": [],
+        "softfail": [],
+        "fail": [],
+        "include": [
+          {
+            "domain": "_spf.cardinalhealth.com",
+            "record": "v=spf1 exists:%{i}.spf.hc2781-64.iphmx.com",
+            "dns_lookups": 1,
+            "dns_void_lookups": 0,
+            "parsed": {
+              "pass": [
+                {
+                  "value": "%{i}.spf.hc2781-64.iphmx.com",
+                  "mechanism": "exists"
+                }
+              ],
+              "neutral": [],
+              "softfail": [],
+              "fail": [],
+              "include": [],
+              "redirect": null,
+              "exp": null,
+              "all": "neutral"
+            },
+            "warnings": []
+          },
+          {
+            "domain": "bounce.simpleepay.com",
+            "record": "v=spf1 include:cust-spf.exacttarget.com -all",
+            "dns_lookups": 1,
+            "dns_void_lookups": 0,
+            "parsed": {
+              "pass": [],
+              "neutral": [],
+              "softfail": [],
+              "fail": [],
+              "include": [
+                {
+                  "domain": "cust-spf.exacttarget.com",
+                  "record": "v=spf1 ip4:64.132.92.0/24 ip4:64.132.88.0/23 ip4:66.231.80.0/20 ip4:68.232.192.0/20 ip4:199.122.120.0/21 ip4:207.67.38.0/24 ip4:128.17.0.0/20 ip4:128.17.64.0/20 ip4:128.17.128.0/20 ip4:128.17.192.0/20 ip4:128.245.0.0/20 ip4:128.245.64.0/20 ip4:128.245.242.0/24 ip4:128.245.243.0/24 ip4:128.245.244.0/24 ip4:128.245.245.0/24 ip4:128.245.246.0/24 ip4:128.245.247.0/24 ip4:128.245.176.0/20 ip4:207.67.98.192/27 ip4:207.250.68.0/24 ip4:209.43.22.0/28 ip4:198.245.80.0/20 ip4:136.147.128.0/20 ip4:136.147.176.0/20 ip4:13.111.0.0/16 ip4:161.71.32.0/19 ip4:161.71.64.0/20 ip4:13.110.208.0/21 ip4:13.110.216.0/22 ip4:13.110.224.0/20 ip4:159.92.157.0/24 ip4:159.92.158.0/24 ip4:159.92.159.0/24 ip4:159.92.160.0/24 ip4:159.92.161.0/24 ip4:159.92.162.0/24 -all",
+                  "dns_lookups": 0,
+                  "dns_void_lookups": 0,
+                  "parsed": {
+                    "pass": [
+                      {
+                        "value": "64.132.92.0/24",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "64.132.88.0/23",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "66.231.80.0/20",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "68.232.192.0/20",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "199.122.120.0/21",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "207.67.38.0/24",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "128.17.0.0/20",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "128.17.64.0/20",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "128.17.128.0/20",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "128.17.192.0/20",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "128.245.0.0/20",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "128.245.64.0/20",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "128.245.242.0/24",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "128.245.243.0/24",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "128.245.244.0/24",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "128.245.245.0/24",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "128.245.246.0/24",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "128.245.247.0/24",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "128.245.176.0/20",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "207.67.98.192/27",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "207.250.68.0/24",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "209.43.22.0/28",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "198.245.80.0/20",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "136.147.128.0/20",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "136.147.176.0/20",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "13.111.0.0/16",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "161.71.32.0/19",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "161.71.64.0/20",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "13.110.208.0/21",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "13.110.216.0/22",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "13.110.224.0/20",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "159.92.157.0/24",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "159.92.158.0/24",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "159.92.159.0/24",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "159.92.160.0/24",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "159.92.161.0/24",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "159.92.162.0/24",
+                        "mechanism": "ip4"
+                      }
+                    ],
+                    "neutral": [],
+                    "softfail": [],
+                    "fail": [],
+                    "include": [],
+                    "redirect": null,
+                    "exp": null,
+                    "all": "fail"
+                  },
+                  "warnings": []
+                }
+              ],
+              "redirect": null,
+              "exp": null,
+              "all": "fail"
+            },
+            "warnings": []
+          },
+          {
+            "domain": "_spf.access.creehan.com",
+            "record": "v=spf1 ip4:72.237.71.75 -all",
+            "dns_lookups": 0,
+            "dns_void_lookups": 0,
+            "parsed": {
+              "pass": [
+                {
+                  "value": "72.237.71.75",
+                  "mechanism": "ip4"
+                }
+              ],
+              "neutral": [],
+              "softfail": [],
+              "fail": [],
+              "include": [],
+              "redirect": null,
+              "exp": null,
+              "all": "fail"
+            },
+            "warnings": []
+          }
+        ],
+        "redirect": null,
+        "exp": null,
+        "all": "softfail"
+      }
+    },
+    "dmarc": {
+      "record": "v=DMARC1; p=none; rua=mailto:dmarcreports@cardinalhealth.com;  ruf=mailto:dmarcreports@cardinalhealth.com",
+      "valid": true,
+      "location": "edgepark.com",
+      "warnings": [],
+      "tags": {
+        "v": {
+          "value": "DMARC1",
+          "explicit": true
+        },
+        "p": {
+          "value": "none",
+          "explicit": true
+        },
+        "rua": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarcreports@cardinalhealth.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "ruf": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarcreports@cardinalhealth.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "adkim": {
+          "value": "r",
+          "explicit": false
+        },
+        "aspf": {
+          "value": "r",
+          "explicit": false
+        },
+        "fo": {
+          "value": "0",
+          "explicit": false
+        },
+        "pct": {
+          "value": 100,
+          "explicit": false
+        },
+        "rf": {
+          "value": "afrf",
+          "explicit": false
+        },
+        "ri": {
+          "value": 86400,
+          "explicit": false
+        },
+        "sp": {
+          "value": "none",
+          "explicit": false
+        }
+      }
+    }
+  },
+  {
+    "domain": "indemed.com",
+    "base_domain": "indemed.com",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "ns-cloud-e3.googledomains.com",
+        "ns-cloud-e2.googledomains.com",
+        "ns-cloud-e1.googledomains.com",
+        "ns-cloud-e4.googledomains.com"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [
+        {
+          "preference": 10,
+          "hostname": "mx1.hc2781-64.iphmx.com",
+          "addresses": [
+            "216.71.143.52",
+            "216.71.148.142"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "mx2.hc2781-64.iphmx.com",
+          "addresses": [
+            "216.71.143.52",
+            "216.71.148.142"
+          ]
+        }
+      ],
+      "warnings": []
+    },
+    "spf": {
+      "record": "v=spf1 include:_spf.cardinalhealth.com ~all",
+      "valid": true,
+      "dns_lookups": 2,
+      "dns_void_lookups": 0,
+      "warnings": [],
+      "parsed": {
+        "pass": [],
+        "neutral": [],
+        "softfail": [],
+        "fail": [],
+        "include": [
+          {
+            "domain": "_spf.cardinalhealth.com",
+            "record": "v=spf1 exists:%{i}.spf.hc2781-64.iphmx.com",
+            "dns_lookups": 1,
+            "dns_void_lookups": 0,
+            "parsed": {
+              "pass": [
+                {
+                  "value": "%{i}.spf.hc2781-64.iphmx.com",
+                  "mechanism": "exists"
+                }
+              ],
+              "neutral": [],
+              "softfail": [],
+              "fail": [],
+              "include": [],
+              "redirect": null,
+              "exp": null,
+              "all": "neutral"
+            },
+            "warnings": []
+          }
+        ],
+        "redirect": null,
+        "exp": null,
+        "all": "softfail"
+      }
+    },
+    "dmarc": {
+      "record": "v=DMARC1; p=none; rua=mailto:dmarcreports@cardinalhealth.com;  ruf=mailto:dmarcreports@cardinalhealth.com",
+      "valid": true,
+      "location": "indemed.com",
+      "warnings": [],
+      "tags": {
+        "v": {
+          "value": "DMARC1",
+          "explicit": true
+        },
+        "p": {
+          "value": "none",
+          "explicit": true
+        },
+        "rua": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarcreports@cardinalhealth.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "ruf": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarcreports@cardinalhealth.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "adkim": {
+          "value": "r",
+          "explicit": false
+        },
+        "aspf": {
+          "value": "r",
+          "explicit": false
+        },
+        "fo": {
+          "value": "0",
+          "explicit": false
+        },
+        "pct": {
+          "value": 100,
+          "explicit": false
+        },
+        "rf": {
+          "value": "afrf",
+          "explicit": false
+        },
+        "ri": {
+          "value": 86400,
+          "explicit": false
+        },
+        "sp": {
+          "value": "none",
+          "explicit": false
+        }
+      }
+    }
+  },
+  {
+    "domain": "kinray.com",
+    "base_domain": "kinray.com",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "ns-cloud-e3.googledomains.com",
+        "ns-cloud-e4.googledomains.com",
+        "ns-cloud-e1.googledomains.com",
+        "ns-cloud-e2.googledomains.com"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [
+        {
+          "preference": 10,
+          "hostname": "mx1.hc2781-64.iphmx.com",
+          "addresses": [
+            "216.71.143.52",
+            "216.71.148.142"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "mx2.hc2781-64.iphmx.com",
+          "addresses": [
+            "216.71.143.52",
+            "216.71.148.142"
+          ]
+        }
+      ],
+      "warnings": []
+    },
+    "spf": {
+      "record": "v=spf1 include:_spf.cardinalhealth.com ~all",
+      "valid": true,
+      "dns_lookups": 2,
+      "dns_void_lookups": 0,
+      "warnings": [],
+      "parsed": {
+        "pass": [],
+        "neutral": [],
+        "softfail": [],
+        "fail": [],
+        "include": [
+          {
+            "domain": "_spf.cardinalhealth.com",
+            "record": "v=spf1 exists:%{i}.spf.hc2781-64.iphmx.com",
+            "dns_lookups": 1,
+            "dns_void_lookups": 0,
+            "parsed": {
+              "pass": [
+                {
+                  "value": "%{i}.spf.hc2781-64.iphmx.com",
+                  "mechanism": "exists"
+                }
+              ],
+              "neutral": [],
+              "softfail": [],
+              "fail": [],
+              "include": [],
+              "redirect": null,
+              "exp": null,
+              "all": "neutral"
+            },
+            "warnings": []
+          }
+        ],
+        "redirect": null,
+        "exp": null,
+        "all": "softfail"
+      }
+    },
+    "dmarc": {
+      "record": "v=DMARC1; p=none; rua=mailto:dmarcreports@cardinalhealth.com; ruf=mailto:dmarcreports@cardinalhealth.com",
+      "valid": true,
+      "location": "kinray.com",
+      "warnings": [],
+      "tags": {
+        "v": {
+          "value": "DMARC1",
+          "explicit": true
+        },
+        "p": {
+          "value": "none",
+          "explicit": true
+        },
+        "rua": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarcreports@cardinalhealth.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "ruf": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarcreports@cardinalhealth.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "adkim": {
+          "value": "r",
+          "explicit": false
+        },
+        "aspf": {
+          "value": "r",
+          "explicit": false
+        },
+        "fo": {
+          "value": "0",
+          "explicit": false
+        },
+        "pct": {
+          "value": 100,
+          "explicit": false
+        },
+        "rf": {
+          "value": "afrf",
+          "explicit": false
+        },
+        "ri": {
+          "value": 86400,
+          "explicit": false
+        },
+        "sp": {
+          "value": "none",
+          "explicit": false
+        }
+      }
+    }
+  },
+  {
+    "domain": "major-pharm.com",
+    "base_domain": "major-pharm.com",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "ns-1076.awsdns-06.org",
+        "ns-1636.awsdns-12.co.uk",
+        "ns-354.awsdns-44.com",
+        "ns-761.awsdns-31.net"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [
+        {
+          "preference": 10,
+          "hostname": "mx1.hc2781-64.iphmx.com",
+          "addresses": [
+            "216.71.143.52",
+            "216.71.148.142"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "mx2.hc2781-64.iphmx.com",
+          "addresses": [
+            "216.71.143.52",
+            "216.71.148.142"
+          ]
+        }
+      ],
+      "warnings": []
+    },
+    "spf": {
+      "record": "v=spf1 include:_spf.cardinalhealth.com ~all",
+      "valid": true,
+      "dns_lookups": 2,
+      "dns_void_lookups": 0,
+      "warnings": [],
+      "parsed": {
+        "pass": [],
+        "neutral": [],
+        "softfail": [],
+        "fail": [],
+        "include": [
+          {
+            "domain": "_spf.cardinalhealth.com",
+            "record": "v=spf1 exists:%{i}.spf.hc2781-64.iphmx.com",
+            "dns_lookups": 1,
+            "dns_void_lookups": 0,
+            "parsed": {
+              "pass": [
+                {
+                  "value": "%{i}.spf.hc2781-64.iphmx.com",
+                  "mechanism": "exists"
+                }
+              ],
+              "neutral": [],
+              "softfail": [],
+              "fail": [],
+              "include": [],
+              "redirect": null,
+              "exp": null,
+              "all": "neutral"
+            },
+            "warnings": []
+          }
+        ],
+        "redirect": null,
+        "exp": null,
+        "all": "softfail"
+      }
+    },
+    "dmarc": {
+      "record": "v=DMARC1; p=none; rua=mailto:dmarcreports@cardinalhealth.com; ruf=mailto:dmarcreports@cardinalhealth.com",
+      "valid": true,
+      "location": "major-pharm.com",
+      "warnings": [],
+      "tags": {
+        "v": {
+          "value": "DMARC1",
+          "explicit": true
+        },
+        "p": {
+          "value": "none",
+          "explicit": true
+        },
+        "rua": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarcreports@cardinalhealth.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "ruf": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarcreports@cardinalhealth.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "adkim": {
+          "value": "r",
+          "explicit": false
+        },
+        "aspf": {
+          "value": "r",
+          "explicit": false
+        },
+        "fo": {
+          "value": "0",
+          "explicit": false
+        },
+        "pct": {
+          "value": 100,
+          "explicit": false
+        },
+        "rf": {
+          "value": "afrf",
+          "explicit": false
+        },
+        "ri": {
+          "value": 86400,
+          "explicit": false
+        },
+        "sp": {
+          "value": "none",
+          "explicit": false
+        }
+      }
+    }
+  },
+  {
+    "domain": "majorpharmaceuticals.com",
+    "base_domain": "majorpharmaceuticals.com",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "ns-1058.awsdns-04.org",
+        "ns-1594.awsdns-07.co.uk",
+        "ns-457.awsdns-57.com",
+        "ns-634.awsdns-15.net"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [
+        {
+          "preference": 10,
+          "hostname": "dory.thdg.com",
+          "addresses": [
+            "74.218.207.228"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "nemo.thdg.com",
+          "addresses": [
+            "74.218.207.227"
+          ]
+        }
+      ],
+      "warnings": [
+        "The resolution lifetime expired after 2.000 seconds: Server Do53:10.23.1.99@53 answered The DNS operation timed out.",
+        "The reverse DNS of 74.218.207.227 is rrcs-74-218-207-227.central.biz.rr.com, but the A/AAAA DNS records for rrcs-74-218-207-227.central.biz.rr.com do not resolve to 74.218.207.227"
+      ]
+    },
+    "spf": {
+      "record": "v=spf1 mx a ip4:74.218.207.0/24 a:mal.thdg.com a:mail.harvarddruggroup.com a:harvexvm2.harvarddruggroup.com a:dory.thdg.com a:dory.harvarddrugroup.com a:nemo.thdg.com a:nemo.harvarddruggroup.com a:relay.thdg.com a:relay.harvarddrug",
+      "valid": false,
+      "dns_void_lookups": null,
+      "warnings": [],
+      "error": "Parsing the SPF record requires 11/10 maximum DNS lookups - https://tools.ietf.org/html/rfc7208#section-4.6.4",
+      "dns_lookups": 11
+    },
+    "dmarc": {
+      "record": null,
+      "valid": false,
+      "location": null,
+      "error": "A DMARC record does not exist for this domain or its base domain"
+    }
+  },
+  {
+    "domain": "medicineshoppe.com",
+    "base_domain": "medicineshoppe.com",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "pdns11.domaincontrol.com",
+        "pdns12.domaincontrol.com"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [
+        {
+          "preference": 10,
+          "hostname": "aspmx.1.google.com",
+          "addresses": []
+        },
+        {
+          "preference": 20,
+          "hostname": "alt1.aspmx.1.google.com",
+          "addresses": []
+        },
+        {
+          "preference": 30,
+          "hostname": "alt2.aspmx.1.google.com",
+          "addresses": []
+        },
+        {
+          "preference": 40,
+          "hostname": "aspmx2.googlemail.com",
+          "addresses": [
+            "172.217.197.26",
+            "2607:f8b0:400d:c0f::1b"
+          ]
+        },
+        {
+          "preference": 50,
+          "hostname": "aspmx3.googlemail.com",
+          "addresses": [
+            "108.177.12.26",
+            "2607:f8b0:400c:c08::1b"
+          ]
+        },
+        {
+          "preference": 60,
+          "hostname": "aspmx4.googlemail.com",
+          "addresses": [
+            "172.253.62.27",
+            "2607:f8b0:4004:c07::1b"
+          ]
+        },
+        {
+          "preference": 70,
+          "hostname": "aspmx5.googlemail.com",
+          "addresses": [
+            "2800:3f0:4003:c00::1b",
+            "64.233.186.26"
+          ]
+        }
+      ],
+      "warnings": [
+        "The domain aspmx.1.google.com does not exist",
+        "The domain alt1.aspmx.1.google.com does not exist",
+        "The domain alt2.aspmx.1.google.com does not exist",
+        "2800:3f0:4003:c00::1b does not have any reverse DNS (PTR) records"
+      ]
+    },
+    "spf": {
+      "record": null,
+      "valid": false,
+      "dns_void_lookups": null,
+      "error": "(SPFRecordNotFound('medicineshoppe.com does not have a SPF TXT record', 'medicineshoppe.com'), 'medicineshoppe.com')"
+    },
+    "dmarc": {
+      "record": null,
+      "valid": false,
+      "location": null,
+      "error": "A DMARC record does not exist for this domain or its base domain"
+    }
+  },
+  {
+    "domain": "myleader.com",
+    "base_domain": "myleader.com",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "ns-cloud-e3.googledomains.com",
+        "ns-cloud-e4.googledomains.com",
+        "ns-cloud-e1.googledomains.com",
+        "ns-cloud-e2.googledomains.com"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [],
+      "warnings": [
+        "No MX records found. Is the domain parked?"
+      ]
+    },
+    "spf": {
+      "record": "v=spf1 -all",
+      "valid": true,
+      "dns_lookups": 0,
+      "dns_void_lookups": 0,
+      "warnings": [],
+      "parsed": {
+        "pass": [],
+        "neutral": [],
+        "softfail": [],
+        "fail": [],
+        "include": [],
+        "redirect": null,
+        "exp": null,
+        "all": "fail"
+      }
+    },
+    "dmarc": {
+      "record": null,
+      "valid": false,
+      "location": null,
+      "error": "A DMARC record does not exist for this domain or its base domain"
+    }
+  },
+  {
+    "domain": "optifreight.com",
+    "base_domain": "optifreight.com",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "ns29.domaincontrol.com",
+        "ns30.domaincontrol.com"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [
+        {
+          "preference": 0,
+          "hostname": "optifreight-com.mail.protection.outlook.com",
+          "addresses": [
+            "104.47.71.138",
+            "104.47.71.202"
+          ]
+        }
+      ],
+      "warnings": []
+    },
+    "spf": {
+      "record": "v=spf1 include:secureserver.net -all",
+      "valid": true,
+      "dns_lookups": 3,
+      "dns_void_lookups": 0,
+      "warnings": [],
+      "parsed": {
+        "pass": [],
+        "neutral": [],
+        "softfail": [],
+        "fail": [],
+        "include": [
+          {
+            "domain": "secureserver.net",
+            "record": "v=spf1 include:spf-0.secureserver.net -all",
+            "dns_lookups": 2,
+            "dns_void_lookups": 0,
+            "parsed": {
+              "pass": [],
+              "neutral": [],
+              "softfail": [],
+              "fail": [],
+              "include": [
+                {
+                  "domain": "spf-0.secureserver.net",
+                  "record": "v=spf1 ip4:97.74.135.0/24 ip4:72.167.238.0/24 ip4:72.167.234.0/24 ip4:72.167.218.0/24 ip4:68.178.252.0/24 ip4:68.178.213.0/24 ip4:216.69.139.0/24 ip4:208.109.80.0/24 ip4:92.204.81.0/24 ip4:198.71.224.0/19 ip4:184.168.224.0/24 ip4:184.168.200.0/24 ip4:184.168.131.0/24 ip4:184.168.128.0/24 ip4:92.204.65.0/28 ip4:182.50.132.0/24 ip4:173.201.192.0/23 ip4:72.167.168.0/24 ip4:92.204.71.0/24 ip4:132.148.124.0/24 ip4:72.167.172.0/24 ip4:188.121.52.0/24 ip4:188.121.53.0/24 ip4:52.89.65.132 ip4:54.214.222.76 ip4:54.184.82.65 ip4:52.26.164.15 ip4:68.178.181.0/24 ip4:50.63.8.0/22 include:spf.protection.outlook.com -all",
+                  "dns_lookups": 1,
+                  "dns_void_lookups": 0,
+                  "parsed": {
+                    "pass": [
+                      {
+                        "value": "97.74.135.0/24",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "72.167.238.0/24",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "72.167.234.0/24",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "72.167.218.0/24",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "68.178.252.0/24",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "68.178.213.0/24",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "216.69.139.0/24",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "208.109.80.0/24",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "92.204.81.0/24",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "198.71.224.0/19",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "184.168.224.0/24",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "184.168.200.0/24",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "184.168.131.0/24",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "184.168.128.0/24",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "92.204.65.0/28",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "182.50.132.0/24",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "173.201.192.0/23",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "72.167.168.0/24",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "92.204.71.0/24",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "132.148.124.0/24",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "72.167.172.0/24",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "188.121.52.0/24",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "188.121.53.0/24",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "52.89.65.132",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "54.214.222.76",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "54.184.82.65",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "52.26.164.15",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "68.178.181.0/24",
+                        "mechanism": "ip4"
+                      },
+                      {
+                        "value": "50.63.8.0/22",
+                        "mechanism": "ip4"
+                      }
+                    ],
+                    "neutral": [],
+                    "softfail": [],
+                    "fail": [],
+                    "include": [
+                      {
+                        "domain": "spf.protection.outlook.com",
+                        "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/50 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+                        "dns_lookups": 0,
+                        "dns_void_lookups": 0,
+                        "parsed": {
+                          "pass": [
+                            {
+                              "value": "40.92.0.0/15",
+                              "mechanism": "ip4"
+                            },
+                            {
+                              "value": "40.107.0.0/16",
+                              "mechanism": "ip4"
+                            },
+                            {
+                              "value": "52.100.0.0/14",
+                              "mechanism": "ip4"
+                            },
+                            {
+                              "value": "104.47.0.0/17",
+                              "mechanism": "ip4"
+                            },
+                            {
+                              "value": "2a01:111:f400::/48",
+                              "mechanism": "ip6"
+                            },
+                            {
+                              "value": "2a01:111:f403::/49",
+                              "mechanism": "ip6"
+                            },
+                            {
+                              "value": "2a01:111:f403:8000::/50",
+                              "mechanism": "ip6"
+                            },
+                            {
+                              "value": "2a01:111:f403:c000::/51",
+                              "mechanism": "ip6"
+                            },
+                            {
+                              "value": "2a01:111:f403:f000::/52",
+                              "mechanism": "ip6"
+                            }
+                          ],
+                          "neutral": [],
+                          "softfail": [],
+                          "fail": [],
+                          "include": [],
+                          "redirect": null,
+                          "exp": null,
+                          "all": "fail"
+                        },
+                        "warnings": []
+                      }
+                    ],
+                    "redirect": null,
+                    "exp": null,
+                    "all": "fail"
+                  },
+                  "warnings": []
+                }
+              ],
+              "redirect": null,
+              "exp": null,
+              "all": "fail"
+            },
+            "warnings": []
+          }
+        ],
+        "redirect": null,
+        "exp": null,
+        "all": "fail"
+      }
+    },
+    "dmarc": {
+      "record": null,
+      "valid": false,
+      "location": null,
+      "error": "A DMARC record does not exist for this domain or its base domain"
+    }
+  },
+  {
+    "domain": "parmed.com",
+    "base_domain": "parmed.com",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "ns-cloud-e2.googledomains.com",
+        "ns-cloud-e4.googledomains.com",
+        "ns-cloud-e3.googledomains.com",
+        "ns-cloud-e1.googledomains.com"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [
+        {
+          "preference": 10,
+          "hostname": "mail.itx.net",
+          "addresses": []
+        }
+      ],
+      "warnings": [
+        "The domain mail.itx.net does not exist"
+      ]
+    },
+    "spf": {
+      "record": "v=spf1 -all",
+      "valid": true,
+      "dns_lookups": 0,
+      "dns_void_lookups": 0,
+      "warnings": [],
+      "parsed": {
+        "pass": [],
+        "neutral": [],
+        "softfail": [],
+        "fail": [],
+        "include": [],
+        "redirect": null,
+        "exp": null,
+        "all": "fail"
+      }
+    },
+    "dmarc": {
+      "record": null,
+      "valid": false,
+      "location": null,
+      "error": "A DMARC record does not exist for this domain or its base domain"
+    }
+  },
+  {
+    "domain": "redoaksourcing.com",
+    "base_domain": "redoaksourcing.com",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "dns101.register.com",
+        "dns102.register.com"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [
+        {
+          "preference": 0,
+          "hostname": "primary.us.email.fireeyecloud.com",
+          "addresses": [
+            "3.93.93.51",
+            "3.93.93.52",
+            "3.93.93.53",
+            "34.223.36.121",
+            "34.223.36.122",
+            "34.223.36.123"
+          ]
+        },
+        {
+          "preference": 5,
+          "hostname": "alt2.us.email.fireeyecloud.com",
+          "addresses": [
+            "3.93.93.51",
+            "3.93.93.52",
+            "3.93.93.53",
+            "34.223.36.121",
+            "34.223.36.122",
+            "34.223.36.123"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "alt1.us.email.fireeyecloud.com",
+          "addresses": [
+            "3.93.93.51",
+            "3.93.93.52",
+            "3.93.93.53",
+            "34.223.36.121",
+            "34.223.36.122",
+            "34.223.36.123"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "alt3.us.email.fireeyecloud.com",
+          "addresses": [
+            "3.93.93.51",
+            "3.93.93.52",
+            "3.93.93.53",
+            "34.223.36.121",
+            "34.223.36.122",
+            "34.223.36.123"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "redoaksourcing-com.mail.protection.outlook.com",
+          "addresses": [
+            "52.101.11.7",
+            "52.101.11.9",
+            "52.101.40.1",
+            "52.101.42.10",
+            "52.101.8.32",
+            "52.101.9.11",
+            "52.101.9.12"
+          ]
+        }
+      ],
+      "warnings": [
+        "The resolution lifetime expired after 2.000 seconds: Server Do53:10.23.1.99@53 answered The DNS operation timed out.",
+        "The reverse DNS of 3.93.93.51 is mx.us.email.fireeyecloud.com, but the A/AAAA DNS records for mx.us.email.fireeyecloud.com do not resolve to 3.93.93.51",
+        "The resolution lifetime expired after 2.000 seconds: Server Do53:10.23.1.99@53 answered The DNS operation timed out.",
+        "The reverse DNS of 3.93.93.52 is mx.us.email.fireeyecloud.com, but the A/AAAA DNS records for mx.us.email.fireeyecloud.com do not resolve to 3.93.93.52",
+        "The resolution lifetime expired after 2.000 seconds: Server Do53:10.23.1.99@53 answered The DNS operation timed out.",
+        "The reverse DNS of 3.93.93.53 is mx.us.email.fireeyecloud.com, but the A/AAAA DNS records for mx.us.email.fireeyecloud.com do not resolve to 3.93.93.53",
+        "The resolution lifetime expired after 2.000 seconds: Server Do53:10.23.1.99@53 answered The DNS operation timed out.",
+        "The reverse DNS of 34.223.36.121 is mx.us.email.fireeyecloud.com, but the A/AAAA DNS records for mx.us.email.fireeyecloud.com do not resolve to 34.223.36.121"
+      ]
+    },
+    "spf": {
+      "record": "v=spf1 include:spf.protection.outlook.com -all",
+      "valid": true,
+      "dns_lookups": 1,
+      "dns_void_lookups": 0,
+      "warnings": [],
+      "parsed": {
+        "pass": [],
+        "neutral": [],
+        "softfail": [],
+        "fail": [],
+        "include": [
+          {
+            "domain": "spf.protection.outlook.com",
+            "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/50 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+            "dns_lookups": 0,
+            "dns_void_lookups": 0,
+            "parsed": {
+              "pass": [
+                {
+                  "value": "40.92.0.0/15",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "40.107.0.0/16",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "52.100.0.0/14",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "104.47.0.0/17",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "2a01:111:f400::/48",
+                  "mechanism": "ip6"
+                },
+                {
+                  "value": "2a01:111:f403::/49",
+                  "mechanism": "ip6"
+                },
+                {
+                  "value": "2a01:111:f403:8000::/50",
+                  "mechanism": "ip6"
+                },
+                {
+                  "value": "2a01:111:f403:c000::/51",
+                  "mechanism": "ip6"
+                },
+                {
+                  "value": "2a01:111:f403:f000::/52",
+                  "mechanism": "ip6"
+                }
+              ],
+              "neutral": [],
+              "softfail": [],
+              "fail": [],
+              "include": [],
+              "redirect": null,
+              "exp": null,
+              "all": "fail"
+            },
+            "warnings": []
+          }
+        ],
+        "redirect": null,
+        "exp": null,
+        "all": "fail"
+      }
+    },
+    "dmarc": {
+      "record": "v=DMARC1; p=quarantine; fo=0; adkim=r; aspf=r; sp=none",
+      "valid": true,
+      "location": "redoaksourcing.com",
+      "warnings": [
+        "rua tag (destination for aggregate reports) not found"
+      ],
+      "tags": {
+        "v": {
+          "value": "DMARC1",
+          "explicit": true
+        },
+        "p": {
+          "value": "quarantine",
+          "explicit": true
+        },
+        "fo": {
+          "value": "0",
+          "explicit": true
+        },
+        "adkim": {
+          "value": "r",
+          "explicit": true
+        },
+        "aspf": {
+          "value": "r",
+          "explicit": true
+        },
+        "sp": {
+          "value": "none",
+          "explicit": true
+        },
+        "pct": {
+          "value": 100,
+          "explicit": false
+        },
+        "rf": {
+          "value": "afrf",
+          "explicit": false
+        },
+        "ri": {
+          "value": 86400,
+          "explicit": false
+        }
+      }
+    }
+  },
+  {
+    "domain": "theharvarddruggroup.com",
+    "base_domain": "theharvarddruggroup.com",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "ns-1529.awsdns-63.org",
+        "ns-1668.awsdns-16.co.uk",
+        "ns-428.awsdns-53.com",
+        "ns-774.awsdns-32.net"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [
+        {
+          "preference": 10,
+          "hostname": "mx1.hc2781-64.iphmx.com",
+          "addresses": [
+            "216.71.143.52",
+            "216.71.148.142"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "mx2.hc2781-64.iphmx.com",
+          "addresses": [
+            "216.71.143.52",
+            "216.71.148.142"
+          ]
+        }
+      ],
+      "warnings": []
+    },
+    "spf": {
+      "record": "v=spf1 include:_spf.cardinalhealth.com ~all",
+      "valid": true,
+      "dns_lookups": 2,
+      "dns_void_lookups": 0,
+      "warnings": [],
+      "parsed": {
+        "pass": [],
+        "neutral": [],
+        "softfail": [],
+        "fail": [],
+        "include": [
+          {
+            "domain": "_spf.cardinalhealth.com",
+            "record": "v=spf1 exists:%{i}.spf.hc2781-64.iphmx.com",
+            "dns_lookups": 1,
+            "dns_void_lookups": 0,
+            "parsed": {
+              "pass": [
+                {
+                  "value": "%{i}.spf.hc2781-64.iphmx.com",
+                  "mechanism": "exists"
+                }
+              ],
+              "neutral": [],
+              "softfail": [],
+              "fail": [],
+              "include": [],
+              "redirect": null,
+              "exp": null,
+              "all": "neutral"
+            },
+            "warnings": []
+          }
+        ],
+        "redirect": null,
+        "exp": null,
+        "all": "softfail"
+      }
+    },
+    "dmarc": {
+      "record": "v=DMARC1; p=none; rua=mailto:dmarcreports@cardinalhealth.com;  ruf=mailto:dmarcreports@cardinalhealth.com",
+      "valid": true,
+      "location": "theharvarddruggroup.com",
+      "warnings": [],
+      "tags": {
+        "v": {
+          "value": "DMARC1",
+          "explicit": true
+        },
+        "p": {
+          "value": "none",
+          "explicit": true
+        },
+        "rua": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarcreports@cardinalhealth.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "ruf": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarcreports@cardinalhealth.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "adkim": {
+          "value": "r",
+          "explicit": false
+        },
+        "aspf": {
+          "value": "r",
+          "explicit": false
+        },
+        "fo": {
+          "value": "0",
+          "explicit": false
+        },
+        "pct": {
+          "value": 100,
+          "explicit": false
+        },
+        "rf": {
+          "value": "afrf",
+          "explicit": false
+        },
+        "ri": {
+          "value": 86400,
+          "explicit": false
+        },
+        "sp": {
+          "value": "none",
+          "explicit": false
+        }
+      }
+    }
+  },
+  {
+    "domain": "wavemark.net",
+    "base_domain": "wavemark.net",
+    "dnssec": false,
+    "ns": {
+      "hostnames": [
+        "ns-cloud-e2.googledomains.com",
+        "ns-cloud-e1.googledomains.com",
+        "ns-cloud-e3.googledomains.com",
+        "ns-cloud-e4.googledomains.com"
+      ],
+      "warnings": []
+    },
+    "mx": {
+      "hosts": [
+        {
+          "preference": 10,
+          "hostname": "mx1.hc2781-64.iphmx.com",
+          "addresses": [
+            "216.71.143.52",
+            "216.71.148.142"
+          ]
+        },
+        {
+          "preference": 10,
+          "hostname": "mx2.hc2781-64.iphmx.com",
+          "addresses": [
+            "216.71.143.52",
+            "216.71.148.142"
+          ]
+        }
+      ],
+      "warnings": []
+    },
+    "spf": {
+      "record": "v=spf1 include:_spf.cardinalhealth.com include:emailsrvr.com ~all",
+      "valid": true,
+      "dns_lookups": 3,
+      "dns_void_lookups": 0,
+      "warnings": [],
+      "parsed": {
+        "pass": [],
+        "neutral": [],
+        "softfail": [],
+        "fail": [],
+        "include": [
+          {
+            "domain": "_spf.cardinalhealth.com",
+            "record": "v=spf1 exists:%{i}.spf.hc2781-64.iphmx.com",
+            "dns_lookups": 1,
+            "dns_void_lookups": 0,
+            "parsed": {
+              "pass": [
+                {
+                  "value": "%{i}.spf.hc2781-64.iphmx.com",
+                  "mechanism": "exists"
+                }
+              ],
+              "neutral": [],
+              "softfail": [],
+              "fail": [],
+              "include": [],
+              "redirect": null,
+              "exp": null,
+              "all": "neutral"
+            },
+            "warnings": []
+          },
+          {
+            "domain": "emailsrvr.com",
+            "record": "v=spf1 ip4:108.166.43.0/24 ip4:146.20.86.8 ip4:146.20.161.0/25 ip4:161.47.34.7 ip4:173.203.187.0/25 ip4:184.106.54.0/25 ip4:204.232.172.40 ~all",
+            "dns_lookups": 0,
+            "dns_void_lookups": 0,
+            "parsed": {
+              "pass": [
+                {
+                  "value": "108.166.43.0/24",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "146.20.86.8",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "146.20.161.0/25",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "161.47.34.7",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "173.203.187.0/25",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "184.106.54.0/25",
+                  "mechanism": "ip4"
+                },
+                {
+                  "value": "204.232.172.40",
+                  "mechanism": "ip4"
+                }
+              ],
+              "neutral": [],
+              "softfail": [],
+              "fail": [],
+              "include": [],
+              "redirect": null,
+              "exp": null,
+              "all": "softfail"
+            },
+            "warnings": []
+          }
+        ],
+        "redirect": null,
+        "exp": null,
+        "all": "softfail"
+      }
+    },
+    "dmarc": {
+      "record": "v=DMARC1; p=none; rua=mailto:dmarcreports@cardinalhealth.com;  ruf=mailto:dmarcreports@cardinalhealth.com",
+      "valid": true,
+      "location": "wavemark.net",
+      "warnings": [],
+      "tags": {
+        "v": {
+          "value": "DMARC1",
+          "explicit": true
+        },
+        "p": {
+          "value": "none",
+          "explicit": true
+        },
+        "rua": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarcreports@cardinalhealth.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "ruf": {
+          "value": [
+            {
+              "scheme": "mailto",
+              "address": "dmarcreports@cardinalhealth.com",
+              "size_limit": null
+            }
+          ],
+          "explicit": true
+        },
+        "adkim": {
+          "value": "r",
+          "explicit": false
+        },
+        "aspf": {
+          "value": "r",
+          "explicit": false
+        },
+        "fo": {
+          "value": "0",
+          "explicit": false
+        },
+        "pct": {
+          "value": 100,
+          "explicit": false
+        },
+        "rf": {
+          "value": "afrf",
+          "explicit": false
+        },
+        "ri": {
+          "value": 86400,
+          "explicit": false
+        },
+        "sp": {
+          "value": "none",
+          "explicit": false
+        }
+      }
+    }
+  }
+]
