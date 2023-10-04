@@ -16,7 +16,9 @@ When an organization is evaluating its security posture, a common step is a comp
 
 The Fortune 20 list is sourced from [Wikipedia][wikipedia]. The latest version published there at the time of this writing is from 2022, even though Forbes published their 2023 Fortune 500 list behind a paywall on June 5, 2023.
 
-Each company has many domains. The domains listed in this project are gathered based on brands and subsidiaries mentioned in public information, such as the SEC form 10-K annual report, available in [EDGAR][EDGAR]. The domain lists published here do not include all of the domains related to these companies.
+Each company has many domains. The domains listed in this project are gathered based on brands and subsidiaries mentioned in public information, such as the SEC form 10-K annual report, available in [EDGAR][EDGAR].
+
+The domain lists published here may not account for recent divestitures or similarly named companies, although I did my best to avoid such errors. The domain lists do not include all of the domains related to these companies.
 
 The list of domains is then processed using [checkdmarc][checkdmarc], which checks each domain for DNSSEC, a valid SPF record, a valid DMARC record, and more.
 
